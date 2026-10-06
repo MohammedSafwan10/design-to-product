@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mockup to Product"
+  short_description: "Three concepts to a polished, verified product"
+  default_prompt: "Use $mockup-to-product to propose three design directions, extend my chosen one into related screens, and implement it with scoped logic review and verification."
