@@ -1,174 +1,150 @@
-# Mockup to Product
+# Design to Product
 
-A framework-agnostic agent skill for turning an approved visual direction into
-working software—with cohesive assets, responsive interfaces, and logic checks
-alongside implementation.
+One self-contained agent skill for deliberate art direction, comparable mockups,
+scoped design selection, reusable identity assets, working interfaces and visual/
+logic verification. Supports public websites, apps, dashboards and game UIs.
 
-Built for websites, SaaS dashboards, mobile and desktop apps, and games. It does
-not prescribe a particular framework, backend, image generator, or visual style.
+Formerly **Mockup to Product**. The skill is now `design-to-product`; the existing
+repository URL remains `MohammedSafwan10/mockup-to-product` for continuity.
 
-## The workflow
+## What is combined
 
-```text
-Inspect the product and its constraints
-                ↓
-Present three distinct design directions
-                ↓
-User selects a direction
-                ↓
-Extend it into related screens and key states
-                ↓
-Prepare isolated assets + implement a complete flow
-                ↓
-Review logic + compare the running UI with the mockup
-                ↓
-Verify proportionally + document the handoff
-```
+- **Art direction:** a product-specific idea, content hierarchy, imagery strategy,
+  typography and responsive composition before decoration.
+- **Distinct choices:** three concepts by default, or the user's requested count,
+  with comparable content, viewable screenshots and usable previews.
+- **Scoped approval:** records theme, layout, flow and asset decisions separately.
+  A chosen palette is not automatic approval of every screen.
+- **Related screens:** preserves identity while composing each platform for its
+  task; HTML studies are clearly distinguished from native implementations.
+- **Reusable assets:** vector logos, licensed fonts/tokens and relevant icon
+  exports when requested, separate from demo screens and runtime derivatives.
+- **Implementation:** one authorized complete flow, real state/error handling and
+  task-specific logic checks before expanding to the whole product.
+- **Clean handoff:** current references, meaningful verification and requested
+  cleanup with shared-usage checks and proportionate recovery.
 
-Three concepts are the default, not a restriction. If a direction is already
-approved, the agent skips that choice rather than restarting the design process.
+No separate `design-taste-frontend` skill is required. This revision includes its
+own original direction catalog and browser inspection tools. It does **not** copy
+that package's code, prose or research dataset, or claim its model-reviewed gallery
+study as our own. The [source audit](docs/DESIGN_TASTE_AUDIT.md) records what informed
+our decisions and the redistribution boundary.
 
-## What it changes
+## Taste without a universal costume
 
-- **Faithful composition:** follows approved proportions, hierarchy, artwork
-  scale, typography and depth—not just a similar palette.
-- **Real interfaces:** keeps controls, text, counters and state native rather
-  than shipping an interface screenshot as the UI.
-- **Responsive behavior:** checks compact screens, safe areas, larger text,
-  keyboards and long labels; scrolling is intentional, not an accidental fix.
-- **Integrated logic review:** checks relevant async races, persistence, input
-  validation and failure states. Game difficulty, turns and collisions are
-  conditional guidance, not rules imposed on a business application.
-- **Asset discipline:** uses cohesive cutouts and backgrounds, records licensing
-  and provenance, and avoids shipping unused variants or temporary files.
-- **Practical verification:** focused checks during iteration and an appropriate
-  final build. No native rebuild for every small spacing change.
-- **Useful handoffs:** records selected references, completed states, validation
-  results, limitations and the next exact task.
+A new color on the same card layout is not a new direction. The skill requires a
+specific idea, convincing content, deliberate hierarchy, coherent image treatment
+and a phone composition that works on its own. The render is inspected and critiqued;
+a clean measurement report is not an aesthetic score.
 
-## Install in Codex
+Surface profiles separate **marketing**, **app** and **dashboard** needs. An existing
+brand color, a form boundary or a useful data table is preserved when appropriate.
+There is no mandatory photo/video quota, blanket color ban or animation-count gate.
+The browser checker distinguishes measured errors, warnings and design advice.
+Measured overflow, broken images, runtime exceptions and low sampled text contrast
+cannot be silenced with a general allow flag.
 
-If your Codex environment provides `$skill-installer`, ask:
+These changes are engineering/workflow improvements. They do not prove better
+visual outcomes than another skill; that needs broader behavioral comparisons.
 
-```text
-Use $skill-installer to install the skill from:
-https://github.com/MohammedSafwan10/mockup-to-product/tree/main/skills/mockup-to-product
-```
-
-Alternatively, download or clone this repository and copy the entire
-`skills/mockup-to-product` folder into your Codex environment's supported personal
-or project skill directory. Keep its references and `agents` folder together.
-Follow your installed client's skill-discovery guidance; reopen/reload the client
-if necessary, then confirm the skill is available before invoking it.
-
-See the official [skill-building guidance](https://learn.chatgpt.com/docs/build-skills).
-
-## Use it
+## Use
 
 ```text
-Use $mockup-to-product to redesign our appointment-booking app.
-Start with three mobile home-screen directions and wait for my choice.
-Preserve existing booking APIs. Review loading, validation and retry behavior
-alongside implementation. Do not deploy or change production data.
+Use $design-to-product to design our product website and app. Show four genuinely
+different directions with comparable content. Once I choose a theme, show it on
+representative phone screens before implementing the full flow. Preserve our
+backend contracts. Do not deploy.
 ```
-
-Give the agent the codebase, target audience, platforms, constraints and any
-references you already like. Specify whether logic changes are permitted and
-whether commits, pushes or deployment are authorized.
-
-### SaaS dashboard
 
 ```text
-Use $mockup-to-product for our analytics dashboard. Show three directions using
-the same content. After I choose, extend it to filters, drill-down and empty/error
-states. Keep charts accessible and preserve the existing data contract.
+Use $design-to-product with this approved layout. Keep its proportions and identity;
+skip new concepts. Implement one complete booking flow, including validation,
+loading and failure states, then compare the running UI to the reference.
 ```
-
-### Desktop application
 
 ```text
-Use $mockup-to-product to redesign our file manager. Prioritize keyboard navigation
-and dense but readable layouts. Show three directions, then implement one complete
-browse/search flow. Do not change filesystem behavior without asking.
+Use $design-to-product to refine this existing mark into reusable SVG assets and
+website/Android icon exports. The theme is selected; full screen layouts remain
+exploratory. Do not generate unrelated platforms or treat a browser study as a
+native app build.
 ```
 
-### Game
+## Install or migrate
+
+In a Codex environment with `$skill-installer`, ask:
 
 ```text
-Use $mockup-to-product for our puzzle game. Start with three mode-selection
-concepts. Once selected, create gameplay/result mockups and matching artwork.
-Review each difficulty, pause/reset behavior and audio latency alongside the UI.
+Use $skill-installer to install:
+https://github.com/MohammedSafwan10/mockup-to-product/tree/main/skills/design-to-product
 ```
 
-### Already approved design
+For a manual install, clone or download this repository, then copy the complete
+[`skills/design-to-product`](skills/design-to-product) folder into your host's
+supported personal or project skill directory. Keep its references, scripts,
+library, license and metadata together. Invoke it as `$design-to-product`.
+
+When migrating an installed `mockup-to-product`, preserve any local customizations
+before replacing it. Keep old copies outside discoverable skill directories when
+archiving, so agents do not see two competing workflow entries. Reload skill
+discovery as required by the host. Do not remove unrelated helper packages that
+existing projects still import. No other taste skill needs to be called by this one.
+
+The core follows the Agent Skills folder format. `agents/openai.yaml` is optional
+OpenAI-specific presentation metadata; the workflow does not depend on one host.
+This repository is a skill bundle, not a marketplace plugin or MCP server.
+
+## Bundled tools
+
+Requires Node 22+. Inspection also requires an installed Chrome, Edge or Chromium;
+set `DESIGN_CHROME_PATH` if necessary. No npm install, image API key or logged-in
+browser is required for these tools. The inspector launches an isolated profile.
 
 ```text
-Use $mockup-to-product with the attached approved mockup. Do not generate three
-new concepts. Inspect it carefully, create related-screen mockups in the same
-family, then implement and compare screenshots at the target viewports.
+node skills/design-to-product/scripts/directions.mjs --profile marketing --count 4 --seed 21 --assets photography --keep palette,type
+node skills/design-to-product/scripts/inspect.mjs path/to/index.html --profile app --widths 320,390,430 --reduced-motion
 ```
 
-## Other agent platforms
+The 12 original catalog entries are starting hypotheses filtered by surface and
+available media, with reproducible seeded variety. The agent still decides fit,
+exact type/palette and composition; the tool does not understand the brief for you.
 
-The core is a `SKILL.md` instruction bundle with linked references, compatible
-with the [Agent Skills format](https://agentskills.io). Hosts supporting that
-format may load it through their own installation mechanism; this does not claim
-that every platform supports automatic discovery or the same commands.
+Inspection saves fold/full-page PNGs and a JSON report. Complex contrast, closed
+shadow roots, native surfaces, keyboard behavior and complete accessibility are
+not certified by a DOM sample. Read the [tooling reference](skills/design-to-product/references/tooling.md)
+for options, limitations, exit codes and explicit layout contracts. Image creation,
+external media search and native builds use the host's available tools; they are
+not services provided by this skill.
 
-`agents/openai.yaml` provides optional OpenAI-specific presentation metadata.
-The core workflow does not depend on it. For agents without skill discovery,
-provide `SKILL.md` and the relevant references explicitly as task instructions.
+## Source map
 
-This repository is a skill bundle, **not** an installable marketplace plugin or
-an MCP server. Plugin packaging can be added separately when needed.
+- [Core workflow](skills/design-to-product/SKILL.md)
+- [Art direction and rendered critique](skills/design-to-product/references/art-direction-and-review.md)
+- [Theme approval, mobile studies, identity and cleanup](skills/design-to-product/references/visual-handoff.md)
+- [Logic and verification](skills/design-to-product/references/logic-and-verification.md)
+- [Conditional game-feel and audio](skills/design-to-product/references/game-feel-and-audio.md)
+- [Tooling and evidence limits](skills/design-to-product/references/tooling.md)
+- [Manual behavioral evaluation briefs](skills/design-to-product/evals/scenarios.json)
 
-## Tools and boundaries
-
-The skill supplies a process—not image generation, hosting, API credentials or a
-new model. The host agent needs appropriate capabilities for the requested work:
-code/file access, applicable build/test tools, and, when relevant, image generation,
-browsing, audio preparation or screenshots.
-
-When a capability is unavailable, the agent should disclose the limitation and
-use an appropriate available alternative—not pretend it rendered, tested or
-visually verified a result. Supporting image, performance or platform skills can
-be used when available; none are bundled here.
-
-The workflow preserves scope and user approval. It does not authorize deployments,
-live transactions, destructive migrations, tool installation or external publishing
-merely because the user approved a mockup. It also does not guarantee bug-free or
-production-ready software.
-
-## Contents
+## Validation
 
 ```text
-skills/mockup-to-product/
-├── SKILL.md
-├── agents/openai.yaml
-└── references/
-    ├── logic-and-verification.md
-    └── game-feel-and-audio.md
+npm test
+npm run test:browser
 ```
 
-- [Core workflow](skills/mockup-to-product/SKILL.md)
-- [Logic and verification](skills/mockup-to-product/references/logic-and-verification.md)
-- [Conditional game-feel and audio guidance](skills/mockup-to-product/references/game-feel-and-audio.md)
+Core tests cover media/surface eligibility, unique/reproducible suggestions,
+functional findings, explicit layout contracts and local-server confinement.
+Browser tests use actual Chromium against readable and deliberately broken
+fixtures. They check that usable app UI needs no decorative imagery/animation,
+and that resource/runtime/overflow/name/contrast failures are reported.
 
-## Validation and contributions
-
-The initial bundle passes the Codex skill creator's structural validation. That
-checks packaging/frontmatter, not whether every agent follows the workflow well.
-No cross-platform behavioral certification is claimed.
-
-Useful contributions include reproducible workflow failures, clearer approval
-boundaries, and focused platform-independent improvements. Include the request,
-host/tool context, observed outcome and expected behavior. Do not include private
-code, credentials or customer data in issues.
-
-Keep the shared workflow lean. Put substantial conditional guidance in linked
-references instead of adding every platform's tutorial to the main instructions.
+The skill-creator validator checks structural packaging, not taste or end-to-end
+behavior. Manual evaluation briefs are supplied for future authorized comparisons;
+they are not claims that an independent study has already run. No production-ready,
+WCAG-certified or native-device guarantee is made by the skill.
 
 ## License
 
-[MIT](LICENSE). Third-party assets created or downloaded while using the skill
-retain their own licenses; this license does not grant rights to those assets.
+[MIT](LICENSE) for this repository's own code and instructions. Fonts, artwork and
+other third-party assets used in projects retain their own licenses. Source-audit
+references do not grant redistribution rights to the inspected third-party package.

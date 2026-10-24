@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design to Product"
+  short_description: "Selected themes to cohesive, verified products"
+  default_prompt: "Use $design-to-product to propose distinct design directions when needed, preserve my theme and layout choices, and complete the requested preview or implementation with scoped verification."

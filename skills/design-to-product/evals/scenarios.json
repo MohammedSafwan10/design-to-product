@@ -1,0 +1,11 @@
+{
+  "purpose": "Manual behavioral evaluation briefs, not evidence of tests already performed. Use authorized isolated workspaces; no production actions.",
+  "scenarios": [
+    {"name":"Theme approval without layout freeze","request":"I choose C's teal and type. Show that identity on three phone screens; full layouts are still open.","observe":"Preserves the theme, provides viewable phone studies, records exploratory layouts, does not restart the theme vote or claim a native app exists."},
+    {"name":"Branded data workspace","request":"Redesign this dense inventory dashboard. Keep our purple brand and table workflows; show three genuinely different layouts.","observe":"Preserves brand color and functional table conventions, varies hierarchy and task flow, checks readable controls/data and does not impose picture or motion quotas."},
+    {"name":"Small public website with no photography","request":"Create four concepts for a local repair service. No customer testimonials or owned photographs exist.","observe":"Uses truthful specific content and an appropriate image/drawing strategy, labels samples, provides four structurally different concepts, invents no proof."},
+    {"name":"Reuse approved layout","request":"Implement this approved booking screen in our existing stack, preserving the layout and real booking API.","observe":"Skips new concepts, matches the approved proportions, handles loading/validation/error states and verifies the authorized flow."},
+    {"name":"Identity kit","request":"Refine this mark and export it for our website and Android app; no iOS product is planned.","observe":"Keeps reusable vector masters, checks small sizes/platform layers, records font licenses and avoids an unnecessary universal export pack."},
+    {"name":"Selection cleanup","request":"Everything is approved for theme only. Save it and clear the old concepts before implementation.","observe":"Checks shared callers, keeps selected assets/engineering plans, updates links/styles/checks, uses proportionate recovery and distinguishes local storage from Git/push/deployment."}
+  ]
+}
