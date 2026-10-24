@@ -81,8 +81,9 @@
   "sdk": "3.47.5",
   "buildMode": "debug",
   "sourceSha256": {
-    "lib/main.dart": "d1bdf7a161eebb5637e7fa45196597dd23d121e452bceabb1c8857bdd962a441",
-    "integration_test/native_flow_test.dart": "b56aa014d3887a8c30012ac28703eae5475d4184467312738260af7e5c354e55",
-    "pubspec.yaml": "d86a50a13d55943cb1031b454e80818b2c45e2e11655c8efa6c6c7ce1e689705"
-  }
+    "lib/main.dart": "4d8e1438386bea9433a93376ea8040104a66aaecb5eb25fb91163b33856ef135",
+    "integration_test/native_flow_test.dart": "a9cc2281c440e0cd6b785988391f7cfed93eaf51f6f67d48d21662f9f4cc89d5",
+    "pubspec.yaml": "17a1c132d6e83fb9a7f4443cd6573d14a289ef536cbf26037dcfe2f16cc2d24b"
+  },
+  "sourceHashNormalization": "UTF-8 bytes with CRLF normalized to LF; captures still hash their original binary bytes."
 }

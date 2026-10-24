@@ -12,6 +12,9 @@ errors and known exclusions. Separate a simulator/emulator, physical device,
 native desktop runner, offscreen widget test and browser emulation. A render
 boundary capture excludes OS chrome; label it rather than calling it a complete
 device screenshot. Preserve before/failure/recovery states where relevant.
+The bundled source fingerprints normalize CRLF to LF for cross-platform Git
+checkouts; screenshot hashes use unchanged binary bytes. Verify that declared
+normalization when comparing a report with the current source.
 
 Verify actions against domain state. A timer must not create a connected call,
 successful purchase or delivered message. For game input, prove the action and

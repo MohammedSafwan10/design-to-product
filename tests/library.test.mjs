@@ -6,6 +6,19 @@ import {join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {validateLibrary,queryIndex,loadRecipe,contrastRatio} from '../skills/design-to-product/scripts/library.mjs';
 import {suggestSurface} from '../skills/design-to-product/scripts/directions.mjs';
+import {createHash} from 'node:crypto';
+
+test('published native evidence matches portable source fingerprints and original capture bytes',async()=>{
+ const root=new URL('../skills/design-to-product/',import.meta.url);
+ const report=JSON.parse(await readFile(new URL('evals/native-windows/report.json',root),'utf8'));
+ assert.ok(report.sourceHashNormalization.includes('CRLF normalized to LF'));
+ for(const [path,digest] of Object.entries(report.sourceSha256)){
+  const bytes=await readFile(new URL(`examples/native-lab/${path}`,root));
+  const canonical=Buffer.from(bytes.toString('utf8').replace(/\r\n/g,'\n'),'utf8');
+  assert.equal(createHash('sha256').update(canonical).digest('hex'),digest,path);
+ }
+ for(const capture of report.captures){const bytes=await readFile(new URL(`evals/native-windows/${capture.artifact}`,root));assert.equal(createHash('sha256').update(bytes).digest('hex'),capture.sha256,capture.artifact);}
+});
 test('catalog resolves all linked modules and distinguishes candidates from reviewed work',async()=>{
  const result=await validateLibrary();assert.equal(result.valid,true,JSON.stringify(result.errors));assert.equal(result.total,150);
  assert.ok(Object.values(result.counts).every(n=>n===25));assert.deepEqual(result.statusCounts,{draft:150});
