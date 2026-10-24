@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "multiscript-sans",
+  "kind": "typography",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Script-aware sans",
+  "faces": {
+    "display": "\"Noto Sans\", system-ui, sans-serif",
+    "body": "\"Noto Sans\", system-ui, sans-serif"
+  },
+  "license": "Noto source: https://github.com/notofonts ; verify each selected family license and ship only needed fonts. No files bundled.",
+  "scriptCoverage": "Noto Sans alone does not cover every script. Select script-specific families, line metrics and shaping tests for supported languages.",
+  "fit": "Interfaces requiring explicit multilingual planning.",
+  "roles": {
+    "display": {
+      "minPx": 30,
+      "maxPx": 64,
+      "lineHeight": 1.25
+    },
+    "heading": {
+      "minPx": 23,
+      "maxPx": 34,
+      "lineHeight": 1.4
+    },
+    "body": {
+      "minPx": 17,
+      "maxPx": 21,
+      "lineHeight": 1.65
+    },
+    "label": {
+      "minPx": 15,
+      "maxPx": 19,
+      "lineHeight": 1.55
+    }
+  },
+  "rules": [
+    "Treat sizes as candidate browser baselines, not native point/sp prescriptions.",
+    "Scale and reflow content at enlarged text; do not truncate essential action labels.",
+    "Keep native framework/platform text scaling enabled.",
+    "Use font-display behavior and subset budgets appropriate to the actual chosen files."
+  ],
+  "metricsReview": "Candidate role sizes and line-height ratios; measure x-height, fallback, actual glyph coverage and enlarged text in the target runtime before adoption."
+}

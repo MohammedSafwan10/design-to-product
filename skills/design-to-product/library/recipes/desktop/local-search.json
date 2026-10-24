@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/local-search",
+  "title": "Local search",
+  "familyId": "command",
+  "surface": "desktop",
+  "idea": "Local search: Scoped query and contextual snippets lead file inspection",
+  "audience": "People who need to find file within a desktop surface.",
+  "tasks": [
+    "find-file",
+    "search-inspect"
+  ],
+  "worksWellWhen": [
+    "Users know fragments rather than exact paths"
+  ],
+  "avoidWhen": [
+    "Search scope is unclear"
+  ],
+  "distinctFrom": [
+    "Differs from a generic command layout through its find file priority and explicit commitment contract: Search never expands into unauthorized directories"
+  ],
+  "density": "compact",
+  "navigation": "Local search keeps the current find file context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Scoped query and contextual snippets lead file inspection",
+    "continuation": "Continue with the evidence and controls needed to find file; users know fragments rather than exact paths",
+    "priority": "Search never expands into unauthorized directories"
+  },
+  "patternIds": [
+    "search-inspect"
+  ],
+  "compositionIds": [
+    "command-results"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual find file context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep active filters adjacent to results when resized",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the local search structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no find file content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Search never expands into unauthorized directories",
+    "offline": "Label cached/unsynchronized find file content and prevent claims of server completion.",
+    "success": "Search never expands into unauthorized directories",
+    "interruption": "Restore the active find file context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

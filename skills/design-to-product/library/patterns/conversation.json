@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "conversation",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Conversation",
+  "contract": "Show recipient, delivery uncertainty, safe composition and retry.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

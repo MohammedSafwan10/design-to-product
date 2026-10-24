@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/font-inspector",
+  "title": "Font inspector",
+  "familyId": "craft",
+  "surface": "desktop",
+  "idea": "Font inspector: Real text specimens expose glyph coverage and metrics",
+  "audience": "People who need to inspect font within a desktop surface.",
+  "tasks": [
+    "inspect-font",
+    "compare"
+  ],
+  "worksWellWhen": [
+    "Typography decisions depend on actual content"
+  ],
+  "avoidWhen": [
+    "Only font thumbnails are available"
+  ],
+  "distinctFrom": [
+    "Differs from a generic craft layout through its inspect font priority and explicit commitment contract: Installed face availability must be measured rather than assumed"
+  ],
+  "density": "compact",
+  "navigation": "Font inspector keeps the current inspect font context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Real text specimens expose glyph coverage and metrics",
+    "continuation": "Continue with the evidence and controls needed to inspect font; typography decisions depend on actual content",
+    "priority": "Installed face availability must be measured rather than assumed"
+  },
+  "patternIds": [
+    "compare"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "material-study"
+    ],
+    "role": "Support the actual inspect font context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Test script fallback and enlarged labels in the specimen",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the font inspector structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect font content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Installed face availability must be measured rather than assumed",
+    "offline": "Label cached/unsynchronized inspect font content and prevent claims of server completion.",
+    "success": "Installed face availability must be measured rather than assumed",
+    "interruption": "Restore the active inspect font context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

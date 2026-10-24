@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/remote-workspace",
+  "title": "Remote workspace",
+  "familyId": "workspace",
+  "surface": "desktop",
+  "idea": "Remote workspace: Remote identity and sync state stay visible beside documents",
+  "audience": "People who need to remote edit within a desktop surface.",
+  "tasks": [
+    "remote-edit",
+    "connection"
+  ],
+  "worksWellWhen": [
+    "Users edit across a network boundary"
+  ],
+  "avoidWhen": [
+    "Local and remote states cannot be separated"
+  ],
+  "distinctFrom": [
+    "Differs from a generic workspace layout through its remote edit priority and explicit commitment contract: Do not overwrite remote changes without conflict review"
+  ],
+  "density": "compact",
+  "navigation": "Remote workspace keeps the current remote edit context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Remote identity and sync state stay visible beside documents",
+    "continuation": "Continue with the evidence and controls needed to remote edit; users edit across a network boundary",
+    "priority": "Do not overwrite remote changes without conflict review"
+  },
+  "patternIds": [
+    "connection"
+  ],
+  "compositionIds": [
+    "work-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual remote edit context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Maintain offline draft markers on pane collapse",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the remote workspace structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no remote edit content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Do not overwrite remote changes without conflict review",
+    "offline": "Label cached/unsynchronized remote edit content and prevent claims of server completion.",
+    "success": "Do not overwrite remote changes without conflict review",
+    "interruption": "Restore the active remote edit context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

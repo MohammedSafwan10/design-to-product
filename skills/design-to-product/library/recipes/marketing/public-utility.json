@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/public-utility",
+  "title": "Public utility",
+  "familyId": "signal",
+  "surface": "marketing",
+  "idea": "Public utility: The permitted public action is immediately clear, with privacy and recovery information close to the control.",
+  "audience": "People who need to use public action within a marketing surface.",
+  "tasks": [
+    "use-public-action",
+    "contact"
+  ],
+  "worksWellWhen": [
+    "People arrive under time pressure with little product context."
+  ],
+  "avoidWhen": [
+    "Brand spectacle would delay a necessary action."
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its use public action priority and explicit commitment contract: Display success only for confirmed request delivery or actual connection state."
+  ],
+  "density": "spacious",
+  "navigation": "Public utility keeps the current use public action context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "The permitted public action is immediately clear, with privacy and recovery information close to the control.",
+    "continuation": "Continue with the evidence and controls needed to use public action; people arrive under time pressure with little product context.",
+    "priority": "Display success only for confirmed request delivery or actual connection state."
+  },
+  "patternIds": [
+    "contact"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual use public action context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use large readable actions and keep emergency guidance distinct from ordinary requests.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the public utility structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no use public action content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Display success only for confirmed request delivery or actual connection state.",
+    "offline": "Label cached/unsynchronized use public action content and prevent claims of server completion.",
+    "success": "Display success only for confirmed request delivery or actual connection state.",
+    "interruption": "Restore the active use public action context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

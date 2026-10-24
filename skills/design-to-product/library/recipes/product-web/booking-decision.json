@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/booking-decision",
+  "title": "Booking decision",
+  "familyId": "decision",
+  "surface": "product-web",
+  "idea": "Booking decision: Availability, relevant restrictions and a concise reservation summary occupy a single decision space.",
+  "audience": "People who need to reserve slot within a product-web surface.",
+  "tasks": [
+    "reserve-slot",
+    "book-review"
+  ],
+  "worksWellWhen": [
+    "A time or capacity choice has important eligibility constraints."
+  ],
+  "avoidWhen": [
+    "Availability is only a mock but appears bookable."
+  ],
+  "distinctFrom": [
+    "Differs from a generic decision layout through its reserve slot priority and explicit commitment contract: A pending request becomes confirmed only after the reservation is authoritatively created."
+  ],
+  "density": "balanced",
+  "navigation": "Booking decision keeps the current reserve slot context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Availability, relevant restrictions and a concise reservation summary occupy a single decision space.",
+    "continuation": "Continue with the evidence and controls needed to reserve slot; a time or capacity choice has important eligibility constraints.",
+    "priority": "A pending request becomes confirmed only after the reservation is authoritatively created."
+  },
+  "patternIds": [
+    "book-review"
+  ],
+  "compositionIds": [
+    "question-result"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual reserve slot context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use day then time selection with an explicit review screen and preserved timezone.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the booking decision structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no reserve slot content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; A pending request becomes confirmed only after the reservation is authoritatively created.",
+    "offline": "Label cached/unsynchronized reserve slot content and prevent claims of server completion.",
+    "success": "A pending request becomes confirmed only after the reservation is authoritatively created.",
+    "interruption": "Restore the active reserve slot context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/product-web-booking-decision-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=booking-decision&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/product-web-booking-decision-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=booking-decision&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

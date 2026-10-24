@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/connection-inspector",
+  "title": "Connection inspector",
+  "familyId": "instrument",
+  "surface": "desktop",
+  "idea": "Connection inspector: Endpoint identity and event log flank current connection state",
+  "audience": "People who need to inspect connection within a desktop surface.",
+  "tasks": [
+    "inspect-connection",
+    "connection"
+  ],
+  "worksWellWhen": [
+    "Operators diagnose remote access"
+  ],
+  "avoidWhen": [
+    "The display would expose secrets"
+  ],
+  "distinctFrom": [
+    "Differs from a generic instrument layout through its inspect connection priority and explicit commitment contract: A transport handshake is not application readiness"
+  ],
+  "density": "compact",
+  "navigation": "Connection inspector keeps the current inspect connection context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Endpoint identity and event log flank current connection state",
+    "continuation": "Continue with the evidence and controls needed to inspect connection; operators diagnose remote access",
+    "priority": "A transport handshake is not application readiness"
+  },
+  "patternIds": [
+    "connection"
+  ],
+  "compositionIds": [
+    "instrument-controls"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "midnight-ice"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual inspect connection context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize failure reason and reconnect controls when panes stack",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the connection inspector structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect connection content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; A transport handshake is not application readiness",
+    "offline": "Label cached/unsynchronized inspect connection content and prevent claims of server completion.",
+    "success": "A transport handshake is not application readiness",
+    "interruption": "Restore the active inspect connection context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/desktop-connection-inspector-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=connection-inspector&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/desktop-connection-inspector-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=connection-inspector&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

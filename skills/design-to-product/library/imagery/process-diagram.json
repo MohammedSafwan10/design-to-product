@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "process-diagram",
+  "kind": "imagery",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Process diagram",
+  "role": "A deliberate diagram explains a causal mechanism or relationship.",
+  "cropRules": "Offer a linear text equivalent and preserve readable labels at narrow widths.",
+  "provenance": "Original diagram or source/license; do not trace proprietary art.",
+  "delivery": [
+    "Choose actual output dimensions and format from the display role.",
+    "Use responsive sources and avoid blocking the primary action on nonessential art.",
+    "Record bytes, dimensions, source and transformations in the project asset manifest."
+  ]
+}

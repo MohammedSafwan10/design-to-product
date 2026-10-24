@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "form-review",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Form and review",
+  "contract": "Group by decision, explain validation and preserve safe draft input.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

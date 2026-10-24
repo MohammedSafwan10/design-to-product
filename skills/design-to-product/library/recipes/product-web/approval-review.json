@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/approval-review",
+  "title": "Approval review",
+  "familyId": "decision",
+  "surface": "product-web",
+  "idea": "Approval review: A proposal and its relevant evidence sit beside a clear approve, reject or request-change decision.",
+  "audience": "People who need to review approval within a product-web surface.",
+  "tasks": [
+    "review-approval",
+    "form-review"
+  ],
+  "worksWellWhen": [
+    "A reviewer must assess consequences and record rationale."
+  ],
+  "avoidWhen": [
+    "Approving is presented without necessary permissions or evidence."
+  ],
+  "distinctFrom": [
+    "Differs from a generic decision layout through its review approval priority and explicit commitment contract: Record the exact proposal version and authoritative decision; prevent stale approval."
+  ],
+  "density": "balanced",
+  "navigation": "Approval review keeps the current review approval context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A proposal and its relevant evidence sit beside a clear approve, reject or request-change decision.",
+    "continuation": "Continue with the evidence and controls needed to review approval; a reviewer must assess consequences and record rationale.",
+    "priority": "Record the exact proposal version and authoritative decision; prevent stale approval."
+  },
+  "patternIds": [
+    "form-review"
+  ],
+  "compositionIds": [
+    "question-result"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review approval context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Move supporting material into labelled sections before the decision controls.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the approval review structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review approval content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Record the exact proposal version and authoritative decision; prevent stale approval.",
+    "offline": "Label cached/unsynchronized review approval content and prevent claims of server completion.",
+    "success": "Record the exact proposal version and authoritative decision; prevent stale approval.",
+    "interruption": "Restore the active review approval context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/process-cutaway",
+  "title": "Process cutaway",
+  "familyId": "process",
+  "surface": "marketing",
+  "idea": "Process cutaway: An original cutaway or flow reveals input, transformation and output in an ordered causal story.",
+  "audience": "People who need to understand mechanism within a marketing surface.",
+  "tasks": [
+    "understand-mechanism",
+    "process-proof"
+  ],
+  "worksWellWhen": [
+    "Understanding how something works reduces genuine uncertainty."
+  ],
+  "avoidWhen": [
+    "A theatrical diagram would imply unbuilt functionality."
+  ],
+  "distinctFrom": [
+    "Differs from a generic process layout through its understand mechanism priority and explicit commitment contract: Separate implemented stages from conceptual or future steps."
+  ],
+  "density": "spacious",
+  "navigation": "Process cutaway keeps the current understand mechanism context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "An original cutaway or flow reveals input, transformation and output in an ordered causal story.",
+    "continuation": "Continue with the evidence and controls needed to understand mechanism; understanding how something works reduces genuine uncertainty.",
+    "priority": "Separate implemented stages from conceptual or future steps."
+  },
+  "patternIds": [
+    "process-proof"
+  ],
+  "compositionIds": [
+    "sequence-reveal"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "process-diagram"
+    ],
+    "role": "Support the actual understand mechanism context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Replace wide connecting arrows with a numbered semantic reading sequence if useful.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the process cutaway structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no understand mechanism content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Separate implemented stages from conceptual or future steps.",
+    "offline": "Label cached/unsynchronized understand mechanism content and prevent claims of server completion.",
+    "success": "Separate implemented stages from conceptual or future steps.",
+    "interruption": "Restore the active understand mechanism context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/marketing-process-cutaway-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=process-cutaway&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/marketing-process-cutaway-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=process-cutaway&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/comparison-workspace",
+  "title": "Comparison workspace",
+  "familyId": "collection",
+  "surface": "product-web",
+  "idea": "Comparison workspace: Selected actual items share an aligned attribute view with deliberate differences and source context.",
+  "audience": "People who need to compare records within a product-web surface.",
+  "tasks": [
+    "compare-records",
+    "compare"
+  ],
+  "worksWellWhen": [
+    "Differences across a few records determine a decision."
+  ],
+  "avoidWhen": [
+    "Too many incomparable attributes would produce decorative density."
+  ],
+  "distinctFrom": [
+    "Differs from a generic collection layout through its compare records priority and explicit commitment contract: Flag missing or uncertain values rather than inventing equivalence."
+  ],
+  "density": "balanced",
+  "navigation": "Comparison workspace keeps the current compare records context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Selected actual items share an aligned attribute view with deliberate differences and source context.",
+    "continuation": "Continue with the evidence and controls needed to compare records; differences across a few records determine a decision.",
+    "priority": "Flag missing or uncertain values rather than inventing equivalence."
+  },
+  "patternIds": [
+    "compare"
+  ],
+  "compositionIds": [
+    "collection-field"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "output-crop"
+    ],
+    "role": "Support the actual compare records context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Compare one attribute group at a time and keep item identity visible.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the comparison workspace structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no compare records content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Flag missing or uncertain values rather than inventing equivalence.",
+    "offline": "Label cached/unsynchronized compare records content and prevent claims of server completion.",
+    "success": "Flag missing or uncertain values rather than inventing equivalence.",
+    "interruption": "Restore the active compare records context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

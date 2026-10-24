@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/scan-actions",
+  "title": "Scan actions",
+  "familyId": "signal",
+  "surface": "mobile",
+  "idea": "Scan actions: Trusted resource identity precedes a short action list",
+  "audience": "People who need to contact within a mobile surface.",
+  "tasks": [
+    "contact",
+    "contact"
+  ],
+  "worksWellWhen": [
+    "Visitors need immediate private contact"
+  ],
+  "avoidWhen": [
+    "Account management is required first"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its contact priority and explicit commitment contract: Never report connected before media connects"
+  ],
+  "density": "balanced",
+  "navigation": "Scan actions keeps the current contact context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Trusted resource identity precedes a short action list",
+    "continuation": "Continue with the evidence and controls needed to contact; visitors need immediate private contact",
+    "priority": "Never report connected before media connects"
+  },
+  "patternIds": [
+    "contact"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual contact context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Urgent and ordinary actions remain distinct on short screens",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the scan actions structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no contact content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Never report connected before media connects",
+    "offline": "Label cached/unsynchronized contact content and prevent claims of server completion.",
+    "success": "Never report connected before media connects",
+    "interruption": "Restore the active contact context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

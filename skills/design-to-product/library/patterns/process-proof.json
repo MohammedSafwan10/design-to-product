@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "process-proof",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Process proof",
+  "contract": "Show actual mechanism, inputs and output without unsupported claims.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

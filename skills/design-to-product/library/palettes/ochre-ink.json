@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "ochre-ink",
+  "kind": "palettes",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Ochre and ink",
+  "roles": {
+    "background": "#faf9f2",
+    "text": "#292d32",
+    "surface": "#eee9d6",
+    "primary": "#715500",
+    "onPrimary": "#ffffff",
+    "error": "#b42318",
+    "focus": "#715500"
+  },
+  "contrastPairs": [
+    {
+      "foreground": "text",
+      "background": "background",
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text",
+      "background": "surface",
+      "minimum": 4.5
+    },
+    {
+      "foreground": "onPrimary",
+      "background": "primary",
+      "minimum": 4.5
+    }
+  ],
+  "rules": [
+    "Contrast values apply only to the explicit opaque token pairs; composited page contrast needs runtime testing.",
+    "Use labels, shapes or patterns alongside semantic colors.",
+    "Focus outline must be tested against its actual neighboring surfaces.",
+    "Build a considered theme counterpart; do not mechanically invert imagery.",
+    "Chart series need task-specific distinguishability and labeled alternatives."
+  ]
+}

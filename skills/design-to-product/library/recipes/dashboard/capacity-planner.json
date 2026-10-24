@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/capacity-planner",
+  "title": "Capacity planner",
+  "familyId": "decision",
+  "surface": "dashboard",
+  "idea": "Capacity planner: Demand and staffed capacity share a reviewable allocation form",
+  "audience": "People who need to allocate capacity within a dashboard surface.",
+  "tasks": [
+    "allocate-capacity",
+    "capacity"
+  ],
+  "worksWellWhen": [
+    "Scheduling depends on finite resources"
+  ],
+  "avoidWhen": [
+    "Capacity is invented or unbounded"
+  ],
+  "distinctFrom": [
+    "Differs from a generic decision layout through its allocate capacity priority and explicit commitment contract: Save only validated non-conflicting allocations"
+  ],
+  "density": "compact",
+  "navigation": "Capacity planner keeps the current allocate capacity context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Demand and staffed capacity share a reviewable allocation form",
+    "continuation": "Continue with the evidence and controls needed to allocate capacity; scheduling depends on finite resources",
+    "priority": "Save only validated non-conflicting allocations"
+  },
+  "patternIds": [
+    "capacity"
+  ],
+  "compositionIds": [
+    "question-result"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual allocate capacity context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep units and conflicts visible when charts collapse",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the capacity planner structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no allocate capacity content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Save only validated non-conflicting allocations",
+    "offline": "Label cached/unsynchronized allocate capacity content and prevent claims of server completion.",
+    "success": "Save only validated non-conflicting allocations",
+    "interruption": "Restore the active allocate capacity context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/dashboard-capacity-planner-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=capacity-planner&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/dashboard-capacity-planner-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=capacity-planner&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "ledger-detail",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Ledger with detail",
+  "entry": "Comparable rows establish order; selected detail preserves the original row context.",
+  "adaptation": "Use focused item routes and retain filter/scroll state on return."
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/social-invitation",
+  "title": "Social invitation",
+  "familyId": "conversation",
+  "surface": "game",
+  "idea": "Social invitation: Inviter identity session scope and decline affordance precede joining",
+  "audience": "People who need to accept invite within a game surface.",
+  "tasks": [
+    "accept-invite",
+    "permissions"
+  ],
+  "worksWellWhen": [
+    "Players receive real scoped invitations"
+  ],
+  "avoidWhen": [
+    "The invitation exposes private account details"
+  ],
+  "distinctFrom": [
+    "Differs from a generic conversation layout through its accept invite priority and explicit commitment contract: Joining validates current invitation expiry and permissions"
+  ],
+  "density": "balanced",
+  "navigation": "Social invitation keeps the current accept invite context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Inviter identity session scope and decline affordance precede joining",
+    "continuation": "Continue with the evidence and controls needed to accept invite; players receive real scoped invitations",
+    "priority": "Joining validates current invitation expiry and permissions"
+  },
+  "patternIds": [
+    "permissions"
+  ],
+  "compositionIds": [
+    "conversation-context"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual accept invite context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep decline reachable and do not steal active gameplay focus",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the social invitation structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no accept invite content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Joining validates current invitation expiry and permissions",
+    "offline": "Label cached/unsynchronized accept invite content and prevent claims of server completion.",
+    "success": "Joining validates current invitation expiry and permissions",
+    "interruption": "Restore the active accept invite context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

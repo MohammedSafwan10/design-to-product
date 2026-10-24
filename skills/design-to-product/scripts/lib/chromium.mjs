@@ -51,7 +51,7 @@ export async function withChromium(work){
   });
   browserCommand=command;
   const browser={
-   async page(width,height,reducedMotion=false){
+   async page(width,height,reducedMotion=false,{touch=false,deviceScaleFactor=1,mobile=false}={}){
     const {targetId}=await command('Target.createTarget',{url:'about:blank'});
     const {sessionId}=await command('Target.attachToTarget',{targetId,flatten:true});
     const send=(method,params={})=>command(method,params,sessionId);
@@ -64,12 +64,13 @@ export async function withChromium(work){
      if(method==='Network.loadingFailed'&&!params.canceled)issues.push({type:'resource-error',message:params.errorText});
     }]);
     await send('Page.enable');await send('Runtime.enable');await send('Network.enable');
-    await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:false});
+    await send('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor,mobile});
+    await send('Emulation.setTouchEmulationEnabled',{enabled:touch,maxTouchPoints:touch?1:undefined});
     await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:reducedMotion?'reduce':'no-preference'}]});
     return {
      issues,send,
      async evaluate(fn,arg){const expression=typeof fn==='function'?`(${fn.toString()})(${JSON.stringify(arg)??''})`:fn;const reply=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(reply.exceptionDetails)throw Error(reply.exceptionDetails.exception?.description||reply.exceptionDetails.text);return reply.result.value;},
-     async navigate(url){const result=await send('Page.navigate',{url});if(result.errorText)throw Error(result.errorText);for(let i=0;i<200;i++){if(await this.evaluate(()=>document.readyState==='complete')){await this.evaluate(()=>Promise.race([document.fonts.ready.then(()=>true),new Promise(done=>setTimeout(()=>done(false),5000))]));await pause(150);return;}await pause(50);}throw Error('Page loading timed out.');},
+     async navigate(url){const result=await send('Page.navigate',{url});if(result.errorText)throw Error(result.errorText);for(let i=0;i<200;i++){if(await this.evaluate(()=>document.readyState==='complete')){const fontsReady=await this.evaluate(()=>Promise.race([document.fonts.ready.then(()=>true),new Promise(done=>setTimeout(()=>done(false),5000))]));await pause(150);return {documentComplete:true,fontsReady,applicationReady:'unverified'};}await pause(50);}throw Error('Page loading timed out.');},
      async screenshot(fullPage=false){const params={format:'png',captureBeyondViewport:fullPage};if(fullPage){const layout=await send('Page.getLayoutMetrics');const bounds=layout.cssContentSize;params.clip={x:0,y:0,width:Math.ceil(bounds.width),height:Math.min(16000,Math.ceil(bounds.height)),scale:1};}return Buffer.from((await send('Page.captureScreenshot',params)).data,'base64');},
      async close(){events.delete(sessionId);await command('Target.closeTarget',{targetId});}
     };

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/exception-triage",
+  "title": "Exception triage",
+  "familyId": "signal",
+  "surface": "dashboard",
+  "idea": "Exception triage: Actionable exceptions lead a named owner and resolution detail",
+  "audience": "People who need to resolve exception within a dashboard surface.",
+  "tasks": [
+    "resolve-exception",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "A small urgent queue drives operations"
+  ],
+  "avoidWhen": [
+    "All rows have equal importance"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its resolve exception priority and explicit commitment contract: Resolving requires an authoritative update not a dismissed alert"
+  ],
+  "density": "compact",
+  "navigation": "Exception triage keeps the current resolve exception context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Actionable exceptions lead a named owner and resolution detail",
+    "continuation": "Continue with the evidence and controls needed to resolve exception; a small urgent queue drives operations",
+    "priority": "Resolving requires an authoritative update not a dismissed alert"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual resolve exception context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Narrow views prioritize severity owner and next action",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the exception triage structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no resolve exception content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Resolving requires an authoritative update not a dismissed alert",
+    "offline": "Label cached/unsynchronized resolve exception content and prevent claims of server completion.",
+    "success": "Resolving requires an authoritative update not a dismissed alert",
+    "interruption": "Restore the active resolve exception context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/dashboard-exception-triage-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=exception-triage&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/dashboard-exception-triage-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=exception-triage&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

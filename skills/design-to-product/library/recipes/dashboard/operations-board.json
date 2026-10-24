@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/operations-board",
+  "title": "Operations board",
+  "familyId": "workspace",
+  "surface": "dashboard",
+  "idea": "Operations board: Stage columns show work objects and blocked transitions",
+  "audience": "People who need to coordinate within a dashboard surface.",
+  "tasks": [
+    "coordinate",
+    "queue"
+  ],
+  "worksWellWhen": [
+    "Teams manage a bounded flow"
+  ],
+  "avoidWhen": [
+    "A board hides essential numeric comparison"
+  ],
+  "distinctFrom": [
+    "Differs from a generic workspace layout through its coordinate priority and explicit commitment contract: Stage movement validates permissions and server acknowledgement"
+  ],
+  "density": "compact",
+  "navigation": "Operations board keeps the current coordinate context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Stage columns show work objects and blocked transitions",
+    "continuation": "Continue with the evidence and controls needed to coordinate; teams manage a bounded flow",
+    "priority": "Stage movement validates permissions and server acknowledgement"
+  },
+  "patternIds": [
+    "queue"
+  ],
+  "compositionIds": [
+    "work-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual coordinate context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Stack stages while preserving filters and selected work",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the operations board structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no coordinate content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Stage movement validates permissions and server acknowledgement",
+    "offline": "Label cached/unsynchronized coordinate content and prevent claims of server completion.",
+    "success": "Stage movement validates permissions and server acknowledgement",
+    "interruption": "Restore the active coordinate context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/dashboard-operations-board-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=operations-board&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/dashboard-operations-board-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=operations-board&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

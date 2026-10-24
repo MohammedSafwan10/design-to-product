@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "review-commit",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Review before commit",
+  "entry": "Editable choices lead to an explicit summary and deliberate final action.",
+  "adaptation": "Keep totals/affected objects visible without covering review content."
+}

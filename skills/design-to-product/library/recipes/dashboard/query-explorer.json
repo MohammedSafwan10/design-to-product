@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/query-explorer",
+  "title": "Query explorer",
+  "familyId": "command",
+  "surface": "dashboard",
+  "idea": "Query explorer: Scoped query and result provenance share bounded execution controls",
+  "audience": "People who need to query within a dashboard surface.",
+  "tasks": [
+    "query",
+    "search-inspect"
+  ],
+  "worksWellWhen": [
+    "Users explore authorized data safely"
+  ],
+  "avoidWhen": [
+    "Arbitrary cross-tenant query is exposed"
+  ],
+  "distinctFrom": [
+    "Differs from a generic command layout through its query priority and explicit commitment contract: Reads remain scoped and costly queries bounded"
+  ],
+  "density": "compact",
+  "navigation": "Query explorer keeps the current query context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Scoped query and result provenance share bounded execution controls",
+    "continuation": "Continue with the evidence and controls needed to query; users explore authorized data safely",
+    "priority": "Reads remain scoped and costly queries bounded"
+  },
+  "patternIds": [
+    "search-inspect"
+  ],
+  "compositionIds": [
+    "command-results"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual query context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Retain query limits and selected result when panes stack",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the query explorer structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no query content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Reads remain scoped and costly queries bounded",
+    "offline": "Label cached/unsynchronized query content and prevent claims of server completion.",
+    "success": "Reads remain scoped and costly queries bounded",
+    "interruption": "Restore the active query context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

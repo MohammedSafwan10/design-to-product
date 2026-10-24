@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/search-workbench",
+  "title": "Search workbench",
+  "familyId": "workspace",
+  "surface": "product-web",
+  "idea": "Search workbench: A persistent query and filter region faces ranked results; selected detail opens without replacing the search context.",
+  "audience": "People who need to find record within a product-web surface.",
+  "tasks": [
+    "find-record",
+    "search-inspect"
+  ],
+  "worksWellWhen": [
+    "People repeatedly inspect results under several constraints."
+  ],
+  "avoidWhen": [
+    "A full workspace would overcomplicate one simple lookup."
+  ],
+  "distinctFrom": [
+    "Differs from a generic workspace layout through its find record priority and explicit commitment contract: Confirm the selected record identity and current permission before acting on it."
+  ],
+  "density": "balanced",
+  "navigation": "Search workbench keeps the current find record context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A persistent query and filter region faces ranked results; selected detail opens without replacing the search context.",
+    "continuation": "Continue with the evidence and controls needed to find record; people repeatedly inspect results under several constraints.",
+    "priority": "Confirm the selected record identity and current permission before acting on it."
+  },
+  "patternIds": [
+    "search-inspect"
+  ],
+  "compositionIds": [
+    "work-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual find record context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Move filters into a labelled sheet and detail into a focused route while retaining query and scroll.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the search workbench structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no find record content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Confirm the selected record identity and current permission before acting on it.",
+    "offline": "Label cached/unsynchronized find record content and prevent claims of server completion.",
+    "success": "Confirm the selected record identity and current permission before acting on it.",
+    "interruption": "Restore the active find record context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/product-web-search-workbench-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=search-workbench&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/product-web-search-workbench-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=search-workbench&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

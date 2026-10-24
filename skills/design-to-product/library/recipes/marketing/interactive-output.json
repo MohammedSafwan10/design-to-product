@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/interactive-output",
+  "title": "Interactive output",
+  "familyId": "workspace",
+  "surface": "marketing",
+  "idea": "Interactive output: A small real input controls a generous output region, with a concise statement of what changed.",
+  "audience": "People who need to try output within a marketing surface.",
+  "tasks": [
+    "try-output",
+    "media-preview"
+  ],
+  "worksWellWhen": [
+    "A bounded demonstration can honestly show the product effect."
+  ],
+  "avoidWhen": [
+    "The result would require simulating unavailable backend intelligence."
+  ],
+  "distinctFrom": [
+    "Differs from a generic workspace layout through its try output priority and explicit commitment contract: Label sample processing and avoid implying the demonstration saved or delivered anything."
+  ],
+  "density": "spacious",
+  "navigation": "Interactive output keeps the current try output context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A small real input controls a generous output region, with a concise statement of what changed.",
+    "continuation": "Continue with the evidence and controls needed to try output; a bounded demonstration can honestly show the product effect.",
+    "priority": "Label sample processing and avoid implying the demonstration saved or delivered anything."
+  },
+  "patternIds": [
+    "media-preview"
+  ],
+  "compositionIds": [
+    "work-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual try output context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Put input and output in one clear phone sequence with a stable loading region.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the interactive output structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no try output content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Label sample processing and avoid implying the demonstration saved or delivered anything.",
+    "offline": "Label cached/unsynchronized try output content and prevent claims of server completion.",
+    "success": "Label sample processing and avoid implying the demonstration saved or delivered anything.",
+    "interruption": "Restore the active try output context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "annotation",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Annotation",
+  "contract": "Keep comments attached to stable content anchors.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "document",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Document and annotation",
+  "idea": "The content artifact is primary; comments and tools preserve reading context.",
+  "avoid": "Formatting chrome must not displace useful document space."
+}

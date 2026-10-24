@@ -31,8 +31,10 @@ a working flow. Complete that stage without presenting it as the entire product.
 - For visual-direction work, read
   [references/art-direction-and-review.md](references/art-direction-and-review.md).
   The direction catalog and browser inspection are bundled here; no separate
-  frontend taste skill is required. Choose the marketing, app or dashboard
-  inspection profile according to the actual surface.
+  frontend taste skill is required. Read
+  [references/surface-design.md](references/surface-design.md) for the relevant
+  web, mobile, desktop, dashboard or game surface. Browser inspection profiles
+  remain marketing, app and dashboard; they do not certify native behavior.
 
 ## 2. Present distinct directions
 
@@ -44,10 +46,15 @@ interaction hierarchy, not just color palettes.
 - Build each direction around the product's actual subject, content or physical
   artifact. Vary composition, typography, imagery and interaction emphasis;
   changing the accent color of the same layout is not another direction. Use
-  `node <skill>/scripts/directions.mjs --profile marketing --count 3 --seed 7`
-  for original catalog suggestions when useful. Pass actual assets with `--assets`
+  `node <skill>/scripts/directions.mjs --surface mobile --count 3 --seed 7`
+  for original catalog suggestions when useful. Use exact `--task` and `--input`
+  filters when appropriate. The 150 recipes are draft hypotheses, not 150 reviewed
+  designs; 36 original browser studies illustrate a subset of compositions.
+  Pass actual assets with `--assets`
   and existing brand roles with `--keep`; then use subject/task judgment to select.
   See [references/tooling.md](references/tooling.md) for options and limits.
+  Use `scripts/library.mjs --id mobile/capture-review --modules` to load only a
+  selected recipe and its linked modules. Do not ingest the entire catalog.
 - Choose an appropriate mockup method: generated raster for art-led concepts,
   editable HTML/design tooling for interactive or text-dense products. Use the
   applicable available skill when generating images. Do not mandate raster art
@@ -73,6 +80,10 @@ interaction hierarchy, not just color palettes.
 Inspect every approved image yourself at useful resolution. Define a compact
 design contract: layout proportions, typography, palette, materials, shadows,
 art scale/camera, controls, safe areas and responsive behavior.
+Read [references/design-systems.md](references/design-systems.md) when defining
+semantic tokens and component contracts. Library font/palette suggestions never
+override an approved brand. Cut redundant explanation; retain essential labels,
+permissions, validation, privacy and safety information.
 
 Create separate related-screen mockups in the selected family, batching a coherent
 flow rather than unrelated pages. Include key setup, active, result and dialog
@@ -134,6 +145,24 @@ without a large speculative abstraction layer.
 - Include safe areas, keyboard, larger text, long/localized labels, focus order,
   readable contrast and practical touch targets. Allow intentional scrolling on
   content-heavy or accessibility layouts; don't force a dashboard into one page.
+- Treat scrolling surfaces as part of the design: inspect page, pane, table,
+  editor and dialog scrollbars. Where platform conventions permit, coordinate
+  their colors and proportions with the theme. Preserve native scrolling,
+  visible affordances, keyboard access and OS accessibility preferences; do not
+  hide overflow or replace scroll physics just for a cleaner screenshot. Read
+  [references/design-systems.md](references/design-systems.md) for scroll behavior.
+- Review controls in their open and active states, not only at rest: dropdown
+  popups, selected long values, close actions, hover/pressed/focus and dialogs.
+  Use a familiar icon alone where its meaning is clear (such as dialog close),
+  with an accessible name and adequate hit area. Keep visible labels for
+  ambiguous or consequential actions. Match control styling to the design using
+  the project's established accessible primitives; native controls remain a
+  valid platform choice, not an automatic defect.
+- Test intermediate widths and content stress, not just named device sizes.
+  Recompose before controls or text become cramped. Fix the container/reading
+  order rather than clipping labels, shrinking type or adding explanatory prose.
+  Cut redundant slogans, metadata and repeated warnings from the main flow;
+  disclose secondary technical detail on demand. Keep essential facts visible.
 - Check transition frames as well as static screens. Prevent intrinsic-size
   collapse, one-letter wrapping, disappearing heroes and controls shifting when
   async indicators appear. Keep layout slots stable during loading/animation.
@@ -153,6 +182,7 @@ For browser surfaces, run the bundled inspector with the appropriate profile:
 ```text
 node <skill>/scripts/inspect.mjs <URL-or-HTML> --profile marketing
 node <skill>/scripts/inspect.mjs <URL-or-HTML> --profile app --reduced-motion
+node <skill>/scripts/inspect.mjs <URL-or-HTML> --profile app --viewports 320x568,390x844 --touch
 ```
 
 Read the JSON report and screenshots. Fix functional errors; review warnings and
@@ -160,6 +190,12 @@ visual advice with reasons. There is no color ban, media quota or required
 animation count. A clean report is not an aesthetic score or a full accessibility
 certificate. Inspect task completion and visual craft separately. Use native
 platform tooling for native builds and device behavior.
+Control occlusion is bounded hit-test evidence, and sparse-region advice is not
+proof of an empty or bad screen. Review the reported uncertainty and readiness.
+For comparative studies or claims of better outcomes, load
+[references/research-and-evaluation.md](references/research-and-evaluation.md).
+Use the frozen development briefs; report model critique separately from human
+task evidence. Do not claim virality or aesthetic superiority from passing tools.
 
 Capture the running implementation using an available platform-appropriate tool;
 compare it with the approved reference at a comparable logical viewport. Inspect

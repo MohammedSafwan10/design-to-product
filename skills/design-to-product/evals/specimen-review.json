@@ -1,0 +1,954 @@
+{
+  "date": "2026-10-24",
+  "method": "Automated Chromium DOM sampling, screenshots and selected local flow assertions",
+  "reviewer": "Builder automated regression suite; selected screenshot critique by builder; not independent",
+  "cases": 108,
+  "specimens": 36,
+  "renders": [
+    {
+      "id": "marketing/artifact-demonstration",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/marketing-artifact-demonstration-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "415acd475978804633e70b5f2cd949c122004afd3108ea3a886a7dec91f23911"
+    },
+    {
+      "id": "marketing/artifact-demonstration",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/marketing-artifact-demonstration-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 1,
+      "sha256": "6dc1a75000128ae505cfee06d42d01b4c992d000e05c3084d29807752cf5ac8a"
+    },
+    {
+      "id": "marketing/editorial-proof",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/marketing-editorial-proof-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "5d75ed0fc903c5db5acf80971d23d8c36610adad8d7eb9f0c121819594714170"
+    },
+    {
+      "id": "marketing/editorial-proof",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/marketing-editorial-proof-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "e8fe9acab0bfb34074e0a89301dd3758744ed46badf3108fc7ceeaeb15bc1f94"
+    },
+    {
+      "id": "marketing/contextual-place",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/marketing-contextual-place-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "38ec53c36dfe91bef19c3b2a0180957dbce447df39dba3e06dab0e31f7721f02"
+    },
+    {
+      "id": "marketing/contextual-place",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/marketing-contextual-place-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "dcd4d2eeded18a6fe28aaa610f1d0634eb0fb15ab214b8512704f9383f4218ac"
+    },
+    {
+      "id": "marketing/output-gallery",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/marketing-output-gallery-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "4e8e623543d0a68521a18ac5f89392b0186239e0fcba1fdc59e6dbdaf284a6bb"
+    },
+    {
+      "id": "marketing/output-gallery",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/marketing-output-gallery-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "e7f714f502db85bcc8e76f088752842ca7cecb8a07b8b9180348b0d6c53ce831"
+    },
+    {
+      "id": "marketing/guided-comparison",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/marketing-guided-comparison-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "824efaeddc2a720a096732b2c8ec73658426d2df3a11bcd035012fe8d5bcbb16"
+    },
+    {
+      "id": "marketing/guided-comparison",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/marketing-guided-comparison-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "5819b5fecc7060aebb93553e59ee9a41ccab35178b399c6675597bc6aa306b3f"
+    },
+    {
+      "id": "marketing/process-cutaway",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/marketing-process-cutaway-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "42389729104459e93e521463a6c6d13392e1b35890574f72d82fa3851a8c982b"
+    },
+    {
+      "id": "marketing/process-cutaway",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/marketing-process-cutaway-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "a7f6c36b0b487c0f8fafc61307010ef1737a794c77386f344920fd0ba2307aa7"
+    },
+    {
+      "id": "product-web/search-workbench",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/product-web-search-workbench-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "f03ea8992af7bef8fb9a60ab181e6e5d4a4e913a830cdd27dc21c71d8143a572"
+    },
+    {
+      "id": "product-web/search-workbench",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/product-web-search-workbench-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "384e0b721e432107145d275c6550e10646007d5d0ebc13d449596bbc2bd234d4"
+    },
+    {
+      "id": "product-web/booking-decision",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/product-web-booking-decision-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "72868a5fa6dc49956fe0357d70c77b6d3652bb6d5b43b8fe2a8e4f36379e0e9f"
+    },
+    {
+      "id": "product-web/booking-decision",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/product-web-booking-decision-1440-normal.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "f6564eda1eccd6f043a3073c4d09191a1aca7ebeaae86138840df89237afcd9d"
+    },
+    {
+      "id": "product-web/cart-review",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/product-web-cart-review-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "1817f55a49b487b89091d3c4ae4faac9b112ffa381e004fb958caf27fe7ef28c"
+    },
+    {
+      "id": "product-web/cart-review",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/product-web-cart-review-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "62fbf24d8bb0b1ab8d4ccf381f733b4286f650c33a52f14d7c3f8611da9eabab"
+    },
+    {
+      "id": "product-web/upload-review",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/product-web-upload-review-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "1dff69f7b0b6c6c8f3a200c1bcefa0ca1f031bb46312ba7712788324a3fb205f"
+    },
+    {
+      "id": "product-web/upload-review",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/product-web-upload-review-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "44c8569b2f47f1ed5786e07d9a58202f847c4c3de7fd93940b2b67d6b8d035d6"
+    },
+    {
+      "id": "product-web/collection-curator",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/product-web-collection-curator-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "b1d49660019709c35310cff8d1f1e739d9f158cd23e5c419a27422913a6ffb11"
+    },
+    {
+      "id": "product-web/collection-curator",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/product-web-collection-curator-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "ccd1829a6bd8f541e920e5635e1dfadbbfbe5a9e70d9affd442ad085ac531805"
+    },
+    {
+      "id": "product-web/permission-console",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/product-web-permission-console-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "b6a35326018ba238fdcaaca44d40618a77682bd6f0de095158be6324101dd29a"
+    },
+    {
+      "id": "product-web/permission-console",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/product-web-permission-console-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "48793f714a513acae8a5e3011e8f802eca6303cd51d3856bece9b331b4c9f8d9"
+    },
+    {
+      "id": "mobile/capture-review",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/mobile-capture-review-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "b861a16180ce83c7c81450dfa686d580a16a461af2146504c57ff69baf12754b"
+    },
+    {
+      "id": "mobile/capture-review",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/mobile-capture-review-1440-normal.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "a1110cc8b8b7ff8df0f4cf7db08951002c2ad9c9de2092fa5c4fabb92ca2a853"
+    },
+    {
+      "id": "mobile/daily-brief",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/mobile-daily-brief-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "26acaef8e5697ebd2d4bbad1198b0a0686e201fbf5b337624243827b9f2d4abe"
+    },
+    {
+      "id": "mobile/daily-brief",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/mobile-daily-brief-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "cfc86e576d560127e2c164ad7e738cc77659efdcc2aa3f84cacee675ee043454"
+    },
+    {
+      "id": "mobile/route-companion",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/mobile-route-companion-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "05415c79d8343df5f4a3f3928869c9bce5f9a524bfdbcac14a97ddb23f3df2e9"
+    },
+    {
+      "id": "mobile/route-companion",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/mobile-route-companion-1440-normal.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "67b695d93b0d00445d613de7a5c2c077abe46a84be1ffb2586bd8086955521ee"
+    },
+    {
+      "id": "mobile/conversation-focus",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/mobile-conversation-focus-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "717c7e0bcd408ed4c0a6410cac6d6b7171177906d0b09492c940944bb6109328"
+    },
+    {
+      "id": "mobile/conversation-focus",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/mobile-conversation-focus-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "943ff35914360a9e42dc8da4059545c690cdb666dbce5751709418e9c801bd6c"
+    },
+    {
+      "id": "mobile/collection-pocket",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/mobile-collection-pocket-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "714fb3f2ad16048a7446f59e0bba4ca611bb2dceb23c95f901921d333f4321b3"
+    },
+    {
+      "id": "mobile/collection-pocket",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/mobile-collection-pocket-1440-normal.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "55e18f85e395e20fbd43bb3c46c2e20d8e981a31669e0170805eeb4a20d6470b"
+    },
+    {
+      "id": "mobile/quiet-timer",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/mobile-quiet-timer-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "a745b5e5794af1dbcaaeddec8a1a09fcbe19790f9b321042da45cff5ff5281c4"
+    },
+    {
+      "id": "mobile/quiet-timer",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/mobile-quiet-timer-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "6666b5bb920151ff32e04cf27266a1aebbfeef507f349d156efd908dbf40f087"
+    },
+    {
+      "id": "desktop/document-studio",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/desktop-document-studio-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "5aa6ed81d5809e150b5239ea94c4aa6687b3b09da6fbc8473c05c9b56a143b8e"
+    },
+    {
+      "id": "desktop/document-studio",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/desktop-document-studio-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "47a631ea8af2ce03b6b76580cda9a9bb5858236426c7bc6de141d87d4ab42659"
+    },
+    {
+      "id": "desktop/media-library",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/desktop-media-library-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "71a3db75c97bb70dea43b597e4ff162c2261462b47717696e59f1ba2b9175a54"
+    },
+    {
+      "id": "desktop/media-library",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/desktop-media-library-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "5b18287c14de74c3d62965792be429fe6a027f092d8669eed11cdac7664b44c6"
+    },
+    {
+      "id": "desktop/timeline-editor",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/desktop-timeline-editor-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "18b3a7a63540fc7d23448c3a46559a111555511599f0d7751d71c466f8e4f5fe"
+    },
+    {
+      "id": "desktop/timeline-editor",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/desktop-timeline-editor-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "a7c2b076fee31b88864ab908052a36e57c8825ef648cd382b1026bf3480be576"
+    },
+    {
+      "id": "desktop/command-workbench",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/desktop-command-workbench-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "0b9a29e0a8457a887277f305f5573ac13864472bd1166447e6d0ff4dd39ed55b"
+    },
+    {
+      "id": "desktop/command-workbench",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/desktop-command-workbench-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "49e5f7a501380d665410d0f7b6eba6de346c2d10dacb22b0e269f218bc8da67d"
+    },
+    {
+      "id": "desktop/file-transfer",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/desktop-file-transfer-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "8eb00da6731c19e16254bad2f7fe68359138c51cbb300f6713be01331616b637"
+    },
+    {
+      "id": "desktop/file-transfer",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/desktop-file-transfer-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "c2333f2f2b7bfb56fce26993519f94ee380a83381b70ce6d2b848dd4beeaeb9d"
+    },
+    {
+      "id": "desktop/connection-inspector",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/desktop-connection-inspector-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "44e926e450c65b17d9a992a5c1079a41abbdd3b28af257249aab90fe6b5deb8c"
+    },
+    {
+      "id": "desktop/connection-inspector",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/desktop-connection-inspector-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "9b328852cf76b7bcc3b8ccbdd85fca24538c7b06c4b198a5a847ca4627658fc9"
+    },
+    {
+      "id": "dashboard/exception-triage",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/dashboard-exception-triage-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "49d1c792ea385953afbb8c8f952ddba6a02aed6cfde88e90ad2a33c83a8a756b"
+    },
+    {
+      "id": "dashboard/exception-triage",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/dashboard-exception-triage-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "952810fb146178a37b06bb7a317fe9ca9dc314cb9bc799cb53fefd973fe8e091"
+    },
+    {
+      "id": "dashboard/operations-board",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/dashboard-operations-board-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "71597c8785bae355d9bb1266552fa9f3d65ee5df287ddbaaa7456ff01601b89c"
+    },
+    {
+      "id": "dashboard/operations-board",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/dashboard-operations-board-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "e07f8280fe4cc4dcdad6afcc142682b604fd1068a256cc8e58aca039221501a0"
+    },
+    {
+      "id": "dashboard/comparison-table",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/dashboard-comparison-table-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "1d1c921c15b5c4a4b78b043c5ee984e182e4c90e559026a2aeeb5bd42c562cdd"
+    },
+    {
+      "id": "dashboard/comparison-table",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/dashboard-comparison-table-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "9c1e994d1dc40b4bc9d21de5b680b0582fe5fdcafc10834476e6bfedfecfc0fb"
+    },
+    {
+      "id": "dashboard/cohort-explorer",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/dashboard-cohort-explorer-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "8ef2aece47d28e154351c749c64d7b8fae5b659e77de4be992338318b33ef544"
+    },
+    {
+      "id": "dashboard/cohort-explorer",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/dashboard-cohort-explorer-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "e181a0b0a1d27e5674d9b12b590d8102613dfc25d6badc915e1c15f032623937"
+    },
+    {
+      "id": "dashboard/audit-trail",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/dashboard-audit-trail-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "b3ef4957ccaae4b0afb90a1bb6c51fdb1edb4d29abb2b6ef4b9e5e83c4434c20"
+    },
+    {
+      "id": "dashboard/audit-trail",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/dashboard-audit-trail-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "a6d53177cd67deacf92a17a10e1df837ffd4a91e7fb41bbfcb993cf99aa685d3"
+    },
+    {
+      "id": "dashboard/capacity-planner",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/dashboard-capacity-planner-390-stress.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "74a02589bbc5560c3033ddbcbeed086944bb5a696eb8566950faa2050c89cb6d"
+    },
+    {
+      "id": "dashboard/capacity-planner",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/dashboard-capacity-planner-1440-normal.png",
+      "errors": 0,
+      "warningCount": 2,
+      "adviceCount": 0,
+      "sha256": "8da130ed451b96a46920d7d38964918e6627842e4581d7cde30d0d88a29834ab"
+    },
+    {
+      "id": "game/focus-hud",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/game-focus-hud-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "9329d3d433f6da50f7ee3ef927372ed1c9dac0cf36974ab0230e1c1713dc1863"
+    },
+    {
+      "id": "game/focus-hud",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/game-focus-hud-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "a5c03e3f6da48f88ea03b737d0c4a36800b11d3d80d5ebf1f67eee2a61ed1696"
+    },
+    {
+      "id": "game/tactical-command",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/game-tactical-command-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "ba527058ea9ada031f1002540ba950241e97a888046481ef8610593f85ab4cfb"
+    },
+    {
+      "id": "game/tactical-command",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/game-tactical-command-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "eae5c9c8ae0486fac8dc1a8ccea1c981bc111e9992ef5ddcf401fa9c4f5c85a3"
+    },
+    {
+      "id": "game/route-map",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/game-route-map-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "5cbc643ecf56e63dc7c7621c45ab941b577a2f61550310e37e2d14efdb74bf35"
+    },
+    {
+      "id": "game/route-map",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/game-route-map-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "041b19d5647556ca980217666510fefcef429efc7ce867b2f695cee2b9f1762a"
+    },
+    {
+      "id": "game/inventory-bench",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/game-inventory-bench-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "04e458ee64f8009c543f7151ccffa99fd95cbe4034728c1a73fbbf72977172b5"
+    },
+    {
+      "id": "game/inventory-bench",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/game-inventory-bench-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "9ff689ec37683719c8df7bb0c5111ba99c75d4645bb31e744a80b13996c8384a"
+    },
+    {
+      "id": "game/run-preparation",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/game-run-preparation-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "72999898518344a07ea0ff192a817442f8f2edeacebc0cdbd53b78f4f50aee3b"
+    },
+    {
+      "id": "game/run-preparation",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/game-run-preparation-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "a70dd7595c7ba7da7a7d03b3ca135a7fa9e4b4e8a969e1e2681c581666b04e6f"
+    },
+    {
+      "id": "game/results-recap",
+      "state": "stress",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "examples/renders/game-results-recap-390-stress.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "2480e5219be37df3b0ef2b519ec821e80c728f08b246073c1a23561cf5a4f7f2"
+    },
+    {
+      "id": "game/results-recap",
+      "state": "normal",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screenshot": "examples/renders/game-results-recap-1440-normal.png",
+      "errors": 0,
+      "warningCount": 1,
+      "adviceCount": 0,
+      "sha256": "cbca57297383882e326704d4d845777ca505fcc5a67a9a04232e16c131101471"
+    }
+  ],
+  "limits": [
+    "No native/device or game-engine test.",
+    "No blinded comparison or intended-user task study.",
+    "Checks sample DOM properties; warnings and uncertain contrast require manual review.",
+    "Each six-screen group shares a product identity; these are compositions and tasks, not 36 unrelated brand directions.",
+    "Additional labeled stress scenarios and full flow coverage remain future work."
+  ],
+  "scrollChrome": "Theme-coordinated native page/nested scrollbars; forced-colors fallback authored. OS/native behavior not certified.",
+  "controlReview": "Themed select-only popups, named icon close actions, hover/pressed/focus states and modal scroll locking added. Eight catalog widths and keyboard/pointer/wheel checks passed. Screen-reader/native-device behavior unverified."
+}

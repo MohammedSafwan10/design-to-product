@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "tactical",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Tactical clarity",
+  "idea": "Separate planning, active action and consequences while preserving priorities.",
+  "avoid": "World readability outranks ornamental chrome."
+}

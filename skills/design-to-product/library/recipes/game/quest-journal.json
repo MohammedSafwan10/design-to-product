@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/quest-journal",
+  "title": "Quest journal",
+  "familyId": "document",
+  "surface": "game",
+  "idea": "Quest journal: Active objective and confirmed progress precede optional narrative",
+  "audience": "People who need to track quest within a game surface.",
+  "tasks": [
+    "track-quest",
+    "progression"
+  ],
+  "worksWellWhen": [
+    "Players return after interruption"
+  ],
+  "avoidWhen": [
+    "The journal substitutes for missing world feedback"
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its track quest priority and explicit commitment contract: Progress is recorded only from actual quest events"
+  ],
+  "density": "balanced",
+  "navigation": "Quest journal keeps the current track quest context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Active objective and confirmed progress precede optional narrative",
+    "continuation": "Continue with the evidence and controls needed to track quest; players return after interruption",
+    "priority": "Progress is recorded only from actual quest events"
+  },
+  "patternIds": [
+    "progression"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual track quest context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Allow readable narrative without hiding tracking control",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the quest journal structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no track quest content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Progress is recorded only from actual quest events",
+    "offline": "Label cached/unsynchronized track quest content and prevent claims of server completion.",
+    "success": "Progress is recorded only from actual quest events",
+    "interruption": "Restore the active track quest context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

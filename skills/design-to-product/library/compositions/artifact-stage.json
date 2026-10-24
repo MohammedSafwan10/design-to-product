@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "artifact-stage",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Artifact stage",
+  "entry": "The object occupies the dominant field; explanation and action attach to its actual reading order.",
+  "adaptation": "Recompose the artifact and text side by side only when both remain readable."
+}

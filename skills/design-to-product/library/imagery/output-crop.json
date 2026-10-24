@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "output-crop",
+  "kind": "imagery",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Output crop",
+  "role": "Real product output or original interface detail supplies evidence.",
+  "cropRules": "Crop to one meaningful detail; keep controls native if interactive.",
+  "provenance": "Record own/generated/sample status and remove personal data.",
+  "delivery": [
+    "Choose actual output dimensions and format from the display role.",
+    "Use responsive sources and avoid blocking the primary action on nonessential art.",
+    "Record bytes, dimensions, source and transformations in the project asset manifest."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "timed-focus",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Timed focus",
+  "contract": "Keep remaining time, pause, interruption and completion honest.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

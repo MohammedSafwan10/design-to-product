@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/travel-documents",
+  "title": "Travel documents",
+  "familyId": "collection",
+  "surface": "mobile",
+  "idea": "Travel documents: Critical documents grouped by trip with offline availability labels",
+  "audience": "People who need to retrieve document within a mobile surface.",
+  "tasks": [
+    "retrieve-document",
+    "file-operation"
+  ],
+  "worksWellWhen": [
+    "Users need reliable retrieval while traveling"
+  ],
+  "avoidWhen": [
+    "Sensitive documents lack access controls"
+  ],
+  "distinctFrom": [
+    "Differs from a generic collection layout through its retrieve document priority and explicit commitment contract: Cached and synchronized copies remain distinguishable"
+  ],
+  "density": "balanced",
+  "navigation": "Travel documents keeps the current retrieve document context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Critical documents grouped by trip with offline availability labels",
+    "continuation": "Continue with the evidence and controls needed to retrieve document; users need reliable retrieval while traveling",
+    "priority": "Cached and synchronized copies remain distinguishable"
+  },
+  "patternIds": [
+    "file-operation"
+  ],
+  "compositionIds": [
+    "collection-field"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "output-crop"
+    ],
+    "role": "Support the actual retrieve document context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Place expiry and availability beside document names",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the travel documents structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no retrieve document content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Cached and synchronized copies remain distinguishable",
+    "offline": "Label cached/unsynchronized retrieve document content and prevent claims of server completion.",
+    "success": "Cached and synchronized copies remain distinguishable",
+    "interruption": "Restore the active retrieve document context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

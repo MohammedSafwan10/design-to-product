@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/cohort-explorer",
+  "title": "Cohort explorer",
+  "familyId": "instrument",
+  "surface": "dashboard",
+  "idea": "Cohort explorer: A cohort matrix keeps sample size and date definitions visible",
+  "audience": "People who need to analyze retention within a dashboard surface.",
+  "tasks": [
+    "analyze-retention",
+    "data-monitor"
+  ],
+  "worksWellWhen": [
+    "Return behavior depends on starting groups"
+  ],
+  "avoidWhen": [
+    "The dataset is too small for conclusions"
+  ],
+  "distinctFrom": [
+    "Differs from a generic instrument layout through its analyze retention priority and explicit commitment contract: Label missing data and avoid implying causation"
+  ],
+  "density": "compact",
+  "navigation": "Cohort explorer keeps the current analyze retention context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A cohort matrix keeps sample size and date definitions visible",
+    "continuation": "Continue with the evidence and controls needed to analyze retention; return behavior depends on starting groups",
+    "priority": "Label missing data and avoid implying causation"
+  },
+  "patternIds": [
+    "data-monitor"
+  ],
+  "compositionIds": [
+    "instrument-controls"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "midnight-ice"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual analyze retention context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Provide readable table alternative to dense heatmap",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the cohort explorer structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no analyze retention content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Label missing data and avoid implying causation",
+    "offline": "Label cached/unsynchronized analyze retention content and prevent claims of server completion.",
+    "success": "Label missing data and avoid implying causation",
+    "interruption": "Restore the active analyze retention context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/dashboard-cohort-explorer-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=cohort-explorer&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/dashboard-cohort-explorer-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=cohort-explorer&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

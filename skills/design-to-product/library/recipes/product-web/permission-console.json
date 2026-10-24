@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/permission-console",
+  "title": "Permission console",
+  "familyId": "signal",
+  "surface": "product-web",
+  "idea": "Permission console: Current access scope, affected people and the proposed change are visible before the control that grants it.",
+  "audience": "People who need to review permissions within a product-web surface.",
+  "tasks": [
+    "review-permissions",
+    "permissions"
+  ],
+  "worksWellWhen": [
+    "Authorization changes have consequences users must understand."
+  ],
+  "avoidWhen": [
+    "A switch would grant broad access without review."
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its review permissions priority and explicit commitment contract: Access changes require server authorization and a confirmed resulting policy."
+  ],
+  "density": "balanced",
+  "navigation": "Permission console keeps the current review permissions context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Current access scope, affected people and the proposed change are visible before the control that grants it.",
+    "continuation": "Continue with the evidence and controls needed to review permissions; authorization changes have consequences users must understand.",
+    "priority": "Access changes require server authorization and a confirmed resulting policy."
+  },
+  "patternIds": [
+    "permissions"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review permissions context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Show the resource and principal before controls; use a review route for broad changes.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the permission console structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review permissions content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Access changes require server authorization and a confirmed resulting policy.",
+    "offline": "Label cached/unsynchronized review permissions content and prevent claims of server completion.",
+    "success": "Access changes require server authorization and a confirmed resulting policy.",
+    "interruption": "Restore the active review permissions context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/product-web-permission-console-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=permission-console&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/product-web-permission-console-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=permission-console&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

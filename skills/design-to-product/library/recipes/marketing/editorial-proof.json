@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/editorial-proof",
+  "title": "Editorial proof",
+  "familyId": "editorial",
+  "surface": "marketing",
+  "idea": "Editorial proof: One concrete proposition faces a large source-backed example, followed by a compact interpretation.",
+  "audience": "People who need to assess claim within a marketing surface.",
+  "tasks": [
+    "assess-claim",
+    "claim-proof"
+  ],
+  "worksWellWhen": [
+    "Visitors need confidence in a specific claim rather than a broad feature list."
+  ],
+  "avoidWhen": [
+    "There is no evidence supporting the proposition."
+  ],
+  "distinctFrom": [
+    "Differs from a generic editorial layout through its assess claim priority and explicit commitment contract: Distinguish observed evidence from sample content and future capability."
+  ],
+  "density": "spacious",
+  "navigation": "Editorial proof keeps the current assess claim context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "One concrete proposition faces a large source-backed example, followed by a compact interpretation.",
+    "continuation": "Continue with the evidence and controls needed to assess claim; visitors need confidence in a specific claim rather than a broad feature list.",
+    "priority": "Distinguish observed evidence from sample content and future capability."
+  },
+  "patternIds": [
+    "claim-proof"
+  ],
+  "compositionIds": [
+    "claim-evidence"
+  ],
+  "typeRecipeIds": [
+    "editorial-serif"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual assess claim context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep the proposition and its first proof adjacent at phone width.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the editorial proof structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no assess claim content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Distinguish observed evidence from sample content and future capability.",
+    "offline": "Label cached/unsynchronized assess claim content and prevent claims of server completion.",
+    "success": "Distinguish observed evidence from sample content and future capability.",
+    "interruption": "Restore the active assess claim context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/marketing-editorial-proof-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=editorial-proof&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/marketing-editorial-proof-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=editorial-proof&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

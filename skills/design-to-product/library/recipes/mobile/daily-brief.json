@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/daily-brief",
+  "title": "Daily brief",
+  "familyId": "editorial",
+  "surface": "mobile",
+  "idea": "Daily brief: One dated priority leads a short chronological agenda",
+  "audience": "People who need to plan day within a mobile surface.",
+  "tasks": [
+    "plan-day",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "A handful of important tasks guides the day"
+  ],
+  "avoidWhen": [
+    "Users need a complete multi-project ledger"
+  ],
+  "distinctFrom": [
+    "Differs from a generic editorial layout through its plan day priority and explicit commitment contract: Completion is undoable and never implied by viewing"
+  ],
+  "density": "balanced",
+  "navigation": "Daily brief keeps the current plan day context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "One dated priority leads a short chronological agenda",
+    "continuation": "Continue with the evidence and controls needed to plan day; a handful of important tasks guides the day",
+    "priority": "Completion is undoable and never implied by viewing"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "claim-evidence"
+  ],
+  "typeRecipeIds": [
+    "editorial-serif"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual plan day context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Collapse secondary agenda rows before compressing the main priority",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the daily brief structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no plan day content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Completion is undoable and never implied by viewing",
+    "offline": "Label cached/unsynchronized plan day content and prevent claims of server completion.",
+    "success": "Completion is undoable and never implied by viewing",
+    "interruption": "Restore the active plan day context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/mobile-daily-brief-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=mobile&screen=daily-brief&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/mobile-daily-brief-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=mobile&screen=daily-brief&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/resource-activation",
+  "title": "Resource activation",
+  "familyId": "process",
+  "surface": "product-web",
+  "idea": "Resource activation: An unclaimed resource identity leads through ownership eligibility and a final assignment review.",
+  "audience": "People who need to activate resource within a product-web surface.",
+  "tasks": [
+    "activate-resource",
+    "permissions"
+  ],
+  "worksWellWhen": [
+    "An entitlement or physical token must be assigned securely."
+  ],
+  "avoidWhen": [
+    "Possessing a URL is treated as unrestricted administrative authority."
+  ],
+  "distinctFrom": [
+    "Differs from a generic process layout through its activate resource priority and explicit commitment contract: Enforce atomic server-side claiming and distinguish already-assigned or revoked tokens."
+  ],
+  "density": "balanced",
+  "navigation": "Resource activation keeps the current activate resource context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "An unclaimed resource identity leads through ownership eligibility and a final assignment review.",
+    "continuation": "Continue with the evidence and controls needed to activate resource; an entitlement or physical token must be assigned securely.",
+    "priority": "Enforce atomic server-side claiming and distinguish already-assigned or revoked tokens."
+  },
+  "patternIds": [
+    "permissions"
+  ],
+  "compositionIds": [
+    "sequence-reveal"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "process-diagram"
+    ],
+    "role": "Support the actual activate resource context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep one assignment decision at a time with a visible resource summary.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the resource activation structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no activate resource content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Enforce atomic server-side claiming and distinguish already-assigned or revoked tokens.",
+    "offline": "Label cached/unsynchronized activate resource content and prevent claims of server completion.",
+    "success": "Enforce atomic server-side claiming and distinguish already-assigned or revoked tokens.",
+    "interruption": "Restore the active activate resource context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

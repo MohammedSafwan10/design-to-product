@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/voice-note",
+  "title": "Voice note",
+  "familyId": "instrument",
+  "surface": "mobile",
+  "idea": "Voice note: Recording state and elapsed time lead a playback review",
+  "audience": "People who need to record audio within a mobile surface.",
+  "tasks": [
+    "record-audio",
+    "media-preview"
+  ],
+  "worksWellWhen": [
+    "Voice capture is the central task"
+  ],
+  "avoidWhen": [
+    "Microphone access is unnecessary"
+  ],
+  "distinctFrom": [
+    "Differs from a generic instrument layout through its record audio priority and explicit commitment contract: Never record before permission and explicit start"
+  ],
+  "density": "balanced",
+  "navigation": "Voice note keeps the current record audio context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Recording state and elapsed time lead a playback review",
+    "continuation": "Continue with the evidence and controls needed to record audio; voice capture is the central task",
+    "priority": "Never record before permission and explicit start"
+  },
+  "patternIds": [
+    "media-preview"
+  ],
+  "compositionIds": [
+    "instrument-controls"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "midnight-ice"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual record audio context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep stop and permission recovery reachable with one hand",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the voice note structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no record audio content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Never record before permission and explicit start",
+    "offline": "Label cached/unsynchronized record audio content and prevent claims of server completion.",
+    "success": "Never record before permission and explicit start",
+    "interruption": "Restore the active record audio context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

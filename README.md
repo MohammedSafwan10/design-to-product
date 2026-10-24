@@ -34,7 +34,8 @@ our decisions and the redistribution boundary.
 
 A new color on the same card layout is not a new direction. The skill requires a
 specific idea, convincing content, deliberate hierarchy, coherent image treatment
-and a phone composition that works on its own. The render is inspected and critiqued;
+and a phone composition that works on its own. Scrollbars and nested scroll areas
+are reviewed with the theme, input and accessibility behavior. The render is inspected and critiqued;
 a clean measurement report is not an aesthetic score.
 
 Surface profiles separate **marketing**, **app** and **dashboard** needs. An existing
@@ -46,6 +47,19 @@ cannot be silenced with a general allow flag.
 
 These changes are engineering/workflow improvements. They do not prove better
 visual outcomes than another skill; that needs broader behavioral comparisons.
+
+The expanded candidate library now contains **150 original draft recipes**:
+25 each for marketing web, product web, mobile apps, desktop apps, dashboards and
+game interfaces. It separates 20 families, 18 compositions, 36 task patterns,
+six typography systems, eight semantic palettes and six imagery treatments.
+These are authored candidates; they are **not 150 visually reviewed designs**.
+
+A searchable browser catalog includes **36 original interface studies** (six per
+surface), local interactions and normal/interrupted states. Native behavior,
+backend services and actual gameplay remain unverified. The
+[roadmap](docs/NEXT_VERSION_PLAN.md), [research register](docs/RESEARCH_REGISTER.md)
+and [implementation review](docs/IMPLEMENTATION_REVIEW.md) distinguish completed
+engineering from the research, comparisons and device work still needed.
 
 ## Use
 
@@ -104,9 +118,19 @@ node skills/design-to-product/scripts/directions.mjs --profile marketing --count
 node skills/design-to-product/scripts/inspect.mjs path/to/index.html --profile app --widths 320,390,430 --reduced-motion
 ```
 
-The 12 original catalog entries are starting hypotheses filtered by surface and
-available media, with reproducible seeded variety. The agent still decides fit,
-exact type/palette and composition; the tool does not understand the brief for you.
+The legacy 12-entry `--profile` selector remains compatible. Use the modular
+selector for six-surface coverage, exact task/input constraints and family variety:
+
+```text
+node skills/design-to-product/scripts/directions.mjs --surface mobile --count 3 --seed 7
+node skills/design-to-product/scripts/library.mjs --id mobile/capture-review --modules
+npm run library:validate
+npm run gallery
+```
+
+The gallery command prints a loopback preview URL. It loads only the index and
+selected recipe. The agent still decides product fit, type and composition;
+filters do not semantically understand a prose brief or overwrite brand roles.
 
 Inspection saves fold/full-page PNGs and a JSON report. Complex contrast, closed
 shadow roots, native surfaces, keyboard behavior and complete accessibility are
@@ -123,6 +147,11 @@ not services provided by this skill.
 - [Logic and verification](skills/design-to-product/references/logic-and-verification.md)
 - [Conditional game-feel and audio](skills/design-to-product/references/game-feel-and-audio.md)
 - [Tooling and evidence limits](skills/design-to-product/references/tooling.md)
+- [Surface composition and input guidance](skills/design-to-product/references/surface-design.md)
+- [Semantic design systems](skills/design-to-product/references/design-systems.md)
+- [Research and comparison method](skills/design-to-product/references/research-and-evaluation.md)
+- [Frozen development benchmark](skills/design-to-product/evals/benchmark-v1.json)
+- [Browsable catalog](skills/design-to-product/examples/gallery/index.html) (serve over HTTP)
 - [Manual behavioral evaluation briefs](skills/design-to-product/evals/scenarios.json)
 
 ## Validation
@@ -135,7 +164,9 @@ npm run test:browser
 Core tests cover media/surface eligibility, unique/reproducible suggestions,
 functional findings, explicit layout contracts and local-server confinement.
 Browser tests use actual Chromium against readable and deliberately broken
-fixtures. They check that usable app UI needs no decorative imagery/animation,
+fixtures, all 36 original studies across three viewport/state cases, and focused
+local interactions. Library tests check reference integrity and reject unsupported
+review promotion. They check that usable app UI needs no decorative imagery/animation,
 and that resource/runtime/overflow/name/contrast failures are reported.
 
 The skill-creator validator checks structural packaging, not taste or end-to-end

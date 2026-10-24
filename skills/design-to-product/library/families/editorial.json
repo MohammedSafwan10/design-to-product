@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "editorial",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Editorial argument",
+  "idea": "A claim and its verifiable supporting material create the hierarchy.",
+  "avoid": "No fabricated quotes, numbers or authority marks."
+}

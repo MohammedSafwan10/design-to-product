@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "progression",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Progression",
+  "contract": "Show prerequisites, costs and available progression truthfully.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/research-notebook",
+  "title": "Research notebook",
+  "familyId": "document",
+  "surface": "desktop",
+  "idea": "Research notebook: Sources notes and citations retain a selected evidence trail",
+  "audience": "People who need to research within a desktop surface.",
+  "tasks": [
+    "research",
+    "annotation"
+  ],
+  "worksWellWhen": [
+    "Conclusions depend on traceable sources"
+  ],
+  "avoidWhen": [
+    "The content lacks provenance"
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its research priority and explicit commitment contract: Separate observed evidence from interpretation"
+  ],
+  "density": "compact",
+  "navigation": "Research notebook keeps the current research context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Sources notes and citations retain a selected evidence trail",
+    "continuation": "Continue with the evidence and controls needed to research; conclusions depend on traceable sources",
+    "priority": "Separate observed evidence from interpretation"
+  },
+  "patternIds": [
+    "annotation"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual research context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Collapse source panel without losing citation anchors",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the research notebook structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no research content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Separate observed evidence from interpretation",
+    "offline": "Label cached/unsynchronized research content and prevent claims of server completion.",
+    "success": "Separate observed evidence from interpretation",
+    "interruption": "Restore the active research context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

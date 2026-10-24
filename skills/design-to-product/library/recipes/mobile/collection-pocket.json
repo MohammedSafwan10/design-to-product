@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/collection-pocket",
+  "title": "Collection pocket",
+  "familyId": "collection",
+  "surface": "mobile",
+  "idea": "Collection pocket: Small visual records grouped by collection with a persistent search",
+  "audience": "People who need to collect within a mobile surface.",
+  "tasks": [
+    "collect",
+    "collection-select"
+  ],
+  "worksWellWhen": [
+    "People retrieve personal saved material"
+  ],
+  "avoidWhen": [
+    "Each record requires dense comparisons"
+  ],
+  "distinctFrom": [
+    "Differs from a generic collection layout through its collect priority and explicit commitment contract: Deletion is reversible and synchronization explicit"
+  ],
+  "density": "balanced",
+  "navigation": "Collection pocket keeps the current collect context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Small visual records grouped by collection with a persistent search",
+    "continuation": "Continue with the evidence and controls needed to collect; people retrieve personal saved material",
+    "priority": "Deletion is reversible and synchronization explicit"
+  },
+  "patternIds": [
+    "collection-select"
+  ],
+  "compositionIds": [
+    "collection-field"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "output-crop"
+    ],
+    "role": "Support the actual collect context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use one column with meaningful metadata when large text grows",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the collection pocket structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no collect content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Deletion is reversible and synchronization explicit",
+    "offline": "Label cached/unsynchronized collect content and prevent claims of server completion.",
+    "success": "Deletion is reversible and synchronization explicit",
+    "interruption": "Restore the active collect context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/mobile-collection-pocket-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=mobile&screen=collection-pocket&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/mobile-collection-pocket-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=mobile&screen=collection-pocket&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

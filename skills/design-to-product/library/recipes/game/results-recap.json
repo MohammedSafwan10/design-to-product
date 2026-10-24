@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/results-recap",
+  "title": "Results recap",
+  "familyId": "editorial",
+  "surface": "game",
+  "idea": "Results recap: A meaningful outcome and causal recap precede next-run action",
+  "audience": "People who need to review run within a game surface.",
+  "tasks": [
+    "review-run",
+    "results"
+  ],
+  "worksWellWhen": [
+    "Players learn from route and resource decisions"
+  ],
+  "avoidWhen": [
+    "Only celebratory confetti exists"
+  ],
+  "distinctFrom": [
+    "Differs from a generic editorial layout through its review run priority and explicit commitment contract: Results derive from actual completed run state"
+  ],
+  "density": "balanced",
+  "navigation": "Results recap keeps the current review run context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A meaningful outcome and causal recap precede next-run action",
+    "continuation": "Continue with the evidence and controls needed to review run; players learn from route and resource decisions",
+    "priority": "Results derive from actual completed run state"
+  },
+  "patternIds": [
+    "results"
+  ],
+  "compositionIds": [
+    "claim-evidence"
+  ],
+  "typeRecipeIds": [
+    "editorial-serif"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review run context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep next action separate from scrollable detailed statistics",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the results recap structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review run content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Results derive from actual completed run state",
+    "offline": "Label cached/unsynchronized review run content and prevent claims of server completion.",
+    "success": "Results derive from actual completed run state",
+    "interruption": "Restore the active review run context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/game-results-recap-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=game&screen=results-recap&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/game-results-recap-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=game&screen=results-recap&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

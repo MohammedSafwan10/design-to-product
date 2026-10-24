@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "event-ledger",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Event ledger",
+  "contract": "Preserve chronological order, time zone and actor context.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

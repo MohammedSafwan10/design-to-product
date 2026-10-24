@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/mission-brief",
+  "title": "Mission brief",
+  "familyId": "editorial",
+  "surface": "game",
+  "idea": "Mission brief: Objective conditions and relevant map evidence replace lore overload",
+  "audience": "People who need to understand mission within a game surface.",
+  "tasks": [
+    "understand-mission",
+    "progression"
+  ],
+  "worksWellWhen": [
+    "A new objective needs comprehension"
+  ],
+  "avoidWhen": [
+    "The objective is a one-button repeat"
+  ],
+  "distinctFrom": [
+    "Differs from a generic editorial layout through its understand mission priority and explicit commitment contract: Starting confirms selected mission and difficulty"
+  ],
+  "density": "balanced",
+  "navigation": "Mission brief keeps the current understand mission context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Objective conditions and relevant map evidence replace lore overload",
+    "continuation": "Continue with the evidence and controls needed to understand mission; a new objective needs comprehension",
+    "priority": "Starting confirms selected mission and difficulty"
+  },
+  "patternIds": [
+    "progression"
+  ],
+  "compositionIds": [
+    "claim-evidence"
+  ],
+  "typeRecipeIds": [
+    "editorial-serif"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual understand mission context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize win conditions and optional detail on small displays",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the mission brief structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no understand mission content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Starting confirms selected mission and difficulty",
+    "offline": "Label cached/unsynchronized understand mission content and prevent claims of server completion.",
+    "success": "Starting confirms selected mission and difficulty",
+    "interruption": "Restore the active understand mission context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

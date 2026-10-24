@@ -12,6 +12,13 @@ not require another taste skill or inherit a single site's house style. Read
 and prerequisites. The tool proposes eligible starting hypotheses; the designer
 chooses by the actual subject, task and available material.
 
+Use the modular surface index for current candidates and load only the selected
+recipe's linked modules. The legacy profile catalog remains available. A recipe
+is an authored hypothesis until render/stress evidence and critique support it;
+do not describe the 150 draft entries as a completed gallery study. Separate
+family, composition, task, type and palette choices rather than counting their
+combinations as new art directions.
+
 Use `marketing` for a public argument or product story, `app` for task-focused
 screens, and `dashboard` for data/workspace surfaces. Functional input boundaries,
 compact tables and familiar system controls can be good design. Do not force

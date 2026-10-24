@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "signal",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Signal and response",
+  "idea": "One important state and its permitted response dominate.",
+  "avoid": "Never communicate urgency or success through color alone."
+}

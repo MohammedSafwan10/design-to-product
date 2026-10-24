@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/workflow-builder",
+  "title": "Workflow builder",
+  "familyId": "spatial",
+  "surface": "product-web",
+  "idea": "Workflow builder: A bounded workflow diagram pairs each selected step with a plain configuration panel and dependency explanation.",
+  "audience": "People who need to configure workflow within a product-web surface.",
+  "tasks": [
+    "configure-workflow",
+    "process-proof"
+  ],
+  "worksWellWhen": [
+    "Dependencies are easier to inspect spatially than in a flat list."
+  ],
+  "avoidWhen": [
+    "An unrestricted canvas would obscure a short linear form."
+  ],
+  "distinctFrom": [
+    "Differs from a generic spatial layout through its configure workflow priority and explicit commitment contract: Validate references and test behavior before publishing an enabled workflow."
+  ],
+  "density": "balanced",
+  "navigation": "Workflow builder keeps the current configure workflow context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A bounded workflow diagram pairs each selected step with a plain configuration panel and dependency explanation.",
+    "continuation": "Continue with the evidence and controls needed to configure workflow; dependencies are easier to inspect spatially than in a flat list.",
+    "priority": "Validate references and test behavior before publishing an enabled workflow."
+  },
+  "patternIds": [
+    "process-proof"
+  ],
+  "compositionIds": [
+    "map-ledger"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "forest-stone"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual configure workflow context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Provide an ordered step list and non-drag insert/reorder controls.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the workflow builder structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no configure workflow content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Validate references and test behavior before publishing an enabled workflow.",
+    "offline": "Label cached/unsynchronized configure workflow content and prevent claims of server completion.",
+    "success": "Validate references and test behavior before publishing an enabled workflow.",
+    "interruption": "Restore the active configure workflow context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

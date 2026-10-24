@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/event-program",
+  "title": "Event program",
+  "familyId": "timeline",
+  "surface": "marketing",
+  "idea": "Event program: Real date and place lead into a time-based program with sessions, access and booking conditions.",
+  "audience": "People who need to plan attendance within a marketing surface.",
+  "tasks": [
+    "plan-attendance",
+    "event-ledger"
+  ],
+  "worksWellWhen": [
+    "The event has a concrete schedule and attendance requirements."
+  ],
+  "avoidWhen": [
+    "Schedules or participants are unconfirmed but appear final."
+  ],
+  "distinctFrom": [
+    "Differs from a generic timeline layout through its plan attendance priority and explicit commitment contract: Label provisional sessions and confirm date/time zone before reservation."
+  ],
+  "density": "spacious",
+  "navigation": "Event program keeps the current plan attendance context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Real date and place lead into a time-based program with sessions, access and booking conditions.",
+    "continuation": "Continue with the evidence and controls needed to plan attendance; the event has a concrete schedule and attendance requirements.",
+    "priority": "Label provisional sessions and confirm date/time zone before reservation."
+  },
+  "patternIds": [
+    "event-ledger"
+  ],
+  "compositionIds": [
+    "time-tracks"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual plan attendance context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use a local-time list with clear day headings rather than tiny horizontal tracks.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the event program structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no plan attendance content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Label provisional sessions and confirm date/time zone before reservation.",
+    "offline": "Label cached/unsynchronized plan attendance content and prevent claims of server completion.",
+    "success": "Label provisional sessions and confirm date/time zone before reservation.",
+    "interruption": "Restore the active plan attendance context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

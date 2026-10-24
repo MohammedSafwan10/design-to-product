@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/expense-capture",
+  "title": "Expense capture",
+  "familyId": "transaction",
+  "surface": "mobile",
+  "idea": "Expense capture: Receipt preview and amount correction lead a review total",
+  "audience": "People who need to record expense within a mobile surface.",
+  "tasks": [
+    "record-expense",
+    "capture-review"
+  ],
+  "worksWellWhen": [
+    "Users verify extracted transaction details"
+  ],
+  "avoidWhen": [
+    "A decorative camera serves no task"
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its record expense priority and explicit commitment contract: Prevent duplicate submissions and preserve receipt draft"
+  ],
+  "density": "balanced",
+  "navigation": "Expense capture keeps the current record expense context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Receipt preview and amount correction lead a review total",
+    "continuation": "Continue with the evidence and controls needed to record expense; users verify extracted transaction details",
+    "priority": "Prevent duplicate submissions and preserve receipt draft"
+  },
+  "patternIds": [
+    "capture-review"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual record expense context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Allow currency and amount edits with keyboard visible",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the expense capture structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no record expense content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Prevent duplicate submissions and preserve receipt draft",
+    "offline": "Label cached/unsynchronized record expense content and prevent claims of server completion.",
+    "success": "Prevent duplicate submissions and preserve receipt draft",
+    "interruption": "Restore the active record expense context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

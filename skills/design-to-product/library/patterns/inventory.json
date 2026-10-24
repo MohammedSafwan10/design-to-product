@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "inventory",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Inventory",
+  "contract": "Expose capacity, comparison, equip/use consequences and input navigation.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

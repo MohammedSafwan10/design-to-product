@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "task-triage",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Task triage",
+  "contract": "Prioritize real exceptions and keep ownership/next action visible.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

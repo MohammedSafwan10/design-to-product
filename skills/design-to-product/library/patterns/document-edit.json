@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "document-edit",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Document editing",
+  "contract": "Preserve content, selection, unsaved changes and version context.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

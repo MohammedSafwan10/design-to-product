@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/comparison-table",
+  "title": "Comparison table",
+  "familyId": "ledger",
+  "surface": "dashboard",
+  "idea": "Comparison table: Aligned measures share units dates and a selected row inspector",
+  "audience": "People who need to compare performance within a dashboard surface.",
+  "tasks": [
+    "compare-performance",
+    "compare"
+  ],
+  "worksWellWhen": [
+    "Users compare many records across common measures"
+  ],
+  "avoidWhen": [
+    "Measures have incompatible definitions"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its compare performance priority and explicit commitment contract: Sorting never changes underlying record values"
+  ],
+  "density": "compact",
+  "navigation": "Comparison table keeps the current compare performance context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Aligned measures share units dates and a selected row inspector",
+    "continuation": "Continue with the evidence and controls needed to compare performance; users compare many records across common measures",
+    "priority": "Sorting never changes underlying record values"
+  },
+  "patternIds": [
+    "compare"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual compare performance context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Offer deliberate horizontal scrolling and a focused row view",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the comparison table structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no compare performance content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Sorting never changes underlying record values",
+    "offline": "Label cached/unsynchronized compare performance content and prevent claims of server completion.",
+    "success": "Sorting never changes underlying record values",
+    "interruption": "Restore the active compare performance context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/dashboard-comparison-table-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=comparison-table&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/dashboard-comparison-table-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=comparison-table&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

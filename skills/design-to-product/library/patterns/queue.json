@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "queue",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Work queue",
+  "contract": "Prioritize actual items with owner, dependencies and permitted transitions.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

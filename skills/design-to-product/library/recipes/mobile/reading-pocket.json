@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/reading-pocket",
+  "title": "Reading pocket",
+  "familyId": "document",
+  "surface": "mobile",
+  "idea": "Reading pocket: A comfortable text column and quiet progress anchor",
+  "audience": "People who need to read within a mobile surface.",
+  "tasks": [
+    "read",
+    "document-edit"
+  ],
+  "worksWellWhen": [
+    "Long-form reading is the core activity"
+  ],
+  "avoidWhen": [
+    "Rapid dense comparisons dominate"
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its read priority and explicit commitment contract: Restore reading position without hiding new content"
+  ],
+  "density": "balanced",
+  "navigation": "Reading pocket keeps the current read context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A comfortable text column and quiet progress anchor",
+    "continuation": "Continue with the evidence and controls needed to read; long-form reading is the core activity",
+    "priority": "Restore reading position without hiding new content"
+  },
+  "patternIds": [
+    "document-edit"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual read context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Support text enlargement without horizontal text scrolling",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the reading pocket structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no read content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Restore reading position without hiding new content",
+    "offline": "Label cached/unsynchronized read content and prevent claims of server completion.",
+    "success": "Restore reading position without hiding new content",
+    "interruption": "Restore the active read context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

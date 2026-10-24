@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/approval-desk",
+  "title": "Approval desk",
+  "familyId": "decision",
+  "surface": "dashboard",
+  "idea": "Approval desk: Request rationale and before-after effect precede approval",
+  "audience": "People who need to approve within a dashboard surface.",
+  "tasks": [
+    "approve",
+    "form-review"
+  ],
+  "worksWellWhen": [
+    "Privileged operations need a clear decision"
+  ],
+  "avoidWhen": [
+    "Approvers lack authority or context"
+  ],
+  "distinctFrom": [
+    "Differs from a generic decision layout through its approve priority and explicit commitment contract: Atomic authorization and audit precede executed changes"
+  ],
+  "density": "compact",
+  "navigation": "Approval desk keeps the current approve context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Request rationale and before-after effect precede approval",
+    "continuation": "Continue with the evidence and controls needed to approve; privileged operations need a clear decision",
+    "priority": "Atomic authorization and audit precede executed changes"
+  },
+  "patternIds": [
+    "form-review"
+  ],
+  "compositionIds": [
+    "question-result"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual approve context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Show full effect before the confirm control",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the approval desk structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no approve content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Atomic authorization and audit precede executed changes",
+    "offline": "Label cached/unsynchronized approve content and prevent claims of server completion.",
+    "success": "Atomic authorization and audit precede executed changes",
+    "interruption": "Restore the active approve context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

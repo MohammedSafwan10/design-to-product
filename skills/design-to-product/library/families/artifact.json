@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "artifact",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Artifact as interface",
+  "idea": "A real physical or digital artifact establishes proportions, grouping and the reading sequence.",
+  "avoid": "Only borrow qualities the artifact actually has; preserve native controls."
+}

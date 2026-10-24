@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/puzzle-hints",
+  "title": "Puzzle hints",
+  "familyId": "decision",
+  "surface": "game",
+  "idea": "Puzzle hints: Current constraint and optional graduated hints preserve agency",
+  "audience": "People who need to solve puzzle within a game surface.",
+  "tasks": [
+    "solve-puzzle",
+    "feedback"
+  ],
+  "worksWellWhen": [
+    "Players benefit from progressive assistance"
+  ],
+  "avoidWhen": [
+    "Hints reveal the entire solution immediately"
+  ],
+  "distinctFrom": [
+    "Differs from a generic decision layout through its solve puzzle priority and explicit commitment contract: Using a hint states any scoring consequence before commitment"
+  ],
+  "density": "balanced",
+  "navigation": "Puzzle hints keeps the current solve puzzle context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Current constraint and optional graduated hints preserve agency",
+    "continuation": "Continue with the evidence and controls needed to solve puzzle; players benefit from progressive assistance",
+    "priority": "Using a hint states any scoring consequence before commitment"
+  },
+  "patternIds": [
+    "feedback"
+  ],
+  "compositionIds": [
+    "question-result"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual solve puzzle context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep puzzle state visible while a hint panel opens",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the puzzle hints structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no solve puzzle content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Using a hint states any scoring consequence before commitment",
+    "offline": "Label cached/unsynchronized solve puzzle content and prevent claims of server completion.",
+    "success": "Using a hint states any scoring consequence before commitment",
+    "interruption": "Restore the active solve puzzle context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/commute-alert",
+  "title": "Commute alert",
+  "familyId": "signal",
+  "surface": "mobile",
+  "idea": "Commute alert: One relevant disruption leads alternatives with source freshness",
+  "audience": "People who need to check disruption within a mobile surface.",
+  "tasks": [
+    "check-disruption",
+    "data-monitor"
+  ],
+  "worksWellWhen": [
+    "A time-sensitive trip needs a next decision"
+  ],
+  "avoidWhen": [
+    "Data freshness cannot be stated"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its check disruption priority and explicit commitment contract: Stale data is labeled and safe alternatives remain visible"
+  ],
+  "density": "balanced",
+  "navigation": "Commute alert keeps the current check disruption context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "One relevant disruption leads alternatives with source freshness",
+    "continuation": "Continue with the evidence and controls needed to check disruption; a time-sensitive trip needs a next decision",
+    "priority": "Stale data is labeled and safe alternatives remain visible"
+  },
+  "patternIds": [
+    "data-monitor"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual check disruption context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize disruption over decorative route illustration",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the commute alert structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no check disruption content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Stale data is labeled and safe alternatives remain visible",
+    "offline": "Label cached/unsynchronized check disruption content and prevent claims of server completion.",
+    "success": "Stale data is labeled and safe alternatives remain visible",
+    "interruption": "Restore the active check disruption context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

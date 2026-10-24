@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/accessibility-studio",
+  "title": "Accessibility studio",
+  "familyId": "workspace",
+  "surface": "game",
+  "idea": "Accessibility studio: Text input motion and audio options each have a live preview",
+  "audience": "People who need to configure accessibility within a game surface.",
+  "tasks": [
+    "configure-accessibility",
+    "accessibility"
+  ],
+  "worksWellWhen": [
+    "Players need tailored interaction"
+  ],
+  "avoidWhen": [
+    "Settings have no implemented effect"
+  ],
+  "distinctFrom": [
+    "Differs from a generic workspace layout through its configure accessibility priority and explicit commitment contract: Preview and saved settings states remain distinct"
+  ],
+  "density": "balanced",
+  "navigation": "Accessibility studio keeps the current configure accessibility context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Text input motion and audio options each have a live preview",
+    "continuation": "Continue with the evidence and controls needed to configure accessibility; players need tailored interaction",
+    "priority": "Preview and saved settings states remain distinct"
+  },
+  "patternIds": [
+    "accessibility"
+  ],
+  "compositionIds": [
+    "work-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual configure accessibility context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use scalable labels and predictable focus groups",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the accessibility studio structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no configure accessibility content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Preview and saved settings states remain distinct",
+    "offline": "Label cached/unsynchronized configure accessibility content and prevent claims of server completion.",
+    "success": "Preview and saved settings states remain distinct",
+    "interruption": "Restore the active configure accessibility context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

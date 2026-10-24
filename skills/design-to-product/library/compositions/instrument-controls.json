@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "instrument-controls",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Instrument with controls",
+  "entry": "Measurements, units and recent context sit near the actions they inform.",
+  "adaptation": "Prioritize the current reading and action over secondary historical detail."
+}

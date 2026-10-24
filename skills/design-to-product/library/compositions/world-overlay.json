@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "world-overlay",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "World with overlay",
+  "entry": "The world remains legible; contextual UI occupies deliberate safe regions.",
+  "adaptation": "Reflow HUD by aspect ratio and input mode rather than scaling the whole canvas."
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "reading-text",
+  "kind": "typography",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Reading text",
+  "faces": {
+    "display": "Georgia, serif",
+    "body": "Georgia, serif"
+  },
+  "license": "No font files bundled; use installed system faces.",
+  "scriptCoverage": "Offer a reader/system alternative. Measure line length and fallback for each target script.",
+  "fit": "Long-form content with calm editorial hierarchy.",
+  "roles": {
+    "display": {
+      "minPx": 30,
+      "maxPx": 54,
+      "lineHeight": 1.12
+    },
+    "heading": {
+      "minPx": 24,
+      "maxPx": 34,
+      "lineHeight": 1.25
+    },
+    "body": {
+      "minPx": 18,
+      "maxPx": 23,
+      "lineHeight": 1.8
+    },
+    "label": {
+      "minPx": 14,
+      "maxPx": 18,
+      "lineHeight": 1.5
+    }
+  },
+  "rules": [
+    "Treat sizes as candidate browser baselines, not native point/sp prescriptions.",
+    "Scale and reflow content at enlarged text; do not truncate essential action labels.",
+    "Keep native framework/platform text scaling enabled.",
+    "Use font-display behavior and subset budgets appropriate to the actual chosen files."
+  ],
+  "metricsReview": "Candidate role sizes and line-height ratios; measure x-height, fallback, actual glyph coverage and enlarged text in the target runtime before adoption.",
+  "measure": "Start around 55–75 Latin characters per line; adapt to script, font metrics and reader settings."
+}

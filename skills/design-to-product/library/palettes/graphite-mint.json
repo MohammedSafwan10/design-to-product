@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "graphite-mint",
+  "kind": "palettes",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Graphite and mint",
+  "roles": {
+    "background": "#161c22",
+    "text": "#f0f5f3",
+    "surface": "#232d35",
+    "primary": "#a9e5ca",
+    "onPrimary": "#14251d",
+    "error": "#ffb4ab",
+    "focus": "#a9e5ca"
+  },
+  "contrastPairs": [
+    {
+      "foreground": "text",
+      "background": "background",
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text",
+      "background": "surface",
+      "minimum": 4.5
+    },
+    {
+      "foreground": "onPrimary",
+      "background": "primary",
+      "minimum": 4.5
+    }
+  ],
+  "rules": [
+    "Contrast values apply only to the explicit opaque token pairs; composited page contrast needs runtime testing.",
+    "Use labels, shapes or patterns alongside semantic colors.",
+    "Focus outline must be tested against its actual neighboring surfaces.",
+    "Build a considered theme counterpart; do not mechanically invert imagery.",
+    "Chart series need task-specific distinguishability and labeled alternatives."
+  ]
+}

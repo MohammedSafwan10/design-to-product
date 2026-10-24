@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "compare",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Comparison",
+  "contract": "Align actual attributes, units, uncertainty and selection rationale.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

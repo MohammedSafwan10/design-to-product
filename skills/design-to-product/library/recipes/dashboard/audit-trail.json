@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/audit-trail",
+  "title": "Audit trail",
+  "familyId": "timeline",
+  "surface": "dashboard",
+  "idea": "Audit trail: Chronological events expose actor action resource and provenance",
+  "audience": "People who need to audit within a dashboard surface.",
+  "tasks": [
+    "audit",
+    "event-ledger"
+  ],
+  "worksWellWhen": [
+    "Privileged changes must be traceable"
+  ],
+  "avoidWhen": [
+    "The log omits authoritative source identity"
+  ],
+  "distinctFrom": [
+    "Differs from a generic timeline layout through its audit priority and explicit commitment contract: Events are immutable and redaction policy explicit"
+  ],
+  "density": "compact",
+  "navigation": "Audit trail keeps the current audit context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Chronological events expose actor action resource and provenance",
+    "continuation": "Continue with the evidence and controls needed to audit; privileged changes must be traceable",
+    "priority": "Events are immutable and redaction policy explicit"
+  },
+  "patternIds": [
+    "event-ledger"
+  ],
+  "compositionIds": [
+    "time-tracks"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual audit context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use text-first event detail with persistent filters",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the audit trail structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no audit content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Events are immutable and redaction policy explicit",
+    "offline": "Label cached/unsynchronized audit content and prevent claims of server completion.",
+    "success": "Events are immutable and redaction policy explicit",
+    "interruption": "Restore the active audit context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/dashboard-audit-trail-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=audit-trail&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/dashboard-audit-trail-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=dashboard&screen=audit-trail&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

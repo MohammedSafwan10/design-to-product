@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "results",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Result review",
+  "contract": "Explain outcome, rewards, failures and the next permitted action.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

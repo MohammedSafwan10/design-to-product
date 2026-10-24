@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "conversation-context",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Conversation with context",
+  "entry": "The current exchange owns the main field, with identity and attached decisions nearby.",
+  "adaptation": "Keep composer and messages in distinct accessible scroll regions."
+}

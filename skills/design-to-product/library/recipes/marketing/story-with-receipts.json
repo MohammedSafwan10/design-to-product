@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/story-with-receipts",
+  "title": "Story with receipts",
+  "familyId": "ledger",
+  "surface": "marketing",
+  "idea": "Story with receipts: A factual chronology of decisions and artifacts carries the story, with evidence attached to each turning point.",
+  "audience": "People who need to trace history within a marketing surface.",
+  "tasks": [
+    "trace-history",
+    "event-ledger"
+  ],
+  "worksWellWhen": [
+    "Origin or development explains why the current product exists."
+  ],
+  "avoidWhen": [
+    "The story depends on fabricated founder moments or dates."
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its trace history priority and explicit commitment contract: Only show historical claims that have a legitimate recorded source."
+  ],
+  "density": "spacious",
+  "navigation": "Story with receipts keeps the current trace history context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A factual chronology of decisions and artifacts carries the story, with evidence attached to each turning point.",
+    "continuation": "Continue with the evidence and controls needed to trace history; origin or development explains why the current product exists.",
+    "priority": "Only show historical claims that have a legitimate recorded source."
+  },
+  "patternIds": [
+    "event-ledger"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual trace history context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Read as a compact chronology with expandable source detail.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the story with receipts structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no trace history content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Only show historical claims that have a legitimate recorded source.",
+    "offline": "Label cached/unsynchronized trace history content and prevent claims of server completion.",
+    "success": "Only show historical claims that have a legitimate recorded source.",
+    "interruption": "Restore the active trace history context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

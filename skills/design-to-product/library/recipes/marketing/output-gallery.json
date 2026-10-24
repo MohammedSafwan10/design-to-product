@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/output-gallery",
+  "title": "Output gallery",
+  "familyId": "collection",
+  "surface": "marketing",
+  "idea": "Output gallery: One representative output leads, with a varied sequence of work and readable provenance captions below.",
+  "audience": "People who need to inspect output within a marketing surface.",
+  "tasks": [
+    "inspect-output",
+    "collection-select"
+  ],
+  "worksWellWhen": [
+    "The work itself shows differences more convincingly than promotional copy."
+  ],
+  "avoidWhen": [
+    "Items cannot be publicly shown with permission."
+  ],
+  "distinctFrom": [
+    "Differs from a generic collection layout through its inspect output priority and explicit commitment contract: Opening an item reveals its actual context and authorship without inventing clients."
+  ],
+  "density": "spacious",
+  "navigation": "Output gallery keeps the current inspect output context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "One representative output leads, with a varied sequence of work and readable provenance captions below.",
+    "continuation": "Continue with the evidence and controls needed to inspect output; the work itself shows differences more convincingly than promotional copy.",
+    "priority": "Opening an item reveals its actual context and authorship without inventing clients."
+  },
+  "patternIds": [
+    "collection-select"
+  ],
+  "compositionIds": [
+    "collection-field"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "output-crop"
+    ],
+    "role": "Support the actual inspect output context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use a clear linear selection with generous individual crops on phones.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the output gallery structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect output content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Opening an item reveals its actual context and authorship without inventing clients.",
+    "offline": "Label cached/unsynchronized inspect output content and prevent claims of server completion.",
+    "success": "Opening an item reveals its actual context and authorship without inventing clients.",
+    "interruption": "Restore the active inspect output context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/marketing-output-gallery-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=output-gallery&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/marketing-output-gallery-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=output-gallery&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

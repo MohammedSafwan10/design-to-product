@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/translation-review",
+  "title": "Translation review",
+  "familyId": "document",
+  "surface": "product-web",
+  "idea": "Translation review: Source and translation stay aligned around selected segments with glossary, direction and review status nearby.",
+  "audience": "People who need to review translation within a product-web surface.",
+  "tasks": [
+    "review-translation",
+    "annotation"
+  ],
+  "worksWellWhen": [
+    "Reviewers need precise source-to-target correspondence."
+  ],
+  "avoidWhen": [
+    "Machine output is represented as approved human review."
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its review translation priority and explicit commitment contract: Preserve source version and separate generated, edited and approved translation states."
+  ],
+  "density": "balanced",
+  "navigation": "Translation review keeps the current review translation context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Source and translation stay aligned around selected segments with glossary, direction and review status nearby.",
+    "continuation": "Continue with the evidence and controls needed to review translation; reviewers need precise source-to-target correspondence.",
+    "priority": "Preserve source version and separate generated, edited and approved translation states."
+  },
+  "patternIds": [
+    "annotation"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review translation context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use segment-by-segment focus with correct bidirectional text and readable script metrics.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the translation review structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review translation content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Preserve source version and separate generated, edited and approved translation states.",
+    "offline": "Label cached/unsynchronized review translation content and prevent claims of server completion.",
+    "success": "Preserve source version and separate generated, edited and approved translation states.",
+    "interruption": "Restore the active review translation context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

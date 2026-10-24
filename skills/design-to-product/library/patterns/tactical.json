@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "tactical",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Tactical planning",
+  "contract": "Distinguish selection, preview, commitment and resolution.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

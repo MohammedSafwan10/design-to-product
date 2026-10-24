@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "document-margin",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Document with margin",
+  "entry": "The document is the main field, with annotations and tools organized around its content.",
+  "adaptation": "Move annotations into a separate focused region without losing the anchor."
+}

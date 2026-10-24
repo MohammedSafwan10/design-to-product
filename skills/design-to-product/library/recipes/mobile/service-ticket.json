@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/service-ticket",
+  "title": "Service ticket",
+  "familyId": "process",
+  "surface": "mobile",
+  "idea": "Service ticket: Issue identity and latest confirmed stage precede the event timeline",
+  "audience": "People who need to track ticket within a mobile surface.",
+  "tasks": [
+    "track-ticket",
+    "progression"
+  ],
+  "worksWellWhen": [
+    "Users need trustworthy progress"
+  ],
+  "avoidWhen": [
+    "No authoritative stages exist"
+  ],
+  "distinctFrom": [
+    "Differs from a generic process layout through its track ticket priority and explicit commitment contract: A queued update is not a completed service action"
+  ],
+  "density": "balanced",
+  "navigation": "Service ticket keeps the current track ticket context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Issue identity and latest confirmed stage precede the event timeline",
+    "continuation": "Continue with the evidence and controls needed to track ticket; users need trustworthy progress",
+    "priority": "A queued update is not a completed service action"
+  },
+  "patternIds": [
+    "progression"
+  ],
+  "compositionIds": [
+    "sequence-reveal"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "process-diagram"
+    ],
+    "role": "Support the actual track ticket context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Collapse historical detail rather than current status",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the service ticket structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no track ticket content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; A queued update is not a completed service action",
+    "offline": "Label cached/unsynchronized track ticket content and prevent claims of server completion.",
+    "success": "A queued update is not a completed service action",
+    "interruption": "Restore the active track ticket context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

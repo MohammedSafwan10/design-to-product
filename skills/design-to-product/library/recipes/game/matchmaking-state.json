@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/matchmaking-state",
+  "title": "Matchmaking state",
+  "familyId": "signal",
+  "surface": "game",
+  "idea": "Matchmaking state: Queue elapsed state and cancel action explain actual session search",
+  "audience": "People who need to find match within a game surface.",
+  "tasks": [
+    "find-match",
+    "connection"
+  ],
+  "worksWellWhen": [
+    "A real matchmaking service exists"
+  ],
+  "avoidWhen": [
+    "A timer would simulate nonexistent peers"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its find match priority and explicit commitment contract: Cancellation acknowledged by service prevents accidental joining"
+  ],
+  "density": "balanced",
+  "navigation": "Matchmaking state keeps the current find match context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Queue elapsed state and cancel action explain actual session search",
+    "continuation": "Continue with the evidence and controls needed to find match; a real matchmaking service exists",
+    "priority": "Cancellation acknowledged by service prevents accidental joining"
+  },
+  "patternIds": [
+    "connection"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual find match context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Avoid trapping focus while queue updates",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the matchmaking state structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no find match content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Cancellation acknowledged by service prevents accidental joining",
+    "offline": "Label cached/unsynchronized find match content and prevent claims of server completion.",
+    "success": "Cancellation acknowledged by service prevents accidental joining",
+    "interruption": "Restore the active find match context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

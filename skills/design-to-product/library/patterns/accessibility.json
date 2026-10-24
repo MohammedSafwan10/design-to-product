@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "accessibility",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Accessible controls",
+  "contract": "Keep important adjustments discoverable and preview effects safely.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

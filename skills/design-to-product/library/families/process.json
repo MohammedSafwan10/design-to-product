@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "process",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Visible process",
+  "idea": "Expose causal stages so people can understand progress and recover.",
+  "avoid": "Avoid decorative timelines that imply unsupported completion."
+}

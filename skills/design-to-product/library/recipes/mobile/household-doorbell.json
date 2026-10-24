@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/household-doorbell",
+  "title": "Household doorbell",
+  "familyId": "signal",
+  "surface": "mobile",
+  "idea": "Household doorbell: A residence alias and permitted contact actions replace personal details",
+  "audience": "People who need to ring within a mobile surface.",
+  "tasks": [
+    "ring",
+    "contact"
+  ],
+  "worksWellWhen": [
+    "Visitors contact an authorized household"
+  ],
+  "avoidWhen": [
+    "The app would disclose presence"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its ring priority and explicit commitment contract: Ringing does not prove receipt or physical presence"
+  ],
+  "density": "balanced",
+  "navigation": "Household doorbell keeps the current ring context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A residence alias and permitted contact actions replace personal details",
+    "continuation": "Continue with the evidence and controls needed to ring; visitors contact an authorized household",
+    "priority": "Ringing does not prove receipt or physical presence"
+  },
+  "patternIds": [
+    "contact"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual ring context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Show permitted actions without exposing a resident list",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the household doorbell structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no ring content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Ringing does not prove receipt or physical presence",
+    "offline": "Label cached/unsynchronized ring content and prevent claims of server completion.",
+    "success": "Ringing does not prove receipt or physical presence",
+    "interruption": "Restore the active ring context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

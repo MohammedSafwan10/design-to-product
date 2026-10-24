@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "state-action",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "State with action",
+  "entry": "One dominant truthful state, one main response, supporting context below.",
+  "adaptation": "Keep the response reachable when text grows or the keyboard opens."
+}

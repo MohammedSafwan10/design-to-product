@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/save-select",
+  "title": "Save select",
+  "familyId": "timeline",
+  "surface": "game",
+  "idea": "Save select: Named slots and last-played context lead load or overwrite review",
+  "audience": "People who need to load game within a game surface.",
+  "tasks": [
+    "load-game",
+    "file-operation"
+  ],
+  "worksWellWhen": [
+    "Players choose recoverable progress states"
+  ],
+  "avoidWhen": [
+    "Slots have no reliable state identity"
+  ],
+  "distinctFrom": [
+    "Differs from a generic timeline layout through its load game priority and explicit commitment contract: Overwrite requires confirmation and preserves recovery where supported"
+  ],
+  "density": "balanced",
+  "navigation": "Save select keeps the current load game context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Named slots and last-played context lead load or overwrite review",
+    "continuation": "Continue with the evidence and controls needed to load game; players choose recoverable progress states",
+    "priority": "Overwrite requires confirmation and preserves recovery where supported"
+  },
+  "patternIds": [
+    "file-operation"
+  ],
+  "compositionIds": [
+    "time-tracks"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual load game context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep overwrite visually separate from load",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the save select structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no load game content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Overwrite requires confirmation and preserves recovery where supported",
+    "offline": "Label cached/unsynchronized load game content and prevent claims of server completion.",
+    "success": "Overwrite requires confirmation and preserves recovery where supported",
+    "interruption": "Restore the active load game context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

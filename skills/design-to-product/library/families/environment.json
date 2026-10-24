@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "environment",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Situated context",
+  "idea": "The actual environment explains location, scale or use before decorative messaging.",
+  "avoid": "Do not impersonate a client location with unrelated stock."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/community-practice",
+  "title": "Community practice",
+  "familyId": "conversation",
+  "surface": "marketing",
+  "idea": "Community practice: A genuine recurring activity and participation rules introduce how to join, with consent and conduct visible.",
+  "audience": "People who need to join activity within a marketing surface.",
+  "tasks": [
+    "join-activity",
+    "onboarding"
+  ],
+  "worksWellWhen": [
+    "Shared practice matters more than fabricated member totals."
+  ],
+  "avoidWhen": [
+    "A fake conversation would impersonate actual participants."
+  ],
+  "distinctFrom": [
+    "Differs from a generic conversation layout through its join activity priority and explicit commitment contract: Explain joining permissions and moderation without claiming a message was posted."
+  ],
+  "density": "spacious",
+  "navigation": "Community practice keeps the current join activity context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A genuine recurring activity and participation rules introduce how to join, with consent and conduct visible.",
+    "continuation": "Continue with the evidence and controls needed to join activity; shared practice matters more than fabricated member totals.",
+    "priority": "Explain joining permissions and moderation without claiming a message was posted."
+  },
+  "patternIds": [
+    "onboarding"
+  ],
+  "compositionIds": [
+    "conversation-context"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual join activity context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize the next real activity and participation requirements over imagery.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the community practice structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no join activity content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Explain joining permissions and moderation without claiming a message was posted.",
+    "offline": "Label cached/unsynchronized join activity content and prevent claims of server completion.",
+    "success": "Explain joining permissions and moderation without claiming a message was posted.",
+    "interruption": "Restore the active join activity context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

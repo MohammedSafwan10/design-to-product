@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/window-layout",
+  "title": "Window layout",
+  "familyId": "workspace",
+  "surface": "desktop",
+  "idea": "Window layout: A workspace map previews pane arrangements before applying",
+  "audience": "People who need to arrange workspace within a desktop surface.",
+  "tasks": [
+    "arrange-workspace",
+    "settings"
+  ],
+  "worksWellWhen": [
+    "Users work across multiple panes"
+  ],
+  "avoidWhen": [
+    "There is one simple linear flow"
+  ],
+  "distinctFrom": [
+    "Differs from a generic workspace layout through its arrange workspace priority and explicit commitment contract: Persist only after a recoverable layout change"
+  ],
+  "density": "compact",
+  "navigation": "Window layout keeps the current arrange workspace context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A workspace map previews pane arrangements before applying",
+    "continuation": "Continue with the evidence and controls needed to arrange workspace; users work across multiple panes",
+    "priority": "Persist only after a recoverable layout change"
+  },
+  "patternIds": [
+    "settings"
+  ],
+  "compositionIds": [
+    "work-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual arrange workspace context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Enforce pane minimums and a restore layout option",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the window layout structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no arrange workspace content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Persist only after a recoverable layout change",
+    "offline": "Label cached/unsynchronized arrange workspace content and prevent claims of server completion.",
+    "success": "Persist only after a recoverable layout change",
+    "interruption": "Restore the active arrange workspace context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

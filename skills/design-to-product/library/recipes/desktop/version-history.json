@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/version-history",
+  "title": "Version history",
+  "familyId": "timeline",
+  "surface": "desktop",
+  "idea": "Version history: Named checkpoints and diff previews support safe restoration",
+  "audience": "People who need to restore version within a desktop surface.",
+  "tasks": [
+    "restore-version",
+    "event-ledger"
+  ],
+  "worksWellWhen": [
+    "Users recover earlier document states"
+  ],
+  "avoidWhen": [
+    "History has no reliable snapshots"
+  ],
+  "distinctFrom": [
+    "Differs from a generic timeline layout through its restore version priority and explicit commitment contract: Restoring creates a recoverable new checkpoint"
+  ],
+  "density": "compact",
+  "navigation": "Version history keeps the current restore version context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Named checkpoints and diff previews support safe restoration",
+    "continuation": "Continue with the evidence and controls needed to restore version; users recover earlier document states",
+    "priority": "Restoring creates a recoverable new checkpoint"
+  },
+  "patternIds": [
+    "event-ledger"
+  ],
+  "compositionIds": [
+    "time-tracks"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual restore version context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep current and proposed state identities visible",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the version history structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no restore version content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Restoring creates a recoverable new checkpoint",
+    "offline": "Label cached/unsynchronized restore version content and prevent claims of server completion.",
+    "success": "Restoring creates a recoverable new checkpoint",
+    "interruption": "Restore the active restore version context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

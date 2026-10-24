@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "purchase-review",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Purchase review",
+  "contract": "Show actual items, price source, edits and pending/failed payment.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

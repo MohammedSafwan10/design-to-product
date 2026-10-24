@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "condensed-display",
+  "kind": "typography",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Compact display",
+  "faces": {
+    "display": "\"Barlow Condensed\", \"Arial Narrow\", sans-serif",
+    "body": "system-ui, sans-serif"
+  },
+  "license": "Barlow source: https://github.com/jpt/barlow ; verify OFL file of selected distribution before bundling. Font is suggested, not distributed.",
+  "scriptCoverage": "Condensed face is display-only. Never condense controls, numbers or long body text. Verify target glyph coverage.",
+  "fit": "Physical labels, sports and emphatic short propositions.",
+  "roles": {
+    "display": {
+      "minPx": 42,
+      "maxPx": 112,
+      "lineHeight": 1.0
+    },
+    "heading": {
+      "minPx": 26,
+      "maxPx": 44,
+      "lineHeight": 1.1
+    },
+    "body": {
+      "minPx": 16,
+      "maxPx": 20,
+      "lineHeight": 1.55
+    },
+    "label": {
+      "minPx": 14,
+      "maxPx": 18,
+      "lineHeight": 1.4
+    }
+  },
+  "rules": [
+    "Treat sizes as candidate browser baselines, not native point/sp prescriptions.",
+    "Scale and reflow content at enlarged text; do not truncate essential action labels.",
+    "Keep native framework/platform text scaling enabled.",
+    "Use font-display behavior and subset budgets appropriate to the actual chosen files."
+  ],
+  "metricsReview": "Candidate role sizes and line-height ratios; measure x-height, fallback, actual glyph coverage and enlarged text in the target runtime before adoption."
+}

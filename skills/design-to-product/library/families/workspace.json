@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "workspace",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Focused workspace",
+  "idea": "Keep the main work and its relevant tools in a stable context.",
+  "avoid": "Dense controls must remain named and operable."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/parcel-handoff",
+  "title": "Parcel handoff",
+  "familyId": "transaction",
+  "surface": "mobile",
+  "idea": "Parcel handoff: Recipient and parcel details end with an explicit handoff review",
+  "audience": "People who need to handoff within a mobile surface.",
+  "tasks": [
+    "handoff",
+    "form-review"
+  ],
+  "worksWellWhen": [
+    "A physical transfer needs confirmation"
+  ],
+  "avoidWhen": [
+    "No recipient verification exists"
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its handoff priority and explicit commitment contract: Do not mark delivered until confirmed by the authorized flow"
+  ],
+  "density": "balanced",
+  "navigation": "Parcel handoff keeps the current handoff context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Recipient and parcel details end with an explicit handoff review",
+    "continuation": "Continue with the evidence and controls needed to handoff; a physical transfer needs confirmation",
+    "priority": "Do not mark delivered until confirmed by the authorized flow"
+  },
+  "patternIds": [
+    "form-review"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual handoff context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep identifiers readable and allow manual correction",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the parcel handoff structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no handoff content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Do not mark delivered until confirmed by the authorized flow",
+    "offline": "Label cached/unsynchronized handoff content and prevent claims of server completion.",
+    "success": "Do not mark delivered until confirmed by the authorized flow",
+    "interruption": "Restore the active handoff context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

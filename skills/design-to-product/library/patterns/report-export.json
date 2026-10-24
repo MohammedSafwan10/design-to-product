@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "report-export",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Report/export",
+  "contract": "Show scope, format, permission, preparation and download failure.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

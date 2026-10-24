@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/partner-handshake",
+  "title": "Partner handshake",
+  "familyId": "transaction",
+  "surface": "marketing",
+  "idea": "Partner handshake: A clear eligibility statement leads into a concise relationship diagram and a scoped expression-of-interest form.",
+  "audience": "People who need to explore partnership within a marketing surface.",
+  "tasks": [
+    "explore-partnership",
+    "form-review"
+  ],
+  "worksWellWhen": [
+    "The visitor needs to understand obligations before contacting sales."
+  ],
+  "avoidWhen": [
+    "The page would imply approved partner status before review."
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its explore partnership priority and explicit commitment contract: Submitting interest creates a request, never an approved partner account."
+  ],
+  "density": "spacious",
+  "navigation": "Partner handshake keeps the current explore partnership context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A clear eligibility statement leads into a concise relationship diagram and a scoped expression-of-interest form.",
+    "continuation": "Continue with the evidence and controls needed to explore partnership; the visitor needs to understand obligations before contacting sales.",
+    "priority": "Submitting interest creates a request, never an approved partner account."
+  },
+  "patternIds": [
+    "form-review"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual explore partnership context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Show requirements before form fields and preserve unfinished input.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the partner handshake structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no explore partnership content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Submitting interest creates a request, never an approved partner account.",
+    "offline": "Label cached/unsynchronized explore partnership content and prevent claims of server completion.",
+    "success": "Submitting interest creates a request, never an approved partner account.",
+    "interruption": "Restore the active explore partnership context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

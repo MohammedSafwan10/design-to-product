@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/image-proofing",
+  "title": "Image proofing",
+  "familyId": "craft",
+  "surface": "desktop",
+  "idea": "Image proofing: Image canvas and color delivery settings expose crop constraints",
+  "audience": "People who need to proof image within a desktop surface.",
+  "tasks": [
+    "proof-image",
+    "media-preview"
+  ],
+  "worksWellWhen": [
+    "Output fidelity matters"
+  ],
+  "avoidWhen": [
+    "No measured color workflow exists"
+  ],
+  "distinctFrom": [
+    "Differs from a generic craft layout through its proof image priority and explicit commitment contract: Display profile assumptions and export limitations"
+  ],
+  "density": "compact",
+  "navigation": "Image proofing keeps the current proof image context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Image canvas and color delivery settings expose crop constraints",
+    "continuation": "Continue with the evidence and controls needed to proof image; output fidelity matters",
+    "priority": "Display profile assumptions and export limitations"
+  },
+  "patternIds": [
+    "media-preview"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "material-study"
+    ],
+    "role": "Support the actual proof image context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep zoom and fit options with non-gesture alternatives",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the image proofing structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no proof image content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Display profile assumptions and export limitations",
+    "offline": "Label cached/unsynchronized proof image content and prevent claims of server completion.",
+    "success": "Display profile assumptions and export limitations",
+    "interruption": "Restore the active proof image context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

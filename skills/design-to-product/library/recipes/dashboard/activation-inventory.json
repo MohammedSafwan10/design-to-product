@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/activation-inventory",
+  "title": "Activation inventory",
+  "familyId": "ledger",
+  "surface": "dashboard",
+  "idea": "Activation inventory: Unclaimed assigned and revoked tags form separate inventory states",
+  "audience": "People who need to assign tag within a dashboard surface.",
+  "tasks": [
+    "assign-tag",
+    "inventory"
+  ],
+  "worksWellWhen": [
+    "Physical tags and digital entitlements differ"
+  ],
+  "avoidWhen": [
+    "A QR identifier can be guessed sequentially"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its assign tag priority and explicit commitment contract: Atomic assignment prevents duplicate ownership"
+  ],
+  "density": "compact",
+  "navigation": "Activation inventory keeps the current assign tag context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Unclaimed assigned and revoked tags form separate inventory states",
+    "continuation": "Continue with the evidence and controls needed to assign tag; physical tags and digital entitlements differ",
+    "priority": "Atomic assignment prevents duplicate ownership"
+  },
+  "patternIds": [
+    "inventory"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual assign tag context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize token-safe label and assignment status",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the activation inventory structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no assign tag content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Atomic assignment prevents duplicate ownership",
+    "offline": "Label cached/unsynchronized assign tag content and prevent claims of server completion.",
+    "success": "Atomic assignment prevents duplicate ownership",
+    "interruption": "Restore the active assign tag context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

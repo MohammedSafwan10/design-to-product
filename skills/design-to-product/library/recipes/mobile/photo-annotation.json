@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/photo-annotation",
+  "title": "Photo annotation",
+  "familyId": "craft",
+  "surface": "mobile",
+  "idea": "Photo annotation: Image inspection and named annotations share an explicit review list",
+  "audience": "People who need to annotate within a mobile surface.",
+  "tasks": [
+    "annotate",
+    "annotation"
+  ],
+  "worksWellWhen": [
+    "Visual observations need precise context"
+  ],
+  "avoidWhen": [
+    "Annotations cannot be edited accessibly"
+  ],
+  "distinctFrom": [
+    "Differs from a generic craft layout through its annotate priority and explicit commitment contract: Persist edits as drafts until committed"
+  ],
+  "density": "balanced",
+  "navigation": "Photo annotation keeps the current annotate context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Image inspection and named annotations share an explicit review list",
+    "continuation": "Continue with the evidence and controls needed to annotate; visual observations need precise context",
+    "priority": "Persist edits as drafts until committed"
+  },
+  "patternIds": [
+    "annotation"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "material-study"
+    ],
+    "role": "Support the actual annotate context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Offer text list editing alongside direct image gestures",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the photo annotation structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no annotate content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Persist edits as drafts until committed",
+    "offline": "Label cached/unsynchronized annotate content and prevent claims of server completion.",
+    "success": "Persist edits as drafts until committed",
+    "interruption": "Restore the active annotate context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "map-ledger",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Map with ledger",
+  "entry": "Space and a synchronized ordered alternative show the same selection.",
+  "adaptation": "Choose one primary view at narrow widths and preserve selection when switching."
+}

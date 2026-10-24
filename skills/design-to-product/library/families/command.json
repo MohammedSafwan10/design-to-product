@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "command",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Command and inspection",
+  "idea": "Repeated expert operations have visible state and discoverable shortcuts.",
+  "avoid": "A command palette cannot be the only discovery mechanism."
+}

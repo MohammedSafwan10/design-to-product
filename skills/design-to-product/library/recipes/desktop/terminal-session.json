@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/terminal-session",
+  "title": "Terminal session",
+  "familyId": "command",
+  "surface": "desktop",
+  "idea": "Terminal session: Session identity and output keep command input grounded",
+  "audience": "People who need to operate shell within a desktop surface.",
+  "tasks": [
+    "operate-shell",
+    "connection"
+  ],
+  "worksWellWhen": [
+    "A real authorized terminal is required"
+  ],
+  "avoidWhen": [
+    "The UI would fake command execution"
+  ],
+  "distinctFrom": [
+    "Differs from a generic command layout through its operate shell priority and explicit commitment contract: Show exit status and keep destructive command review explicit"
+  ],
+  "density": "compact",
+  "navigation": "Terminal session keeps the current operate shell context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Session identity and output keep command input grounded",
+    "continuation": "Continue with the evidence and controls needed to operate shell; a real authorized terminal is required",
+    "priority": "Show exit status and keep destructive command review explicit"
+  },
+  "patternIds": [
+    "connection"
+  ],
+  "compositionIds": [
+    "command-results"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual operate shell context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Wrap or scroll output while preserving prompt context",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the terminal session structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no operate shell content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Show exit status and keep destructive command review explicit",
+    "offline": "Label cached/unsynchronized operate shell content and prevent claims of server completion.",
+    "success": "Show exit status and keep destructive command review explicit",
+    "interruption": "Restore the active operate shell context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

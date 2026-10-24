@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/artifact-demonstration",
+  "title": "Artifact demonstration",
+  "familyId": "artifact",
+  "surface": "marketing",
+  "idea": "Artifact demonstration: An enlarged genuine tag, label or tool anchors the first field; its relevant use sits beside it.",
+  "audience": "People who need to inspect artifact within a marketing surface.",
+  "tasks": [
+    "inspect-artifact",
+    "process-proof"
+  ],
+  "worksWellWhen": [
+    "The product has recognizable physical proportions that explain its use."
+  ],
+  "avoidWhen": [
+    "The object is only a generic mockup unrelated to the claim."
+  ],
+  "distinctFrom": [
+    "Differs from a generic artifact layout through its inspect artifact priority and explicit commitment contract: Show the selected real variation and its limitations before a purchase or contact action."
+  ],
+  "density": "spacious",
+  "navigation": "Artifact demonstration keeps the current inspect artifact context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "An enlarged genuine tag, label or tool anchors the first field; its relevant use sits beside it.",
+    "continuation": "Continue with the evidence and controls needed to inspect artifact; the product has recognizable physical proportions that explain its use.",
+    "priority": "Show the selected real variation and its limitations before a purchase or contact action."
+  },
+  "patternIds": [
+    "process-proof"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "condensed-display"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "artifact-isolate"
+    ],
+    "role": "Support the actual inspect artifact context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "On phones show the intact artifact before a short explanation, never squeeze its fine print.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the artifact demonstration structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect artifact content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Show the selected real variation and its limitations before a purchase or contact action.",
+    "offline": "Label cached/unsynchronized inspect artifact content and prevent claims of server completion.",
+    "success": "Show the selected real variation and its limitations before a purchase or contact action.",
+    "interruption": "Restore the active inspect artifact context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/marketing-artifact-demonstration-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=artifact-demonstration&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/marketing-artifact-demonstration-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=artifact-demonstration&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

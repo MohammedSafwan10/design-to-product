@@ -1,0 +1,2897 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "surfaces": [
+    "marketing",
+    "product-web",
+    "mobile",
+    "desktop",
+    "dashboard",
+    "game"
+  ],
+  "entries": [
+    {
+      "id": "marketing/artifact-demonstration",
+      "title": "Artifact demonstration",
+      "surface": "marketing",
+      "familyId": "artifact",
+      "tasks": [
+        "inspect-artifact",
+        "process-proof"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/artifact-demonstration.json"
+    },
+    {
+      "id": "marketing/community-practice",
+      "title": "Community practice",
+      "surface": "marketing",
+      "familyId": "conversation",
+      "tasks": [
+        "join-activity",
+        "onboarding"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/community-practice.json"
+    },
+    {
+      "id": "marketing/configurable-object",
+      "title": "Configurable object",
+      "surface": "marketing",
+      "familyId": "artifact",
+      "tasks": [
+        "configure-product",
+        "compare"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/configurable-object.json"
+    },
+    {
+      "id": "marketing/consultation-agenda",
+      "title": "Consultation agenda",
+      "surface": "marketing",
+      "familyId": "decision",
+      "tasks": [
+        "plan-consultation",
+        "book-review"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/consultation-agenda.json"
+    },
+    {
+      "id": "marketing/contextual-place",
+      "title": "Contextual place",
+      "surface": "marketing",
+      "familyId": "environment",
+      "tasks": [
+        "choose-place",
+        "map-route"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/contextual-place.json"
+    },
+    {
+      "id": "marketing/course-sample",
+      "title": "Course sample",
+      "surface": "marketing",
+      "familyId": "document",
+      "tasks": [
+        "inspect-course",
+        "media-preview"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/course-sample.json"
+    },
+    {
+      "id": "marketing/editorial-proof",
+      "title": "Editorial proof",
+      "surface": "marketing",
+      "familyId": "editorial",
+      "tasks": [
+        "assess-claim",
+        "claim-proof"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/editorial-proof.json"
+    },
+    {
+      "id": "marketing/event-program",
+      "title": "Event program",
+      "surface": "marketing",
+      "familyId": "timeline",
+      "tasks": [
+        "plan-attendance",
+        "event-ledger"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/event-program.json"
+    },
+    {
+      "id": "marketing/guided-comparison",
+      "title": "Guided comparison",
+      "surface": "marketing",
+      "familyId": "decision",
+      "tasks": [
+        "compare-options",
+        "compare"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/guided-comparison.json"
+    },
+    {
+      "id": "marketing/impact-account",
+      "title": "Impact account",
+      "surface": "marketing",
+      "familyId": "instrument",
+      "tasks": [
+        "assess-impact",
+        "data-monitor"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/impact-account.json"
+    },
+    {
+      "id": "marketing/interactive-output",
+      "title": "Interactive output",
+      "surface": "marketing",
+      "familyId": "workspace",
+      "tasks": [
+        "try-output",
+        "media-preview"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/interactive-output.json"
+    },
+    {
+      "id": "marketing/launch-brief",
+      "title": "Launch brief",
+      "surface": "marketing",
+      "familyId": "editorial",
+      "tasks": [
+        "understand-release",
+        "claim-proof"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/launch-brief.json"
+    },
+    {
+      "id": "marketing/local-directory",
+      "title": "Local directory",
+      "surface": "marketing",
+      "familyId": "spatial",
+      "tasks": [
+        "find-local-service",
+        "search-inspect"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/local-directory.json"
+    },
+    {
+      "id": "marketing/material-closeup",
+      "title": "Material closeup",
+      "surface": "marketing",
+      "familyId": "craft",
+      "tasks": [
+        "judge-material",
+        "process-proof"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/material-closeup.json"
+    },
+    {
+      "id": "marketing/open-method",
+      "title": "Open method",
+      "surface": "marketing",
+      "familyId": "command",
+      "tasks": [
+        "inspect-method",
+        "process-proof"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/open-method.json"
+    },
+    {
+      "id": "marketing/output-gallery",
+      "title": "Output gallery",
+      "surface": "marketing",
+      "familyId": "collection",
+      "tasks": [
+        "inspect-output",
+        "collection-select"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/output-gallery.json"
+    },
+    {
+      "id": "marketing/partner-handshake",
+      "title": "Partner handshake",
+      "surface": "marketing",
+      "familyId": "transaction",
+      "tasks": [
+        "explore-partnership",
+        "form-review"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/partner-handshake.json"
+    },
+    {
+      "id": "marketing/price-led-choice",
+      "title": "Price-led choice",
+      "surface": "marketing",
+      "familyId": "transaction",
+      "tasks": [
+        "review-price",
+        "purchase-review"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/price-led-choice.json"
+    },
+    {
+      "id": "marketing/process-cutaway",
+      "title": "Process cutaway",
+      "surface": "marketing",
+      "familyId": "process",
+      "tasks": [
+        "understand-mechanism",
+        "process-proof"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/process-cutaway.json"
+    },
+    {
+      "id": "marketing/public-utility",
+      "title": "Public utility",
+      "surface": "marketing",
+      "familyId": "signal",
+      "tasks": [
+        "use-public-action",
+        "contact"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/public-utility.json"
+    },
+    {
+      "id": "marketing/research-report",
+      "title": "Research report",
+      "surface": "marketing",
+      "familyId": "document",
+      "tasks": [
+        "read-findings",
+        "document-edit"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/research-report.json"
+    },
+    {
+      "id": "marketing/seasonal-menu",
+      "title": "Seasonal menu",
+      "surface": "marketing",
+      "familyId": "collection",
+      "tasks": [
+        "choose-offering",
+        "collection-select"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/seasonal-menu.json"
+    },
+    {
+      "id": "marketing/service-window",
+      "title": "Service window",
+      "surface": "marketing",
+      "familyId": "signal",
+      "tasks": [
+        "request-service",
+        "contact"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/service-window.json"
+    },
+    {
+      "id": "marketing/spatial-product-tour",
+      "title": "Spatial product tour",
+      "surface": "marketing",
+      "familyId": "spatial",
+      "tasks": [
+        "explore-product-regions",
+        "media-preview"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/spatial-product-tour.json"
+    },
+    {
+      "id": "marketing/story-with-receipts",
+      "title": "Story with receipts",
+      "surface": "marketing",
+      "familyId": "ledger",
+      "tasks": [
+        "trace-history",
+        "event-ledger"
+      ],
+      "density": "spacious",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/marketing/story-with-receipts.json"
+    },
+    {
+      "id": "product-web/account-recovery",
+      "title": "Account recovery",
+      "surface": "product-web",
+      "familyId": "signal",
+      "tasks": [
+        "recover-account",
+        "permissions"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/account-recovery.json"
+    },
+    {
+      "id": "product-web/approval-review",
+      "title": "Approval review",
+      "surface": "product-web",
+      "familyId": "decision",
+      "tasks": [
+        "review-approval",
+        "form-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/approval-review.json"
+    },
+    {
+      "id": "product-web/booking-decision",
+      "title": "Booking decision",
+      "surface": "product-web",
+      "familyId": "decision",
+      "tasks": [
+        "reserve-slot",
+        "book-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/booking-decision.json"
+    },
+    {
+      "id": "product-web/calendar-planner",
+      "title": "Calendar planner",
+      "surface": "product-web",
+      "familyId": "timeline",
+      "tasks": [
+        "plan-calendar",
+        "book-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/calendar-planner.json"
+    },
+    {
+      "id": "product-web/cart-review",
+      "title": "Cart review",
+      "surface": "product-web",
+      "familyId": "transaction",
+      "tasks": [
+        "review-cart",
+        "purchase-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/cart-review.json"
+    },
+    {
+      "id": "product-web/checkout-handoff",
+      "title": "Checkout handoff",
+      "surface": "product-web",
+      "familyId": "transaction",
+      "tasks": [
+        "complete-checkout",
+        "purchase-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/checkout-handoff.json"
+    },
+    {
+      "id": "product-web/collection-curator",
+      "title": "Collection curator",
+      "surface": "product-web",
+      "familyId": "collection",
+      "tasks": [
+        "curate-collection",
+        "collection-select"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/collection-curator.json"
+    },
+    {
+      "id": "product-web/comparison-workspace",
+      "title": "Comparison workspace",
+      "surface": "product-web",
+      "familyId": "collection",
+      "tasks": [
+        "compare-records",
+        "compare"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/comparison-workspace.json"
+    },
+    {
+      "id": "product-web/consent-review",
+      "title": "Consent review",
+      "surface": "product-web",
+      "familyId": "decision",
+      "tasks": [
+        "review-consent",
+        "permissions"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/consent-review.json"
+    },
+    {
+      "id": "product-web/conversation-inbox",
+      "title": "Conversation inbox",
+      "surface": "product-web",
+      "familyId": "conversation",
+      "tasks": [
+        "handle-conversations",
+        "conversation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/conversation-inbox.json"
+    },
+    {
+      "id": "product-web/document-collaboration",
+      "title": "Document collaboration",
+      "surface": "product-web",
+      "familyId": "document",
+      "tasks": [
+        "review-document",
+        "annotation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/document-collaboration.json"
+    },
+    {
+      "id": "product-web/export-center",
+      "title": "Export center",
+      "surface": "product-web",
+      "familyId": "ledger",
+      "tasks": [
+        "retrieve-export",
+        "report-export"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/export-center.json"
+    },
+    {
+      "id": "product-web/form-studio",
+      "title": "Form studio",
+      "surface": "product-web",
+      "familyId": "document",
+      "tasks": [
+        "build-form",
+        "form-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/form-studio.json"
+    },
+    {
+      "id": "product-web/incident-intake",
+      "title": "Incident intake",
+      "surface": "product-web",
+      "familyId": "signal",
+      "tasks": [
+        "report-incident",
+        "feedback"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/incident-intake.json"
+    },
+    {
+      "id": "product-web/notification-center",
+      "title": "Notification center",
+      "surface": "product-web",
+      "familyId": "ledger",
+      "tasks": [
+        "review-notifications",
+        "queue"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/notification-center.json"
+    },
+    {
+      "id": "product-web/permission-console",
+      "title": "Permission console",
+      "surface": "product-web",
+      "familyId": "signal",
+      "tasks": [
+        "review-permissions",
+        "permissions"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/permission-console.json"
+    },
+    {
+      "id": "product-web/report-builder",
+      "title": "Report builder",
+      "surface": "product-web",
+      "familyId": "workspace",
+      "tasks": [
+        "build-report",
+        "report-export"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/report-builder.json"
+    },
+    {
+      "id": "product-web/resource-activation",
+      "title": "Resource activation",
+      "surface": "product-web",
+      "familyId": "process",
+      "tasks": [
+        "activate-resource",
+        "permissions"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/resource-activation.json"
+    },
+    {
+      "id": "product-web/search-workbench",
+      "title": "Search workbench",
+      "surface": "product-web",
+      "familyId": "workspace",
+      "tasks": [
+        "find-record",
+        "search-inspect"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/search-workbench.json"
+    },
+    {
+      "id": "product-web/service-status",
+      "title": "Service status",
+      "surface": "product-web",
+      "familyId": "instrument",
+      "tasks": [
+        "inspect-service",
+        "connection"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/service-status.json"
+    },
+    {
+      "id": "product-web/subscription-change",
+      "title": "Subscription change",
+      "surface": "product-web",
+      "familyId": "transaction",
+      "tasks": [
+        "change-plan",
+        "subscription"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/subscription-change.json"
+    },
+    {
+      "id": "product-web/support-ticket",
+      "title": "Support ticket",
+      "surface": "product-web",
+      "familyId": "ledger",
+      "tasks": [
+        "manage-case",
+        "event-ledger"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/support-ticket.json"
+    },
+    {
+      "id": "product-web/translation-review",
+      "title": "Translation review",
+      "surface": "product-web",
+      "familyId": "document",
+      "tasks": [
+        "review-translation",
+        "annotation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/translation-review.json"
+    },
+    {
+      "id": "product-web/upload-review",
+      "title": "Upload review",
+      "surface": "product-web",
+      "familyId": "process",
+      "tasks": [
+        "review-upload",
+        "file-operation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/upload-review.json"
+    },
+    {
+      "id": "product-web/workflow-builder",
+      "title": "Workflow builder",
+      "surface": "product-web",
+      "familyId": "spatial",
+      "tasks": [
+        "configure-workflow",
+        "process-proof"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/product-web/workflow-builder.json"
+    },
+    {
+      "id": "mobile/appointment-pocket",
+      "title": "Appointment pocket",
+      "surface": "mobile",
+      "familyId": "decision",
+      "tasks": [
+        "book",
+        "book-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/appointment-pocket.json"
+    },
+    {
+      "id": "mobile/budget-envelope",
+      "title": "Budget envelope",
+      "surface": "mobile",
+      "familyId": "ledger",
+      "tasks": [
+        "allocate",
+        "compare"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/budget-envelope.json"
+    },
+    {
+      "id": "mobile/capture-review",
+      "title": "Capture review",
+      "surface": "mobile",
+      "familyId": "process",
+      "tasks": [
+        "capture",
+        "capture-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/capture-review.json"
+    },
+    {
+      "id": "mobile/collection-pocket",
+      "title": "Collection pocket",
+      "surface": "mobile",
+      "familyId": "collection",
+      "tasks": [
+        "collect",
+        "collection-select"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/collection-pocket.json"
+    },
+    {
+      "id": "mobile/commute-alert",
+      "title": "Commute alert",
+      "surface": "mobile",
+      "familyId": "signal",
+      "tasks": [
+        "check-disruption",
+        "data-monitor"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/commute-alert.json"
+    },
+    {
+      "id": "mobile/contact-readiness",
+      "title": "Contact readiness",
+      "surface": "mobile",
+      "familyId": "signal",
+      "tasks": [
+        "verify-readiness",
+        "connection"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/contact-readiness.json"
+    },
+    {
+      "id": "mobile/conversation-focus",
+      "title": "Conversation focus",
+      "surface": "mobile",
+      "familyId": "conversation",
+      "tasks": [
+        "message",
+        "conversation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/conversation-focus.json"
+    },
+    {
+      "id": "mobile/daily-brief",
+      "title": "Daily brief",
+      "surface": "mobile",
+      "familyId": "editorial",
+      "tasks": [
+        "plan-day",
+        "task-triage"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/daily-brief.json"
+    },
+    {
+      "id": "mobile/emergency-contact",
+      "title": "Urgent contact",
+      "surface": "mobile",
+      "familyId": "signal",
+      "tasks": [
+        "urgent-contact",
+        "contact"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/emergency-contact.json"
+    },
+    {
+      "id": "mobile/expense-capture",
+      "title": "Expense capture",
+      "surface": "mobile",
+      "familyId": "transaction",
+      "tasks": [
+        "record-expense",
+        "capture-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/expense-capture.json"
+    },
+    {
+      "id": "mobile/field-checklist",
+      "title": "Field checklist",
+      "surface": "mobile",
+      "familyId": "ledger",
+      "tasks": [
+        "inspect-field",
+        "task-triage"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/field-checklist.json"
+    },
+    {
+      "id": "mobile/habit-reflection",
+      "title": "Habit reflection",
+      "surface": "mobile",
+      "familyId": "editorial",
+      "tasks": [
+        "reflect",
+        "feedback"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/habit-reflection.json"
+    },
+    {
+      "id": "mobile/household-doorbell",
+      "title": "Household doorbell",
+      "surface": "mobile",
+      "familyId": "signal",
+      "tasks": [
+        "ring",
+        "contact"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/household-doorbell.json"
+    },
+    {
+      "id": "mobile/medication-ledger",
+      "title": "Medication ledger",
+      "surface": "mobile",
+      "familyId": "ledger",
+      "tasks": [
+        "record-event",
+        "event-ledger"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/medication-ledger.json"
+    },
+    {
+      "id": "mobile/onboarding-permission",
+      "title": "Permission onboarding",
+      "surface": "mobile",
+      "familyId": "decision",
+      "tasks": [
+        "grant-permission",
+        "permissions"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/onboarding-permission.json"
+    },
+    {
+      "id": "mobile/parcel-handoff",
+      "title": "Parcel handoff",
+      "surface": "mobile",
+      "familyId": "transaction",
+      "tasks": [
+        "handoff",
+        "form-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/parcel-handoff.json"
+    },
+    {
+      "id": "mobile/personal-settings",
+      "title": "Personal settings",
+      "surface": "mobile",
+      "familyId": "workspace",
+      "tasks": [
+        "configure",
+        "settings"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/personal-settings.json"
+    },
+    {
+      "id": "mobile/photo-annotation",
+      "title": "Photo annotation",
+      "surface": "mobile",
+      "familyId": "craft",
+      "tasks": [
+        "annotate",
+        "annotation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/photo-annotation.json"
+    },
+    {
+      "id": "mobile/quiet-timer",
+      "title": "Quiet timer",
+      "surface": "mobile",
+      "familyId": "ritual",
+      "tasks": [
+        "focus",
+        "timed-focus"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/quiet-timer.json"
+    },
+    {
+      "id": "mobile/reading-pocket",
+      "title": "Reading pocket",
+      "surface": "mobile",
+      "familyId": "document",
+      "tasks": [
+        "read",
+        "document-edit"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/reading-pocket.json"
+    },
+    {
+      "id": "mobile/route-companion",
+      "title": "Route companion",
+      "surface": "mobile",
+      "familyId": "spatial",
+      "tasks": [
+        "navigate",
+        "map-route"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/route-companion.json"
+    },
+    {
+      "id": "mobile/scan-actions",
+      "title": "Scan actions",
+      "surface": "mobile",
+      "familyId": "signal",
+      "tasks": [
+        "contact",
+        "contact"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/scan-actions.json"
+    },
+    {
+      "id": "mobile/service-ticket",
+      "title": "Service ticket",
+      "surface": "mobile",
+      "familyId": "process",
+      "tasks": [
+        "track-ticket",
+        "progression"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/service-ticket.json"
+    },
+    {
+      "id": "mobile/travel-documents",
+      "title": "Travel documents",
+      "surface": "mobile",
+      "familyId": "collection",
+      "tasks": [
+        "retrieve-document",
+        "file-operation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/travel-documents.json"
+    },
+    {
+      "id": "mobile/voice-note",
+      "title": "Voice note",
+      "surface": "mobile",
+      "familyId": "instrument",
+      "tasks": [
+        "record-audio",
+        "media-preview"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "touch",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/mobile/voice-note.json"
+    },
+    {
+      "id": "desktop/archive-browser",
+      "title": "Archive browser",
+      "surface": "desktop",
+      "familyId": "collection",
+      "tasks": [
+        "inspect-archive",
+        "file-operation"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/archive-browser.json"
+    },
+    {
+      "id": "desktop/asset-export",
+      "title": "Asset export",
+      "surface": "desktop",
+      "familyId": "transaction",
+      "tasks": [
+        "export",
+        "report-export"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/asset-export.json"
+    },
+    {
+      "id": "desktop/audio-mixer",
+      "title": "Audio mixer",
+      "surface": "desktop",
+      "familyId": "instrument",
+      "tasks": [
+        "mix-audio",
+        "media-preview"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/audio-mixer.json"
+    },
+    {
+      "id": "desktop/backup-console",
+      "title": "Backup console",
+      "surface": "desktop",
+      "familyId": "ledger",
+      "tasks": [
+        "backup",
+        "file-operation"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/backup-console.json"
+    },
+    {
+      "id": "desktop/batch-renamer",
+      "title": "Batch renamer",
+      "surface": "desktop",
+      "familyId": "transaction",
+      "tasks": [
+        "rename-batch",
+        "file-operation"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/batch-renamer.json"
+    },
+    {
+      "id": "desktop/calendar-planner",
+      "title": "Calendar planner",
+      "surface": "desktop",
+      "familyId": "spatial",
+      "tasks": [
+        "schedule",
+        "book-review"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/calendar-planner.json"
+    },
+    {
+      "id": "desktop/code-review",
+      "title": "Code review",
+      "surface": "desktop",
+      "familyId": "document",
+      "tasks": [
+        "review-code",
+        "annotation"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/code-review.json"
+    },
+    {
+      "id": "desktop/command-workbench",
+      "title": "Command workbench",
+      "surface": "desktop",
+      "familyId": "command",
+      "tasks": [
+        "run-command",
+        "search-inspect"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/command-workbench.json"
+    },
+    {
+      "id": "desktop/connection-inspector",
+      "title": "Connection inspector",
+      "surface": "desktop",
+      "familyId": "instrument",
+      "tasks": [
+        "inspect-connection",
+        "connection"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/connection-inspector.json"
+    },
+    {
+      "id": "desktop/document-studio",
+      "title": "Document studio",
+      "surface": "desktop",
+      "familyId": "document",
+      "tasks": [
+        "edit-document",
+        "document-edit"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/document-studio.json"
+    },
+    {
+      "id": "desktop/file-transfer",
+      "title": "File transfer",
+      "surface": "desktop",
+      "familyId": "transaction",
+      "tasks": [
+        "transfer-file",
+        "file-operation"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/file-transfer.json"
+    },
+    {
+      "id": "desktop/font-inspector",
+      "title": "Font inspector",
+      "surface": "desktop",
+      "familyId": "craft",
+      "tasks": [
+        "inspect-font",
+        "compare"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/font-inspector.json"
+    },
+    {
+      "id": "desktop/image-proofing",
+      "title": "Image proofing",
+      "surface": "desktop",
+      "familyId": "craft",
+      "tasks": [
+        "proof-image",
+        "media-preview"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/image-proofing.json"
+    },
+    {
+      "id": "desktop/local-search",
+      "title": "Local search",
+      "surface": "desktop",
+      "familyId": "command",
+      "tasks": [
+        "find-file",
+        "search-inspect"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/local-search.json"
+    },
+    {
+      "id": "desktop/mail-triage",
+      "title": "Mail triage",
+      "surface": "desktop",
+      "familyId": "ledger",
+      "tasks": [
+        "triage-mail",
+        "task-triage"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/mail-triage.json"
+    },
+    {
+      "id": "desktop/media-library",
+      "title": "Media library",
+      "surface": "desktop",
+      "familyId": "collection",
+      "tasks": [
+        "manage-media",
+        "media-preview"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/media-library.json"
+    },
+    {
+      "id": "desktop/package-manager",
+      "title": "Package manager",
+      "surface": "desktop",
+      "familyId": "ledger",
+      "tasks": [
+        "manage-package",
+        "queue"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/package-manager.json"
+    },
+    {
+      "id": "desktop/preferences-studio",
+      "title": "Preferences studio",
+      "surface": "desktop",
+      "familyId": "workspace",
+      "tasks": [
+        "configure-app",
+        "settings"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/preferences-studio.json"
+    },
+    {
+      "id": "desktop/remote-workspace",
+      "title": "Remote workspace",
+      "surface": "desktop",
+      "familyId": "workspace",
+      "tasks": [
+        "remote-edit",
+        "connection"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/remote-workspace.json"
+    },
+    {
+      "id": "desktop/research-notebook",
+      "title": "Research notebook",
+      "surface": "desktop",
+      "familyId": "document",
+      "tasks": [
+        "research",
+        "annotation"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/research-notebook.json"
+    },
+    {
+      "id": "desktop/spreadsheet-work",
+      "title": "Spreadsheet work",
+      "surface": "desktop",
+      "familyId": "ledger",
+      "tasks": [
+        "calculate",
+        "compare"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/spreadsheet-work.json"
+    },
+    {
+      "id": "desktop/terminal-session",
+      "title": "Terminal session",
+      "surface": "desktop",
+      "familyId": "command",
+      "tasks": [
+        "operate-shell",
+        "connection"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/terminal-session.json"
+    },
+    {
+      "id": "desktop/timeline-editor",
+      "title": "Timeline editor",
+      "surface": "desktop",
+      "familyId": "timeline",
+      "tasks": [
+        "edit-sequence",
+        "timeline-edit"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/timeline-editor.json"
+    },
+    {
+      "id": "desktop/version-history",
+      "title": "Version history",
+      "surface": "desktop",
+      "familyId": "timeline",
+      "tasks": [
+        "restore-version",
+        "event-ledger"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/version-history.json"
+    },
+    {
+      "id": "desktop/window-layout",
+      "title": "Window layout",
+      "surface": "desktop",
+      "familyId": "workspace",
+      "tasks": [
+        "arrange-workspace",
+        "settings"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/desktop/window-layout.json"
+    },
+    {
+      "id": "dashboard/abuse-review",
+      "title": "Abuse review",
+      "surface": "dashboard",
+      "familyId": "signal",
+      "tasks": [
+        "review-abuse",
+        "task-triage"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/abuse-review.json"
+    },
+    {
+      "id": "dashboard/activation-inventory",
+      "title": "Activation inventory",
+      "surface": "dashboard",
+      "familyId": "ledger",
+      "tasks": [
+        "assign-tag",
+        "inventory"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/activation-inventory.json"
+    },
+    {
+      "id": "dashboard/approval-desk",
+      "title": "Approval desk",
+      "surface": "dashboard",
+      "familyId": "decision",
+      "tasks": [
+        "approve",
+        "form-review"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/approval-desk.json"
+    },
+    {
+      "id": "dashboard/audit-trail",
+      "title": "Audit trail",
+      "surface": "dashboard",
+      "familyId": "timeline",
+      "tasks": [
+        "audit",
+        "event-ledger"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/audit-trail.json"
+    },
+    {
+      "id": "dashboard/capacity-planner",
+      "title": "Capacity planner",
+      "surface": "dashboard",
+      "familyId": "decision",
+      "tasks": [
+        "allocate-capacity",
+        "capacity"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/capacity-planner.json"
+    },
+    {
+      "id": "dashboard/cohort-explorer",
+      "title": "Cohort explorer",
+      "surface": "dashboard",
+      "familyId": "instrument",
+      "tasks": [
+        "analyze-retention",
+        "data-monitor"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/cohort-explorer.json"
+    },
+    {
+      "id": "dashboard/comparison-table",
+      "title": "Comparison table",
+      "surface": "dashboard",
+      "familyId": "ledger",
+      "tasks": [
+        "compare-performance",
+        "compare"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/comparison-table.json"
+    },
+    {
+      "id": "dashboard/cost-observatory",
+      "title": "Cost observatory",
+      "surface": "dashboard",
+      "familyId": "instrument",
+      "tasks": [
+        "review-cost",
+        "data-monitor"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/cost-observatory.json"
+    },
+    {
+      "id": "dashboard/data-quality",
+      "title": "Data quality",
+      "surface": "dashboard",
+      "familyId": "signal",
+      "tasks": [
+        "repair-data",
+        "task-triage"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/data-quality.json"
+    },
+    {
+      "id": "dashboard/exception-triage",
+      "title": "Exception triage",
+      "surface": "dashboard",
+      "familyId": "signal",
+      "tasks": [
+        "resolve-exception",
+        "task-triage"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/exception-triage.json"
+    },
+    {
+      "id": "dashboard/experiment-readout",
+      "title": "Experiment readout",
+      "surface": "dashboard",
+      "familyId": "editorial",
+      "tasks": [
+        "review-experiment",
+        "compare"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/experiment-readout.json"
+    },
+    {
+      "id": "dashboard/finance-reconciliation",
+      "title": "Finance reconciliation",
+      "surface": "dashboard",
+      "familyId": "transaction",
+      "tasks": [
+        "reconcile",
+        "compare"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/finance-reconciliation.json"
+    },
+    {
+      "id": "dashboard/incident-room",
+      "title": "Incident room",
+      "surface": "dashboard",
+      "familyId": "signal",
+      "tasks": [
+        "coordinate-incident",
+        "progression"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/incident-room.json"
+    },
+    {
+      "id": "dashboard/inventory-health",
+      "title": "Inventory health",
+      "surface": "dashboard",
+      "familyId": "ledger",
+      "tasks": [
+        "replenish",
+        "inventory"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/inventory-health.json"
+    },
+    {
+      "id": "dashboard/operations-board",
+      "title": "Operations board",
+      "surface": "dashboard",
+      "familyId": "workspace",
+      "tasks": [
+        "coordinate",
+        "queue"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/operations-board.json"
+    },
+    {
+      "id": "dashboard/order-fulfilment",
+      "title": "Order fulfilment",
+      "surface": "dashboard",
+      "familyId": "transaction",
+      "tasks": [
+        "fulfil",
+        "queue"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/order-fulfilment.json"
+    },
+    {
+      "id": "dashboard/partner-allocation",
+      "title": "Partner allocation",
+      "surface": "dashboard",
+      "familyId": "ledger",
+      "tasks": [
+        "allocate-inventory",
+        "capacity"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/partner-allocation.json"
+    },
+    {
+      "id": "dashboard/query-explorer",
+      "title": "Query explorer",
+      "surface": "dashboard",
+      "familyId": "command",
+      "tasks": [
+        "query",
+        "search-inspect"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/query-explorer.json"
+    },
+    {
+      "id": "dashboard/report-builder",
+      "title": "Report builder",
+      "surface": "dashboard",
+      "familyId": "document",
+      "tasks": [
+        "build-report",
+        "report-export"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/report-builder.json"
+    },
+    {
+      "id": "dashboard/resource-map",
+      "title": "Resource map",
+      "surface": "dashboard",
+      "familyId": "spatial",
+      "tasks": [
+        "locate-resource",
+        "map-route"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/resource-map.json"
+    },
+    {
+      "id": "dashboard/role-audit",
+      "title": "Role audit",
+      "surface": "dashboard",
+      "familyId": "workspace",
+      "tasks": [
+        "review-access",
+        "permissions"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/role-audit.json"
+    },
+    {
+      "id": "dashboard/service-health",
+      "title": "Service health",
+      "surface": "dashboard",
+      "familyId": "instrument",
+      "tasks": [
+        "monitor-service",
+        "data-monitor"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/service-health.json"
+    },
+    {
+      "id": "dashboard/subscription-console",
+      "title": "Subscription console",
+      "surface": "dashboard",
+      "familyId": "ledger",
+      "tasks": [
+        "manage-plan",
+        "subscription"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/subscription-console.json"
+    },
+    {
+      "id": "dashboard/support-inbox",
+      "title": "Support inbox",
+      "surface": "dashboard",
+      "familyId": "conversation",
+      "tasks": [
+        "support",
+        "task-triage"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/support-inbox.json"
+    },
+    {
+      "id": "dashboard/workspace-onboarding",
+      "title": "Workspace onboarding",
+      "surface": "dashboard",
+      "familyId": "process",
+      "tasks": [
+        "setup-workspace",
+        "onboarding"
+      ],
+      "density": "compact",
+      "inputModes": [
+        "keyboard",
+        "pointer",
+        "assistive"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/dashboard/workspace-onboarding.json"
+    },
+    {
+      "id": "game/accessibility-studio",
+      "title": "Accessibility studio",
+      "surface": "game",
+      "familyId": "workspace",
+      "tasks": [
+        "configure-accessibility",
+        "accessibility"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/accessibility-studio.json"
+    },
+    {
+      "id": "game/controller-remap",
+      "title": "Controller remap",
+      "surface": "game",
+      "familyId": "instrument",
+      "tasks": [
+        "remap-input",
+        "settings"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/controller-remap.json"
+    },
+    {
+      "id": "game/cooperative-lobby",
+      "title": "Cooperative lobby",
+      "surface": "game",
+      "familyId": "workspace",
+      "tasks": [
+        "join-session",
+        "connection"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/cooperative-lobby.json"
+    },
+    {
+      "id": "game/crafting-recipe",
+      "title": "Crafting recipe",
+      "surface": "game",
+      "familyId": "craft",
+      "tasks": [
+        "craft",
+        "inventory"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/crafting-recipe.json"
+    },
+    {
+      "id": "game/focus-hud",
+      "title": "Focus HUD",
+      "surface": "game",
+      "familyId": "signal",
+      "tasks": [
+        "play",
+        "hud"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/focus-hud.json"
+    },
+    {
+      "id": "game/inventory-bench",
+      "title": "Inventory bench",
+      "surface": "game",
+      "familyId": "craft",
+      "tasks": [
+        "equip",
+        "inventory"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/inventory-bench.json"
+    },
+    {
+      "id": "game/matchmaking-state",
+      "title": "Matchmaking state",
+      "surface": "game",
+      "familyId": "signal",
+      "tasks": [
+        "find-match",
+        "connection"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/matchmaking-state.json"
+    },
+    {
+      "id": "game/mission-brief",
+      "title": "Mission brief",
+      "surface": "game",
+      "familyId": "editorial",
+      "tasks": [
+        "understand-mission",
+        "progression"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/mission-brief.json"
+    },
+    {
+      "id": "game/onboarding-play",
+      "title": "Onboarding play",
+      "surface": "game",
+      "familyId": "process",
+      "tasks": [
+        "learn-input",
+        "onboarding"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/onboarding-play.json"
+    },
+    {
+      "id": "game/pause-controls",
+      "title": "Pause controls",
+      "surface": "game",
+      "familyId": "workspace",
+      "tasks": [
+        "pause",
+        "settings"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/pause-controls.json"
+    },
+    {
+      "id": "game/photo-mode",
+      "title": "Photo mode",
+      "surface": "game",
+      "familyId": "craft",
+      "tasks": [
+        "capture-scene",
+        "media-preview"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/photo-mode.json"
+    },
+    {
+      "id": "game/puzzle-hints",
+      "title": "Puzzle hints",
+      "surface": "game",
+      "familyId": "decision",
+      "tasks": [
+        "solve-puzzle",
+        "feedback"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/puzzle-hints.json"
+    },
+    {
+      "id": "game/quest-journal",
+      "title": "Quest journal",
+      "surface": "game",
+      "familyId": "document",
+      "tasks": [
+        "track-quest",
+        "progression"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/quest-journal.json"
+    },
+    {
+      "id": "game/racing-instrument",
+      "title": "Racing instrument",
+      "surface": "game",
+      "familyId": "instrument",
+      "tasks": [
+        "race",
+        "hud"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/racing-instrument.json"
+    },
+    {
+      "id": "game/results-recap",
+      "title": "Results recap",
+      "surface": "game",
+      "familyId": "editorial",
+      "tasks": [
+        "review-run",
+        "results"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/results-recap.json"
+    },
+    {
+      "id": "game/reward-review",
+      "title": "Reward review",
+      "surface": "game",
+      "familyId": "transaction",
+      "tasks": [
+        "claim-reward",
+        "results"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/reward-review.json"
+    },
+    {
+      "id": "game/rhythm-feedback",
+      "title": "Rhythm feedback",
+      "surface": "game",
+      "familyId": "instrument",
+      "tasks": [
+        "play-rhythm",
+        "hud"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/rhythm-feedback.json"
+    },
+    {
+      "id": "game/route-map",
+      "title": "Route map",
+      "surface": "game",
+      "familyId": "expedition",
+      "tasks": [
+        "choose-route",
+        "map-route"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/route-map.json"
+    },
+    {
+      "id": "game/run-preparation",
+      "title": "Run preparation",
+      "surface": "game",
+      "familyId": "decision",
+      "tasks": [
+        "prepare-run",
+        "form-review"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/run-preparation.json"
+    },
+    {
+      "id": "game/save-select",
+      "title": "Save select",
+      "surface": "game",
+      "familyId": "timeline",
+      "tasks": [
+        "load-game",
+        "file-operation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/save-select.json"
+    },
+    {
+      "id": "game/skill-tree",
+      "title": "Skill tree",
+      "surface": "game",
+      "familyId": "spatial",
+      "tasks": [
+        "unlock-skill",
+        "progression"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/skill-tree.json"
+    },
+    {
+      "id": "game/social-invitation",
+      "title": "Social invitation",
+      "surface": "game",
+      "familyId": "conversation",
+      "tasks": [
+        "accept-invite",
+        "permissions"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/social-invitation.json"
+    },
+    {
+      "id": "game/strategy-ledger",
+      "title": "Strategy ledger",
+      "surface": "game",
+      "familyId": "ledger",
+      "tasks": [
+        "manage-economy",
+        "compare"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/strategy-ledger.json"
+    },
+    {
+      "id": "game/tactical-command",
+      "title": "Tactical command",
+      "surface": "game",
+      "familyId": "tactical",
+      "tasks": [
+        "plan-turn",
+        "tactical"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/tactical-command.json"
+    },
+    {
+      "id": "game/world-dialogue",
+      "title": "World dialogue",
+      "surface": "game",
+      "familyId": "conversation",
+      "tasks": [
+        "choose-dialogue",
+        "conversation"
+      ],
+      "density": "balanced",
+      "inputModes": [
+        "controller",
+        "keyboard",
+        "touch"
+      ],
+      "requiredAssets": [],
+      "reviewStatus": "draft",
+      "path": "recipes/game/world-dialogue.json"
+    }
+  ],
+  "modules": {
+    "families": {
+      "artifact": "families/artifact.json",
+      "collection": "families/collection.json",
+      "command": "families/command.json",
+      "conversation": "families/conversation.json",
+      "craft": "families/craft.json",
+      "decision": "families/decision.json",
+      "document": "families/document.json",
+      "editorial": "families/editorial.json",
+      "environment": "families/environment.json",
+      "expedition": "families/expedition.json",
+      "instrument": "families/instrument.json",
+      "ledger": "families/ledger.json",
+      "process": "families/process.json",
+      "ritual": "families/ritual.json",
+      "signal": "families/signal.json",
+      "spatial": "families/spatial.json",
+      "tactical": "families/tactical.json",
+      "timeline": "families/timeline.json",
+      "transaction": "families/transaction.json",
+      "workspace": "families/workspace.json"
+    },
+    "patterns": {
+      "accessibility": "patterns/accessibility.json",
+      "annotation": "patterns/annotation.json",
+      "book-review": "patterns/book-review.json",
+      "capacity": "patterns/capacity.json",
+      "capture-review": "patterns/capture-review.json",
+      "claim-proof": "patterns/claim-proof.json",
+      "collection-select": "patterns/collection-select.json",
+      "compare": "patterns/compare.json",
+      "connection": "patterns/connection.json",
+      "contact": "patterns/contact.json",
+      "conversation": "patterns/conversation.json",
+      "data-monitor": "patterns/data-monitor.json",
+      "document-edit": "patterns/document-edit.json",
+      "event-ledger": "patterns/event-ledger.json",
+      "feedback": "patterns/feedback.json",
+      "file-operation": "patterns/file-operation.json",
+      "form-review": "patterns/form-review.json",
+      "hud": "patterns/hud.json",
+      "inventory": "patterns/inventory.json",
+      "map-route": "patterns/map-route.json",
+      "media-preview": "patterns/media-preview.json",
+      "onboarding": "patterns/onboarding.json",
+      "permissions": "patterns/permissions.json",
+      "process-proof": "patterns/process-proof.json",
+      "progression": "patterns/progression.json",
+      "purchase-review": "patterns/purchase-review.json",
+      "queue": "patterns/queue.json",
+      "report-export": "patterns/report-export.json",
+      "results": "patterns/results.json",
+      "search-inspect": "patterns/search-inspect.json",
+      "settings": "patterns/settings.json",
+      "subscription": "patterns/subscription.json",
+      "tactical": "patterns/tactical.json",
+      "task-triage": "patterns/task-triage.json",
+      "timed-focus": "patterns/timed-focus.json",
+      "timeline-edit": "patterns/timeline-edit.json"
+    },
+    "compositions": {
+      "artifact-stage": "compositions/artifact-stage.json",
+      "claim-evidence": "compositions/claim-evidence.json",
+      "collection-field": "compositions/collection-field.json",
+      "command-results": "compositions/command-results.json",
+      "context-window": "compositions/context-window.json",
+      "conversation-context": "compositions/conversation-context.json",
+      "document-margin": "compositions/document-margin.json",
+      "instrument-controls": "compositions/instrument-controls.json",
+      "ledger-detail": "compositions/ledger-detail.json",
+      "map-ledger": "compositions/map-ledger.json",
+      "question-result": "compositions/question-result.json",
+      "review-commit": "compositions/review-commit.json",
+      "ritual-focus": "compositions/ritual-focus.json",
+      "sequence-reveal": "compositions/sequence-reveal.json",
+      "state-action": "compositions/state-action.json",
+      "time-tracks": "compositions/time-tracks.json",
+      "work-detail": "compositions/work-detail.json",
+      "world-overlay": "compositions/world-overlay.json"
+    },
+    "typography": {
+      "condensed-display": "typography/condensed-display.json",
+      "data-grotesk": "typography/data-grotesk.json",
+      "editorial-serif": "typography/editorial-serif.json",
+      "multiscript-sans": "typography/multiscript-sans.json",
+      "reading-text": "typography/reading-text.json",
+      "system-humanist": "typography/system-humanist.json"
+    },
+    "palettes": {
+      "clay-slate": "palettes/clay-slate.json",
+      "cobalt-white": "palettes/cobalt-white.json",
+      "forest-stone": "palettes/forest-stone.json",
+      "graphite-mint": "palettes/graphite-mint.json",
+      "midnight-ice": "palettes/midnight-ice.json",
+      "ochre-ink": "palettes/ochre-ink.json",
+      "teal-paper": "palettes/teal-paper.json",
+      "wine-porcelain": "palettes/wine-porcelain.json"
+    },
+    "imagery": {
+      "artifact-isolate": "imagery/artifact-isolate.json",
+      "context-photography": "imagery/context-photography.json",
+      "material-study": "imagery/material-study.json",
+      "native-content": "imagery/native-content.json",
+      "output-crop": "imagery/output-crop.json",
+      "process-diagram": "imagery/process-diagram.json"
+    }
+  }
+}

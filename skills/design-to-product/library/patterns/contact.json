@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "contact",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Contact action",
+  "contract": "Explain permitted recipient/action without exposing private details.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

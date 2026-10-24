@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/media-library",
+  "title": "Media library",
+  "familyId": "collection",
+  "surface": "desktop",
+  "idea": "Media library: Asset grid and inspector share selected media metadata",
+  "audience": "People who need to manage media within a desktop surface.",
+  "tasks": [
+    "manage-media",
+    "media-preview"
+  ],
+  "worksWellWhen": [
+    "Users curate many related assets"
+  ],
+  "avoidWhen": [
+    "Assets have no meaningful visual content"
+  ],
+  "distinctFrom": [
+    "Differs from a generic collection layout through its manage media priority and explicit commitment contract: Previewing never mutates the source asset"
+  ],
+  "density": "compact",
+  "navigation": "Media library keeps the current manage media context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Asset grid and inspector share selected media metadata",
+    "continuation": "Continue with the evidence and controls needed to manage media; users curate many related assets",
+    "priority": "Previewing never mutates the source asset"
+  },
+  "patternIds": [
+    "media-preview"
+  ],
+  "compositionIds": [
+    "collection-field"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "output-crop"
+    ],
+    "role": "Support the actual manage media context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Switch to list view without losing selection",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the media library structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no manage media content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Previewing never mutates the source asset",
+    "offline": "Label cached/unsynchronized manage media content and prevent claims of server completion.",
+    "success": "Previewing never mutates the source asset",
+    "interruption": "Restore the active manage media context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/desktop-media-library-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=media-library&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/desktop-media-library-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=media-library&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

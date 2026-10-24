@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/abuse-review",
+  "title": "Abuse review",
+  "familyId": "signal",
+  "surface": "dashboard",
+  "idea": "Abuse review: Reports and minimal evidence support a permissioned moderation decision",
+  "audience": "People who need to review abuse within a dashboard surface.",
+  "tasks": [
+    "review-abuse",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "Operators need justified limited-access decisions"
+  ],
+  "avoidWhen": [
+    "Raw personal data is displayed by default"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its review abuse priority and explicit commitment contract: Restrictive actions are auditable and support authorized appeal"
+  ],
+  "density": "compact",
+  "navigation": "Abuse review keeps the current review abuse context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Reports and minimal evidence support a permissioned moderation decision",
+    "continuation": "Continue with the evidence and controls needed to review abuse; operators need justified limited-access decisions",
+    "priority": "Restrictive actions are auditable and support authorized appeal"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review abuse context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Focus allegation evidence and action scope at narrow widths",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the abuse review structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review abuse content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Restrictive actions are auditable and support authorized appeal",
+    "offline": "Label cached/unsynchronized review abuse content and prevent claims of server completion.",
+    "success": "Restrictive actions are auditable and support authorized appeal",
+    "interruption": "Restore the active review abuse context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

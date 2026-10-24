@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "data-grotesk",
+  "kind": "typography",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Data grotesk",
+  "faces": {
+    "display": "system-ui, sans-serif",
+    "body": "system-ui, sans-serif"
+  },
+  "license": "No font files bundled; system families vary.",
+  "scriptCoverage": "Tabular numbers only where alignment helps. Test minus signs, fractions, currencies and locale decimals.",
+  "fit": "Dense comparison, tables and measured values.",
+  "roles": {
+    "display": {
+      "minPx": 26,
+      "maxPx": 42,
+      "lineHeight": 1.1
+    },
+    "heading": {
+      "minPx": 20,
+      "maxPx": 28,
+      "lineHeight": 1.2
+    },
+    "body": {
+      "minPx": 14,
+      "maxPx": 17,
+      "lineHeight": 1.5
+    },
+    "label": {
+      "minPx": 13,
+      "maxPx": 16,
+      "lineHeight": 1.4
+    }
+  },
+  "rules": [
+    "Treat sizes as candidate browser baselines, not native point/sp prescriptions.",
+    "Scale and reflow content at enlarged text; do not truncate essential action labels.",
+    "Keep native framework/platform text scaling enabled.",
+    "Use font-display behavior and subset budgets appropriate to the actual chosen files."
+  ],
+  "metricsReview": "Candidate role sizes and line-height ratios; measure x-height, fallback, actual glyph coverage and enlarged text in the target runtime before adoption.",
+  "numericRules": [
+    "Use tabular numerals for aligned quantities; retain signs and units.",
+    "Use proportional numerals for ordinary prose."
+  ]
+}

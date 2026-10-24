@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "decision",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Guided decision",
+  "idea": "Make the current consequential choice and its tradeoffs explicit.",
+  "avoid": "Do not force a wizard when one clear control is enough."
+}

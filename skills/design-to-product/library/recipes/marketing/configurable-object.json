@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/configurable-object",
+  "title": "Configurable object",
+  "familyId": "artifact",
+  "surface": "marketing",
+  "idea": "Configurable object: A consistent object view accompanies a short variation selector and explicit consequences for size, compatibility or finish.",
+  "audience": "People who need to configure product within a marketing surface.",
+  "tasks": [
+    "configure-product",
+    "compare"
+  ],
+  "worksWellWhen": [
+    "A small supported variation set materially changes fit."
+  ],
+  "avoidWhen": [
+    "Too many unsupported combinations would imply a custom manufacturing promise."
+  ],
+  "distinctFrom": [
+    "Differs from a generic artifact layout through its configure product priority and explicit commitment contract: Show only supported combinations and distinguish visualization from exact finish proof."
+  ],
+  "density": "spacious",
+  "navigation": "Configurable object keeps the current configure product context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A consistent object view accompanies a short variation selector and explicit consequences for size, compatibility or finish.",
+    "continuation": "Continue with the evidence and controls needed to configure product; a small supported variation set materially changes fit.",
+    "priority": "Show only supported combinations and distinguish visualization from exact finish proof."
+  },
+  "patternIds": [
+    "compare"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "condensed-display"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "artifact-isolate"
+    ],
+    "role": "Support the actual configure product context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep selected attributes visible beneath the object and group options by decision.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the configurable object structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no configure product content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Show only supported combinations and distinguish visualization from exact finish proof.",
+    "offline": "Label cached/unsynchronized configure product content and prevent claims of server completion.",
+    "success": "Show only supported combinations and distinguish visualization from exact finish proof.",
+    "interruption": "Restore the active configure product context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

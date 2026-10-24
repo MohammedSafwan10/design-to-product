@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "expedition",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Progress through territory",
+  "idea": "A route, next destination and available resources organize decisions.",
+  "avoid": "Never confuse fiction with device/network state."
+}

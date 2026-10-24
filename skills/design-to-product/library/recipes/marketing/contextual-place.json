@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/contextual-place",
+  "title": "Contextual place",
+  "familyId": "environment",
+  "surface": "marketing",
+  "idea": "Contextual place: A real setting occupies the main field, with location, access and next action in a grounded side column.",
+  "audience": "People who need to choose place within a marketing surface.",
+  "tasks": [
+    "choose-place",
+    "map-route"
+  ],
+  "worksWellWhen": [
+    "Place and surroundings materially change the visitor decision."
+  ],
+  "avoidWhen": [
+    "Stock scenery would impersonate the actual venue."
+  ],
+  "distinctFrom": [
+    "Differs from a generic environment layout through its choose place priority and explicit commitment contract: Confirm the location and real access restrictions before requesting directions or booking."
+  ],
+  "density": "spacious",
+  "navigation": "Contextual place keeps the current choose place context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A real setting occupies the main field, with location, access and next action in a grounded side column.",
+    "continuation": "Continue with the evidence and controls needed to choose place; place and surroundings materially change the visitor decision.",
+    "priority": "Confirm the location and real access restrictions before requesting directions or booking."
+  },
+  "patternIds": [
+    "map-route"
+  ],
+  "compositionIds": [
+    "context-window"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "forest-stone"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "context-photography"
+    ],
+    "role": "Support the actual choose place context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Recrop around the meaningful location and bring access details above secondary images.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the contextual place structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no choose place content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Confirm the location and real access restrictions before requesting directions or booking.",
+    "offline": "Label cached/unsynchronized choose place content and prevent claims of server completion.",
+    "success": "Confirm the location and real access restrictions before requesting directions or booking.",
+    "interruption": "Restore the active choose place context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/marketing-contextual-place-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=contextual-place&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/marketing-contextual-place-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=marketing&screen=contextual-place&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

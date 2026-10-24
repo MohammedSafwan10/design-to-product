@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/cart-review",
+  "title": "Cart review",
+  "familyId": "transaction",
+  "surface": "product-web",
+  "idea": "Cart review: Editable items and fulfillment constraints lead directly into a complete, clearly scoped total.",
+  "audience": "People who need to review cart within a product-web surface.",
+  "tasks": [
+    "review-cart",
+    "purchase-review"
+  ],
+  "worksWellWhen": [
+    "People need to correct items and understand the commitment."
+  ],
+  "avoidWhen": [
+    "Costs or fulfillment conditions are hidden until the last action."
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its review cart priority and explicit commitment contract: Do not mark payment complete from a redirect or optimistic client state."
+  ],
+  "density": "balanced",
+  "navigation": "Cart review keeps the current review cart context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Editable items and fulfillment constraints lead directly into a complete, clearly scoped total.",
+    "continuation": "Continue with the evidence and controls needed to review cart; people need to correct items and understand the commitment.",
+    "priority": "Do not mark payment complete from a redirect or optimistic client state."
+  },
+  "patternIds": [
+    "purchase-review"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review cart context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Stack item review before totals and keep destructive removal recoverable.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the cart review structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review cart content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Do not mark payment complete from a redirect or optimistic client state.",
+    "offline": "Label cached/unsynchronized review cart content and prevent claims of server completion.",
+    "success": "Do not mark payment complete from a redirect or optimistic client state.",
+    "interruption": "Restore the active review cart context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/product-web-cart-review-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=cart-review&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/product-web-cart-review-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=product-web&screen=cart-review&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

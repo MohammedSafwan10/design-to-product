@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/workspace-onboarding",
+  "title": "Workspace onboarding",
+  "familyId": "process",
+  "surface": "dashboard",
+  "idea": "Workspace onboarding: A readiness checklist separates configured tested and enabled capabilities",
+  "audience": "People who need to setup workspace within a dashboard surface.",
+  "tasks": [
+    "setup-workspace",
+    "onboarding"
+  ],
+  "worksWellWhen": [
+    "Admin setup spans real dependencies"
+  ],
+  "avoidWhen": [
+    "Completion is a decorative percentage"
+  ],
+  "distinctFrom": [
+    "Differs from a generic process layout through its setup workspace priority and explicit commitment contract: A configured integration is not verified until its check succeeds"
+  ],
+  "density": "compact",
+  "navigation": "Workspace onboarding keeps the current setup workspace context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A readiness checklist separates configured tested and enabled capabilities",
+    "continuation": "Continue with the evidence and controls needed to setup workspace; admin setup spans real dependencies",
+    "priority": "A configured integration is not verified until its check succeeds"
+  },
+  "patternIds": [
+    "onboarding"
+  ],
+  "compositionIds": [
+    "sequence-reveal"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "process-diagram"
+    ],
+    "role": "Support the actual setup workspace context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize blocked dependencies with an explicit next action",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the workspace onboarding structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no setup workspace content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; A configured integration is not verified until its check succeeds",
+    "offline": "Label cached/unsynchronized setup workspace content and prevent claims of server completion.",
+    "success": "A configured integration is not verified until its check succeeds",
+    "interruption": "Restore the active setup workspace context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

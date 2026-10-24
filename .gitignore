@@ -5,3 +5,12 @@ __pycache__/
 .venv/
 .env
 .env.*
+!.env.example
+!.env.sample
+.design-to-product/
+node_modules/
+/.cache/
+/coverage/
+/dist/
+*.log
+*.tsbuildinfo

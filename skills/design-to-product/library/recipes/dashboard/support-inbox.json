@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/support-inbox",
+  "title": "Support inbox",
+  "familyId": "conversation",
+  "surface": "dashboard",
+  "idea": "Support inbox: Assigned conversations retain customer context and pending response",
+  "audience": "People who need to support within a dashboard surface.",
+  "tasks": [
+    "support",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "Teams manage messages with ownership"
+  ],
+  "avoidWhen": [
+    "There is no permissioned shared inbox"
+  ],
+  "distinctFrom": [
+    "Differs from a generic conversation layout through its support priority and explicit commitment contract: Draft sent delivered and resolved stay distinct"
+  ],
+  "density": "compact",
+  "navigation": "Support inbox keeps the current support context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Assigned conversations retain customer context and pending response",
+    "continuation": "Continue with the evidence and controls needed to support; teams manage messages with ownership",
+    "priority": "Draft sent delivered and resolved stay distinct"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "conversation-context"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual support context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Preserve conversation identity when pane becomes route",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the support inbox structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no support content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Draft sent delivered and resolved stay distinct",
+    "offline": "Label cached/unsynchronized support content and prevent claims of server completion.",
+    "success": "Draft sent delivered and resolved stay distinct",
+    "interruption": "Restore the active support context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

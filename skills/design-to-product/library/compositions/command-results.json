@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "command-results",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Command and results",
+  "entry": "Discoverable operations sit alongside inspectable actual output.",
+  "adaptation": "Keep operation status and cancellation visible if results scroll."
+}

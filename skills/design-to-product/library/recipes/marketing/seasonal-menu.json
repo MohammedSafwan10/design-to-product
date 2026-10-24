@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/seasonal-menu",
+  "title": "Seasonal menu",
+  "familyId": "collection",
+  "surface": "marketing",
+  "idea": "Seasonal menu: A real rotating selection uses item names, availability and complete prices as the visual hierarchy.",
+  "audience": "People who need to choose offering within a marketing surface.",
+  "tasks": [
+    "choose-offering",
+    "collection-select"
+  ],
+  "worksWellWhen": [
+    "Current offerings change by season or batch."
+  ],
+  "avoidWhen": [
+    "Invented stock or scarcity would mislead visitors."
+  ],
+  "distinctFrom": [
+    "Differs from a generic collection layout through its choose offering priority and explicit commitment contract: Availability comes from actual data; never simulate remaining stock."
+  ],
+  "density": "spacious",
+  "navigation": "Seasonal menu keeps the current choose offering context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A real rotating selection uses item names, availability and complete prices as the visual hierarchy.",
+    "continuation": "Continue with the evidence and controls needed to choose offering; current offerings change by season or batch.",
+    "priority": "Availability comes from actual data; never simulate remaining stock."
+  },
+  "patternIds": [
+    "collection-select"
+  ],
+  "compositionIds": [
+    "collection-field"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "cobalt-white"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "output-crop"
+    ],
+    "role": "Support the actual choose offering context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Render readable item rows and explicit sold-out alternatives.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the seasonal menu structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no choose offering content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Availability comes from actual data; never simulate remaining stock.",
+    "offline": "Label cached/unsynchronized choose offering content and prevent claims of server completion.",
+    "success": "Availability comes from actual data; never simulate remaining stock.",
+    "interruption": "Restore the active choose offering context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/checkout-handoff",
+  "title": "Checkout handoff",
+  "familyId": "transaction",
+  "surface": "product-web",
+  "idea": "Checkout handoff: Order identity and amount remain visible while a payment-provider handoff and return state are explained.",
+  "audience": "People who need to complete checkout within a product-web surface.",
+  "tasks": [
+    "complete-checkout",
+    "purchase-review"
+  ],
+  "worksWellWhen": [
+    "Payment occurs in a trusted external or embedded provider flow."
+  ],
+  "avoidWhen": [
+    "The page can grant entitlements from frontend claims."
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its complete checkout priority and explicit commitment contract: Only verified backend fulfillment may grant purchased access."
+  ],
+  "density": "balanced",
+  "navigation": "Checkout handoff keeps the current complete checkout context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Order identity and amount remain visible while a payment-provider handoff and return state are explained.",
+    "continuation": "Continue with the evidence and controls needed to complete checkout; payment occurs in a trusted external or embedded provider flow.",
+    "priority": "Only verified backend fulfillment may grant purchased access."
+  },
+  "patternIds": [
+    "purchase-review"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual complete checkout context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Preserve the order review on navigation and handle return without duplicate submission.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the checkout handoff structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no complete checkout content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Only verified backend fulfillment may grant purchased access.",
+    "offline": "Label cached/unsynchronized complete checkout content and prevent claims of server completion.",
+    "success": "Only verified backend fulfillment may grant purchased access.",
+    "interruption": "Restore the active complete checkout context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

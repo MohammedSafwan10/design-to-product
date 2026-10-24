@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/report-builder",
+  "title": "Report builder",
+  "familyId": "document",
+  "surface": "dashboard",
+  "idea": "Report builder: Selected measures filters and date ranges precede output preview",
+  "audience": "People who need to build report within a dashboard surface.",
+  "tasks": [
+    "build-report",
+    "report-export"
+  ],
+  "worksWellWhen": [
+    "Users create repeatable reports"
+  ],
+  "avoidWhen": [
+    "No authoritative definitions exist"
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its build report priority and explicit commitment contract: Export uses the reviewed scope and redacts restricted fields"
+  ],
+  "density": "compact",
+  "navigation": "Report builder keeps the current build report context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Selected measures filters and date ranges precede output preview",
+    "continuation": "Continue with the evidence and controls needed to build report; users create repeatable reports",
+    "priority": "Export uses the reviewed scope and redacts restricted fields"
+  },
+  "patternIds": [
+    "report-export"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual build report context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep inclusion summary visible alongside collapsed filters",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the report builder structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no build report content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Export uses the reviewed scope and redacts restricted fields",
+    "offline": "Label cached/unsynchronized build report content and prevent claims of server completion.",
+    "success": "Export uses the reviewed scope and redacts restricted fields",
+    "interruption": "Restore the active build report context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/run-preparation",
+  "title": "Run preparation",
+  "familyId": "decision",
+  "surface": "game",
+  "idea": "Run preparation: Route difficulty and supply checklist lead a reviewable start",
+  "audience": "People who need to prepare run within a game surface.",
+  "tasks": [
+    "prepare-run",
+    "form-review"
+  ],
+  "worksWellWhen": [
+    "Players benefit from deliberate setup"
+  ],
+  "avoidWhen": [
+    "Preparation interrupts a trivial repeated action"
+  ],
+  "distinctFrom": [
+    "Differs from a generic decision layout through its prepare run priority and explicit commitment contract: Starting a run commits only after valid configuration"
+  ],
+  "density": "balanced",
+  "navigation": "Run preparation keeps the current prepare run context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Route difficulty and supply checklist lead a reviewable start",
+    "continuation": "Continue with the evidence and controls needed to prepare run; players benefit from deliberate setup",
+    "priority": "Starting a run commits only after valid configuration"
+  },
+  "patternIds": [
+    "form-review"
+  ],
+  "compositionIds": [
+    "question-result"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual prepare run context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep required loadout status visible with controller focus",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the run preparation structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no prepare run content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Starting a run commits only after valid configuration",
+    "offline": "Label cached/unsynchronized prepare run content and prevent claims of server completion.",
+    "success": "Starting a run commits only after valid configuration",
+    "interruption": "Restore the active prepare run context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/game-run-preparation-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=game&screen=run-preparation&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/game-run-preparation-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=game&screen=run-preparation&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

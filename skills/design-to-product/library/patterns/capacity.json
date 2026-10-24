@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "capacity",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Capacity allocation",
+  "contract": "Show actual limits, conflicts and recoverable over-allocation.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

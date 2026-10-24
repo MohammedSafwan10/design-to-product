@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "permissions",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Permission control",
+  "contract": "Explain scope, current authorization and consequences of changes.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

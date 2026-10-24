@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "media-preview",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Media preview",
+  "contract": "Respect aspect ratio, loading, source and nonvisual alternatives.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

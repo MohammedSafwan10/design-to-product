@@ -5,7 +5,12 @@ export function evaluate(metrics,{profile='marketing',contract={}}={}){
  if(metrics.media.broken.length)add('error','broken-image','Images failed to load.',metrics.media.broken);
  if(metrics.media.missingAlt)add('error','missing-alt','Images need an alt attribute; decorative images can use an empty value.',metrics.media.missingAlt);
  if(metrics.unnamedControls.length)add('error','control-name','Interactive elements have no detected accessible name.',metrics.unnamedControls);
+ if(metrics.uncertainControlNames?.length)add('warning','control-name-unverified','No name was detected for complex controls; verify the browser accessibility tree.',metrics.uncertainControlNames);
  if(metrics.clippedControls.length)add('error','clipped-control','Control text appears clipped.',metrics.clippedControls);
+ if(metrics.ancestorClipping?.length)add('warning','ancestor-clipping','Controls extend beyond a clipping ancestor; verify intentional clipping and reachable content.',metrics.ancestorClipping);
+ if(metrics.occludedControls?.length)add('warning','control-occlusion','Other layers intercept sampled points on controls; inspect the recorded viewport coordinates and intended state.',metrics.occludedControls);
+ const sparse=metrics.occupancy?.filter(region=>region.fraction<.12)||[];
+ if(sparse.length)add('advice','sparse-region','Large regions have little sampled text/media coverage; review intentional whitespace, missing content and unsupported imagery. This is not a design failure.',sparse);
  if(metrics.contrast.length)add('error','text-contrast','Sampled text falls below its applicable contrast ratio.',metrics.contrast.slice(0,15));
  if(metrics.unverifiedContrast.length)add('warning','contrast-unverified','Complex styling/compositing prevents reliable contrast measurement; inspect manually.',metrics.unverifiedContrast);
  if(metrics.media.pending)add('warning','pending-images','Some images are not complete; check lazy-load and unavailable states.',metrics.media.pending);

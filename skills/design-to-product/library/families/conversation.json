@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "conversation",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Conversation as context",
+  "idea": "Messages, participants and relevant decisions stay connected.",
+  "avoid": "Keep consent and recipient identity explicit."
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/notification-center",
+  "title": "Notification center",
+  "familyId": "ledger",
+  "surface": "product-web",
+  "idea": "Notification center: Recent actionable events group by actual resource or consequence, keeping read state separate from resolved work.",
+  "audience": "People who need to review notifications within a product-web surface.",
+  "tasks": [
+    "review-notifications",
+    "queue"
+  ],
+  "worksWellWhen": [
+    "Notifications lead to different real tasks."
+  ],
+  "avoidWhen": [
+    "A notification count would imply recipient delivery or task completion."
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its review notifications priority and explicit commitment contract: Marking an event read does not mark its underlying action complete."
+  ],
+  "density": "balanced",
+  "navigation": "Notification center keeps the current review notifications context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Recent actionable events group by actual resource or consequence, keeping read state separate from resolved work.",
+    "continuation": "Continue with the evidence and controls needed to review notifications; notifications lead to different real tasks.",
+    "priority": "Marking an event read does not mark its underlying action complete."
+  },
+  "patternIds": [
+    "queue"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review notifications context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Use resource-grouped rows and accessible read/unread actions.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the notification center structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review notifications content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Marking an event read does not mark its underlying action complete.",
+    "offline": "Label cached/unsynchronized review notifications content and prevent claims of server completion.",
+    "success": "Marking an event read does not mark its underlying action complete.",
+    "interruption": "Restore the active review notifications context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

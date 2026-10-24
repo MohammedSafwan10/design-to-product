@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Temporal composition",
+  "idea": "Time, duration and sequence define the working surface.",
+  "avoid": "Allow precise non-drag editing and legible time scales."
+}

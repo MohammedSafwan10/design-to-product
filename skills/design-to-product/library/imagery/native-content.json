@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "native-content",
+  "kind": "imagery",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Native content",
+  "role": "The actual document, world, data or task owns the visual field.",
+  "cropRules": "Keep dynamic text, controls and values native to the implementation.",
+  "provenance": "Use owned/sample data with explicit provenance; no decorative fake metrics.",
+  "delivery": [
+    "Choose actual output dimensions and format from the display role.",
+    "Use responsive sources and avoid blocking the primary action on nonessential art.",
+    "Record bytes, dimensions, source and transformations in the project asset manifest."
+  ]
+}

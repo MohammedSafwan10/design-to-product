@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/mail-triage",
+  "title": "Mail triage",
+  "familyId": "ledger",
+  "surface": "desktop",
+  "idea": "Mail triage: Inbox rows and a reading pane preserve conversation context",
+  "audience": "People who need to triage mail within a desktop surface.",
+  "tasks": [
+    "triage-mail",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "Users process a high-volume inbox"
+  ],
+  "avoidWhen": [
+    "Tasks require a freeform canvas"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its triage mail priority and explicit commitment contract: Sending requires explicit action and truthful delivery state"
+  ],
+  "density": "compact",
+  "navigation": "Mail triage keeps the current triage mail context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Inbox rows and a reading pane preserve conversation context",
+    "continuation": "Continue with the evidence and controls needed to triage mail; users process a high-volume inbox",
+    "priority": "Sending requires explicit action and truthful delivery state"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual triage mail context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Retain selected conversation when preview becomes a route",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the mail triage structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no triage mail content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Sending requires explicit action and truthful delivery state",
+    "offline": "Label cached/unsynchronized triage mail content and prevent claims of server completion.",
+    "success": "Sending requires explicit action and truthful delivery state",
+    "interruption": "Restore the active triage mail context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

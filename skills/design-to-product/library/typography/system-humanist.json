@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "system-humanist",
+  "kind": "typography",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "System humanist",
+  "faces": {
+    "display": "system-ui, sans-serif",
+    "body": "system-ui, sans-serif"
+  },
+  "license": "No font files bundled; host OS faces apply.",
+  "scriptCoverage": "Use actual platform text-size preferences. Measure fallback glyphs for target languages.",
+  "fit": "A friendly unobtrusive system whose identity comes from composition.",
+  "roles": {
+    "display": {
+      "minPx": 30,
+      "maxPx": 64,
+      "lineHeight": 1.08
+    },
+    "heading": {
+      "minPx": 23,
+      "maxPx": 34,
+      "lineHeight": 1.25
+    },
+    "body": {
+      "minPx": 16,
+      "maxPx": 20,
+      "lineHeight": 1.55
+    },
+    "label": {
+      "minPx": 14,
+      "maxPx": 18,
+      "lineHeight": 1.45
+    }
+  },
+  "rules": [
+    "Treat sizes as candidate browser baselines, not native point/sp prescriptions.",
+    "Scale and reflow content at enlarged text; do not truncate essential action labels.",
+    "Keep native framework/platform text scaling enabled.",
+    "Use font-display behavior and subset budgets appropriate to the actual chosen files."
+  ],
+  "metricsReview": "Candidate role sizes and line-height ratios; measure x-height, fallback, actual glyph coverage and enlarged text in the target runtime before adoption."
+}

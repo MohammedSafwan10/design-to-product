@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "connection",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Connection status",
+  "contract": "Separate desired, connecting and verified usable states.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

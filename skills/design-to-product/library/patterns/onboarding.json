@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "onboarding",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Minimal onboarding",
+  "contract": "Explain unfamiliar actions without blocking known tasks.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

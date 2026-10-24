@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/material-closeup",
+  "title": "Material closeup",
+  "familyId": "craft",
+  "surface": "marketing",
+  "idea": "Material closeup: A contextual object view transitions into a magnified material detail with a plain explanation of its relevance.",
+  "audience": "People who need to judge material within a marketing surface.",
+  "tasks": [
+    "judge-material",
+    "process-proof"
+  ],
+  "worksWellWhen": [
+    "Finish, construction or material is a real purchase consideration."
+  ],
+  "avoidWhen": [
+    "Generated texture would be mistaken for manufacturing evidence."
+  ],
+  "distinctFrom": [
+    "Differs from a generic craft layout through its judge material priority and explicit commitment contract: State which material and finish are actually offered and avoid false color fidelity."
+  ],
+  "density": "spacious",
+  "navigation": "Material closeup keeps the current judge material context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A contextual object view transitions into a magnified material detail with a plain explanation of its relevance.",
+    "continuation": "Continue with the evidence and controls needed to judge material; finish, construction or material is a real purchase consideration.",
+    "priority": "State which material and finish are actually offered and avoid false color fidelity."
+  },
+  "patternIds": [
+    "process-proof"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "material-study"
+    ],
+    "role": "Support the actual judge material context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Pair the close crop with its scale/context instead of using a full-screen unlabelled texture.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the material closeup structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no judge material content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; State which material and finish are actually offered and avoid false color fidelity.",
+    "offline": "Label cached/unsynchronized judge material content and prevent claims of server completion.",
+    "success": "State which material and finish are actually offered and avoid false color fidelity.",
+    "interruption": "Restore the active judge material context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

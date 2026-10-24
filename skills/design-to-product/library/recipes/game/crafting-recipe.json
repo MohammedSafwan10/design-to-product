@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/crafting-recipe",
+  "title": "Crafting recipe",
+  "familyId": "craft",
+  "surface": "game",
+  "idea": "Crafting recipe: Required ingredients and output preview show the actual trade",
+  "audience": "People who need to craft within a game surface.",
+  "tasks": [
+    "craft",
+    "inventory"
+  ],
+  "worksWellWhen": [
+    "Resource conversion affects progression"
+  ],
+  "avoidWhen": [
+    "Materials are arbitrary decoration"
+  ],
+  "distinctFrom": [
+    "Differs from a generic craft layout through its craft priority and explicit commitment contract: Atomic crafting consumes ingredients once and grants exact output"
+  ],
+  "density": "balanced",
+  "navigation": "Crafting recipe keeps the current craft context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Required ingredients and output preview show the actual trade",
+    "continuation": "Continue with the evidence and controls needed to craft; resource conversion affects progression",
+    "priority": "Atomic crafting consumes ingredients once and grants exact output"
+  },
+  "patternIds": [
+    "inventory"
+  ],
+  "compositionIds": [
+    "artifact-stage"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "material-study"
+    ],
+    "role": "Support the actual craft context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep missing ingredients readable outside icon grids",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the crafting recipe structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no craft content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Atomic crafting consumes ingredients once and grants exact output",
+    "offline": "Label cached/unsynchronized craft content and prevent claims of server completion.",
+    "success": "Atomic crafting consumes ingredients once and grants exact output",
+    "interruption": "Restore the active craft context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

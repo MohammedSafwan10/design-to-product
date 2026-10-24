@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "artifact-isolate",
+  "kind": "imagery",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Isolated artifact",
+  "role": "A real or honestly labeled conceptual object illustrates construction or use.",
+  "cropRules": "Contain important boundaries; provide contextual detail separately.",
+  "provenance": "Real manufacturer/source or generated concept provenance must be recorded.",
+  "delivery": [
+    "Choose actual output dimensions and format from the display role.",
+    "Use responsive sources and avoid blocking the primary action on nonessential art.",
+    "Record bytes, dimensions, source and transformations in the project asset manifest."
+  ]
+}

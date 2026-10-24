@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "timeline-edit",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Timeline editing",
+  "contract": "Expose range, duration, precision controls and undo.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

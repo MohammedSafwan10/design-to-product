@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/incident-room",
+  "title": "Incident room",
+  "familyId": "signal",
+  "surface": "dashboard",
+  "idea": "Incident room: Current severity and assigned actions precede incident chronology",
+  "audience": "People who need to coordinate incident within a dashboard surface.",
+  "tasks": [
+    "coordinate-incident",
+    "progression"
+  ],
+  "worksWellWhen": [
+    "Teams need shared incident context"
+  ],
+  "avoidWhen": [
+    "The UI would imply emergency service guarantees"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its coordinate incident priority and explicit commitment contract: Acknowledgement assignment and resolution are separate states"
+  ],
+  "density": "compact",
+  "navigation": "Incident room keeps the current coordinate incident context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Current severity and assigned actions precede incident chronology",
+    "continuation": "Continue with the evidence and controls needed to coordinate incident; teams need shared incident context",
+    "priority": "Acknowledgement assignment and resolution are separate states"
+  },
+  "patternIds": [
+    "progression"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual coordinate incident context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Prioritize latest confirmed event and next owner",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the incident room structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no coordinate incident content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Acknowledgement assignment and resolution are separate states",
+    "offline": "Label cached/unsynchronized coordinate incident content and prevent claims of server completion.",
+    "success": "Acknowledgement assignment and resolution are separate states",
+    "interruption": "Restore the active coordinate incident context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

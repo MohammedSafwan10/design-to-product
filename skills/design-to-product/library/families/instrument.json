@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "instrument",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Readable instrument",
+  "idea": "A small number of meaningful measurements guide an intentional action.",
+  "avoid": "No invented live values or ambiguous units."
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/file-transfer",
+  "title": "File transfer",
+  "familyId": "transaction",
+  "surface": "desktop",
+  "idea": "File transfer: A queue separates waiting active failed and verified transfers",
+  "audience": "People who need to transfer file within a desktop surface.",
+  "tasks": [
+    "transfer-file",
+    "file-operation"
+  ],
+  "worksWellWhen": [
+    "File operations need resumable progress"
+  ],
+  "avoidWhen": [
+    "No actual transfer service exists"
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its transfer file priority and explicit commitment contract: Completion requires verified destination acknowledgement"
+  ],
+  "density": "compact",
+  "navigation": "File transfer keeps the current transfer file context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A queue separates waiting active failed and verified transfers",
+    "continuation": "Continue with the evidence and controls needed to transfer file; file operations need resumable progress",
+    "priority": "Completion requires verified destination acknowledgement"
+  },
+  "patternIds": [
+    "file-operation"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual transfer file context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep source destination and retry details in focused rows",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the file transfer structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no transfer file content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Completion requires verified destination acknowledgement",
+    "offline": "Label cached/unsynchronized transfer file content and prevent claims of server completion.",
+    "success": "Completion requires verified destination acknowledgement",
+    "interruption": "Restore the active transfer file context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/desktop-file-transfer-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=file-transfer&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/desktop-file-transfer-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=file-transfer&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

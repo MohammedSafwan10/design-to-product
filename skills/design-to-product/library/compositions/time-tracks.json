@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "time-tracks",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Time and tracks",
+  "entry": "A time axis aligns tracks or events; selection explains range, duration and effects.",
+  "adaptation": "Retain a precise numeric editing alternative when tracks become narrow."
+}

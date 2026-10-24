@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/calendar-planner",
+  "title": "Calendar planner",
+  "familyId": "spatial",
+  "surface": "desktop",
+  "idea": "Calendar planner: Time grid and event inspector share a clear timezone",
+  "audience": "People who need to schedule within a desktop surface.",
+  "tasks": [
+    "schedule",
+    "book-review"
+  ],
+  "worksWellWhen": [
+    "Time conflicts drive decisions"
+  ],
+  "avoidWhen": [
+    "Dates are merely decorative"
+  ],
+  "distinctFrom": [
+    "Differs from a generic spatial layout through its schedule priority and explicit commitment contract: Conflicts and timezone changes are reviewed before saving"
+  ],
+  "density": "compact",
+  "navigation": "Calendar planner keeps the current schedule context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Time grid and event inspector share a clear timezone",
+    "continuation": "Continue with the evidence and controls needed to schedule; time conflicts drive decisions",
+    "priority": "Conflicts and timezone changes are reviewed before saving"
+  },
+  "patternIds": [
+    "book-review"
+  ],
+  "compositionIds": [
+    "map-ledger"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "forest-stone"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual schedule context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Provide agenda alternative to compressed week columns",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the calendar planner structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no schedule content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Conflicts and timezone changes are reviewed before saving",
+    "offline": "Label cached/unsynchronized schedule content and prevent claims of server completion.",
+    "success": "Conflicts and timezone changes are reviewed before saving",
+    "interruption": "Restore the active schedule context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

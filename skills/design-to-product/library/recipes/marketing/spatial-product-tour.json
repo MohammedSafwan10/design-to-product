@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/spatial-product-tour",
+  "title": "Spatial product tour",
+  "familyId": "spatial",
+  "surface": "marketing",
+  "idea": "Spatial product tour: A deliberate plan or model reveals meaningful product regions, each tied to a plain explanation and next action.",
+  "audience": "People who need to explore product regions within a marketing surface.",
+  "tasks": [
+    "explore-product-regions",
+    "media-preview"
+  ],
+  "worksWellWhen": [
+    "Spatial relationships are essential to understanding the offer."
+  ],
+  "avoidWhen": [
+    "A generic orbiting 3D object explains nothing."
+  ],
+  "distinctFrom": [
+    "Differs from a generic spatial layout through its explore product regions priority and explicit commitment contract: The selected region exposes only actual supported features and constraints."
+  ],
+  "density": "spacious",
+  "navigation": "Spatial product tour keeps the current explore product regions context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A deliberate plan or model reveals meaningful product regions, each tied to a plain explanation and next action.",
+    "continuation": "Continue with the evidence and controls needed to explore product regions; spatial relationships are essential to understanding the offer.",
+    "priority": "The selected region exposes only actual supported features and constraints."
+  },
+  "patternIds": [
+    "media-preview"
+  ],
+  "compositionIds": [
+    "map-ledger"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "forest-stone"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual explore product regions context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Replace precision gestures with a labelled list and explicit region navigation.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the spatial product tour structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no explore product regions content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; The selected region exposes only actual supported features and constraints.",
+    "offline": "Label cached/unsynchronized explore product regions content and prevent claims of server completion.",
+    "success": "The selected region exposes only actual supported features and constraints.",
+    "interruption": "Restore the active explore product regions context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

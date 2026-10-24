@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "context-window",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Context window",
+  "entry": "A scene or spatial region establishes context with an adjacent clear control zone.",
+  "adaptation": "Crop by meaning and preserve a textual location/task summary."
+}

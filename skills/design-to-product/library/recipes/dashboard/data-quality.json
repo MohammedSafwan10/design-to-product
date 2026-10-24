@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/data-quality",
+  "title": "Data quality",
+  "familyId": "signal",
+  "surface": "dashboard",
+  "idea": "Data quality: Source-specific missing or invalid records lead correction review",
+  "audience": "People who need to repair data within a dashboard surface.",
+  "tasks": [
+    "repair-data",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "Users diagnose measurable data defects"
+  ],
+  "avoidWhen": [
+    "No authoritative schema exists"
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its repair data priority and explicit commitment contract: Corrected data must pass validation before clearing the issue"
+  ],
+  "density": "compact",
+  "navigation": "Data quality keeps the current repair data context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Source-specific missing or invalid records lead correction review",
+    "continuation": "Continue with the evidence and controls needed to repair data; users diagnose measurable data defects",
+    "priority": "Corrected data must pass validation before clearing the issue"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual repair data context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Group by impact and retain source provenance",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the data quality structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no repair data content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Corrected data must pass validation before clearing the issue",
+    "offline": "Label cached/unsynchronized repair data content and prevent claims of server completion.",
+    "success": "Corrected data must pass validation before clearing the issue",
+    "interruption": "Restore the active repair data context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

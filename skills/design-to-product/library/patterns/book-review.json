@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "book-review",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Book and review",
+  "contract": "Choose availability, review constraints and confirm the authoritative result.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

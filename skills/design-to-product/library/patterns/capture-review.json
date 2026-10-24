@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "capture-review",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Capture and review",
+  "contract": "Explain permission, preview captured content and support retake/correction.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

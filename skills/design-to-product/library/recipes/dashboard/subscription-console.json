@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/subscription-console",
+  "title": "Subscription console",
+  "familyId": "ledger",
+  "surface": "dashboard",
+  "idea": "Subscription console: Plan entitlements and billing events stay distinct from usage",
+  "audience": "People who need to manage plan within a dashboard surface.",
+  "tasks": [
+    "manage-plan",
+    "subscription"
+  ],
+  "worksWellWhen": [
+    "Commercial access requires transparent state"
+  ],
+  "avoidWhen": [
+    "The product promises unsupported unlimited service"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its manage plan priority and explicit commitment contract: Cancellation and refund states require provider confirmation"
+  ],
+  "density": "compact",
+  "navigation": "Subscription console keeps the current manage plan context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Plan entitlements and billing events stay distinct from usage",
+    "continuation": "Continue with the evidence and controls needed to manage plan; commercial access requires transparent state",
+    "priority": "Cancellation and refund states require provider confirmation"
+  },
+  "patternIds": [
+    "subscription"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual manage plan context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep renewal cancellation and usage consequences readable",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the subscription console structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no manage plan content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Cancellation and refund states require provider confirmation",
+    "offline": "Label cached/unsynchronized manage plan content and prevent claims of server completion.",
+    "success": "Cancellation and refund states require provider confirmation",
+    "interruption": "Restore the active manage plan context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

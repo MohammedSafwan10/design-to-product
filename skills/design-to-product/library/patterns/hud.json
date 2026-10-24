@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "hud",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Contextual HUD",
+  "contract": "Prioritize current action and readable state without masking the world.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

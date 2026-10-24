@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "teal-paper",
+  "kind": "palettes",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Teal and paper",
+  "roles": {
+    "background": "#f5f8f7",
+    "text": "#153d40",
+    "surface": "#e6efec",
+    "primary": "#00636b",
+    "onPrimary": "#ffffff",
+    "error": "#b42318",
+    "focus": "#00636b"
+  },
+  "contrastPairs": [
+    {
+      "foreground": "text",
+      "background": "background",
+      "minimum": 4.5
+    },
+    {
+      "foreground": "text",
+      "background": "surface",
+      "minimum": 4.5
+    },
+    {
+      "foreground": "onPrimary",
+      "background": "primary",
+      "minimum": 4.5
+    }
+  ],
+  "rules": [
+    "Contrast values apply only to the explicit opaque token pairs; composited page contrast needs runtime testing.",
+    "Use labels, shapes or patterns alongside semantic colors.",
+    "Focus outline must be tested against its actual neighboring surfaces.",
+    "Build a considered theme counterpart; do not mechanically invert imagery.",
+    "Chart series need task-specific distinguishability and labeled alternatives."
+  ]
+}

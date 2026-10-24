@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "settings",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Settings",
+  "contract": "Describe scope, persistence, defaults and reset consequences.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

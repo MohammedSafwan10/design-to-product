@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/code-review",
+  "title": "Code review",
+  "familyId": "document",
+  "surface": "desktop",
+  "idea": "Code review: A change list opens side-by-side code and anchored comments",
+  "audience": "People who need to review code within a desktop surface.",
+  "tasks": [
+    "review-code",
+    "annotation"
+  ],
+  "worksWellWhen": [
+    "Users assess precise changes"
+  ],
+  "avoidWhen": [
+    "Only a marketing summary is needed"
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its review code priority and explicit commitment contract: Comment drafts and submitted reviews remain distinct"
+  ],
+  "density": "compact",
+  "navigation": "Code review keeps the current review code context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A change list opens side-by-side code and anchored comments",
+    "continuation": "Continue with the evidence and controls needed to review code; users assess precise changes",
+    "priority": "Comment drafts and submitted reviews remain distinct"
+  },
+  "patternIds": [
+    "annotation"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review code context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Offer unified diff and keyboard navigation at narrow widths",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the code review structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review code content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Comment drafts and submitted reviews remain distinct",
+    "offline": "Label cached/unsynchronized review code content and prevent claims of server completion.",
+    "success": "Comment drafts and submitted reviews remain distinct",
+    "interruption": "Restore the active review code context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "ledger",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Accountable ledger",
+  "idea": "Chronology, ownership and changes explain what happened and what needs action.",
+  "avoid": "Do not imply logs are complete unless coverage is known."
+}

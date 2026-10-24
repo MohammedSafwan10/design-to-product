@@ -4,7 +4,9 @@
   "type": "module",
   "engines": { "node": ">=22" },
   "scripts": {
-    "test": "node --test tests/tools.test.mjs",
-    "test:browser": "node --test tests/browser.test.mjs"
+    "test": "node --test tests/tools.test.mjs tests/library.test.mjs",
+    "test:browser": "node --test tests/browser.test.mjs tests/specimens.test.mjs tests/gallery.test.mjs",
+    "library:validate": "node skills/design-to-product/scripts/library.mjs --validate",
+    "gallery": "node skills/design-to-product/scripts/preview.mjs"
   }
 }

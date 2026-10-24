@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "collection-select",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Collection selection",
+  "contract": "Show meaningful item differences and preserve selection/filter context.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

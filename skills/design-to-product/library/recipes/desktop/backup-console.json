@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/backup-console",
+  "title": "Backup console",
+  "familyId": "ledger",
+  "surface": "desktop",
+  "idea": "Backup console: Source coverage and restore points precede backup actions",
+  "audience": "People who need to backup within a desktop surface.",
+  "tasks": [
+    "backup",
+    "file-operation"
+  ],
+  "worksWellWhen": [
+    "Users need recoverable copies"
+  ],
+  "avoidWhen": [
+    "Copy success cannot be verified"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its backup priority and explicit commitment contract: Never call an unverified copy a recoverable backup"
+  ],
+  "density": "compact",
+  "navigation": "Backup console keeps the current backup context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Source coverage and restore points precede backup actions",
+    "continuation": "Continue with the evidence and controls needed to backup; users need recoverable copies",
+    "priority": "Never call an unverified copy a recoverable backup"
+  },
+  "patternIds": [
+    "file-operation"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual backup context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep restore verification discoverable at narrow windows",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the backup console structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no backup content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Never call an unverified copy a recoverable backup",
+    "offline": "Label cached/unsynchronized backup content and prevent claims of server completion.",
+    "success": "Never call an unverified copy a recoverable backup",
+    "interruption": "Restore the active backup context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

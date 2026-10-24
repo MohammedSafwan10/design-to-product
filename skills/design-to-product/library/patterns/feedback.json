@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "feedback",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Feedback/report",
+  "contract": "Collect necessary context with consent and clear submission status.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

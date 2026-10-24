@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "map-route",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Map and route",
+  "contract": "Pair spatial orientation with a route/list alternative.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

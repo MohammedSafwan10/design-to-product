@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/price-led-choice",
+  "title": "Price-led choice",
+  "familyId": "transaction",
+  "surface": "marketing",
+  "idea": "Price-led choice: A clear offer and editable quantity share the opening field with a complete cost summary.",
+  "audience": "People who need to review price within a marketing surface.",
+  "tasks": [
+    "review-price",
+    "purchase-review"
+  ],
+  "worksWellWhen": [
+    "Price and inclusions are the main unresolved buying questions."
+  ],
+  "avoidWhen": [
+    "Recurring charges or eligibility terms are unknown."
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its review price priority and explicit commitment contract: Show current server-controlled price, cadence and required terms before checkout."
+  ],
+  "density": "spacious",
+  "navigation": "Price-led choice keeps the current review price context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A clear offer and editable quantity share the opening field with a complete cost summary.",
+    "continuation": "Continue with the evidence and controls needed to review price; price and inclusions are the main unresolved buying questions.",
+    "priority": "Show current server-controlled price, cadence and required terms before checkout."
+  },
+  "patternIds": [
+    "purchase-review"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review price context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep inclusion details readable before the purchase action; do not pin a bar over terms.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the price-led choice structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review price content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Show current server-controlled price, cadence and required terms before checkout.",
+    "offline": "Label cached/unsynchronized review price content and prevent claims of server completion.",
+    "success": "Show current server-controlled price, cadence and required terms before checkout.",
+    "interruption": "Restore the active review price context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

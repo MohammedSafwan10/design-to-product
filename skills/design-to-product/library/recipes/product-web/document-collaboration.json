@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/document-collaboration",
+  "title": "Document collaboration",
+  "familyId": "document",
+  "surface": "product-web",
+  "idea": "Document collaboration: The document remains central while comments attach to stable anchors and change summaries preserve context.",
+  "audience": "People who need to review document within a product-web surface.",
+  "tasks": [
+    "review-document",
+    "annotation"
+  ],
+  "worksWellWhen": [
+    "People need to discuss exact content rather than general messages."
+  ],
+  "avoidWhen": [
+    "Annotations cannot reliably attach to the current document version."
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its review document priority and explicit commitment contract: Changes and comments report their actual save/version status before success."
+  ],
+  "density": "balanced",
+  "navigation": "Document collaboration keeps the current review document context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "The document remains central while comments attach to stable anchors and change summaries preserve context.",
+    "continuation": "Continue with the evidence and controls needed to review document; people need to discuss exact content rather than general messages.",
+    "priority": "Changes and comments report their actual save/version status before success."
+  },
+  "patternIds": [
+    "annotation"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual review document context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Open comments in a separate pane or sheet with an explicit return anchor.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the document collaboration structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no review document content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Changes and comments report their actual save/version status before success.",
+    "offline": "Label cached/unsynchronized review document content and prevent claims of server completion.",
+    "success": "Changes and comments report their actual save/version status before success.",
+    "interruption": "Restore the active review document context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

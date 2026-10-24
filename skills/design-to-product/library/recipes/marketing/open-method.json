@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/open-method",
+  "title": "Open method",
+  "familyId": "command",
+  "surface": "marketing",
+  "idea": "Open method: A readable method and executable or inspectable example sit together, followed by precise limitations.",
+  "audience": "People who need to inspect method within a marketing surface.",
+  "tasks": [
+    "inspect-method",
+    "process-proof"
+  ],
+  "worksWellWhen": [
+    "Visitors are technical and need reproducible behavior."
+  ],
+  "avoidWhen": [
+    "A code-like panel would be decorative or unsafe to run."
+  ],
+  "distinctFrom": [
+    "Differs from a generic command layout through its inspect method priority and explicit commitment contract: Do not execute copied commands automatically; explain prerequisites and effects."
+  ],
+  "density": "spacious",
+  "navigation": "Open method keeps the current inspect method context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A readable method and executable or inspectable example sit together, followed by precise limitations.",
+    "continuation": "Continue with the evidence and controls needed to inspect method; visitors are technical and need reproducible behavior.",
+    "priority": "Do not execute copied commands automatically; explain prerequisites and effects."
+  },
+  "patternIds": [
+    "process-proof"
+  ],
+  "compositionIds": [
+    "command-results"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual inspect method context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Let code scroll within its own labelled region while instructions reflow.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the open method structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect method content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Do not execute copied commands automatically; explain prerequisites and effects.",
+    "offline": "Label cached/unsynchronized inspect method content and prevent claims of server completion.",
+    "success": "Do not execute copied commands automatically; explain prerequisites and effects.",
+    "interruption": "Restore the active inspect method context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

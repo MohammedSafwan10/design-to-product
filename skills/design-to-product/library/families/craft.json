@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "craft",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Material and making",
+  "idea": "Inputs, transformation and the resulting artifact explain the product.",
+  "avoid": "Texture or equipment decoration must communicate real work."
+}

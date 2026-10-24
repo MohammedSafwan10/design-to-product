@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "question-result",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Question and result",
+  "entry": "A clear current question faces a truthful consequence or comparison.",
+  "adaptation": "Place the consequence after its controlling input in reading order."
+}

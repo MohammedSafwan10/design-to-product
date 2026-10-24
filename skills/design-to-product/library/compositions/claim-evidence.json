@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "claim-evidence",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Claim with evidence",
+  "entry": "A short claim leads into one generous evidence region, then supporting interpretation.",
+  "adaptation": "Keep the key evidence near the claim on narrow layouts."
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "context-photography",
+  "kind": "imagery",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Context photography",
+  "role": "A place, material or actual usage gives scale and context.",
+  "cropRules": "Use a subject-aware crop at each breakpoint; keep essential text outside complex imagery.",
+  "provenance": "License/source required; unrelated stock must not impersonate client premises.",
+  "delivery": [
+    "Choose actual output dimensions and format from the display role.",
+    "Use responsive sources and avoid blocking the primary action on nonessential art.",
+    "Record bytes, dimensions, source and transformations in the project asset manifest."
+  ]
+}

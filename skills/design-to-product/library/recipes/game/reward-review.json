@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "game/reward-review",
+  "title": "Reward review",
+  "familyId": "transaction",
+  "surface": "game",
+  "idea": "Reward review: Earned items and eligibility lead one explicit claim action",
+  "audience": "People who need to claim reward within a game surface.",
+  "tasks": [
+    "claim-reward",
+    "results"
+  ],
+  "worksWellWhen": [
+    "Rewards are authoritative outcomes"
+  ],
+  "avoidWhen": [
+    "The UI would imply unearned purchases"
+  ],
+  "distinctFrom": [
+    "Differs from a generic transaction layout through its claim reward priority and explicit commitment contract: Idempotent claim prevents duplicate grants"
+  ],
+  "density": "balanced",
+  "navigation": "Reward review keeps the current claim reward context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Earned items and eligibility lead one explicit claim action",
+    "continuation": "Continue with the evidence and controls needed to claim reward; rewards are authoritative outcomes",
+    "priority": "Idempotent claim prevents duplicate grants"
+  },
+  "patternIds": [
+    "results"
+  ],
+  "compositionIds": [
+    "review-commit"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual claim reward context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "controller",
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep claim and store actions clearly separated",
+    "Compose for safe zones, aspect ratio and the actual input device; preserve world readability."
+  ],
+  "stateContracts": {
+    "loading": "Keep the reward review structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no claim reward content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Idempotent claim prevents duplicate grants",
+    "offline": "Label cached/unsynchronized claim reward content and prevent claims of server completion.",
+    "success": "Idempotent claim prevents duplicate grants",
+    "interruption": "Restore the active claim reward context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure frame-time and input latency in the real engine; DOM checks cannot certify in-world UI."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

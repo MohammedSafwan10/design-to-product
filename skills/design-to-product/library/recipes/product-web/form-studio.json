@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/form-studio",
+  "title": "Form studio",
+  "familyId": "document",
+  "surface": "product-web",
+  "idea": "Form studio: A real form preview sits beside field configuration, validation and recipient/data-retention context.",
+  "audience": "People who need to build form within a product-web surface.",
+  "tasks": [
+    "build-form",
+    "form-review"
+  ],
+  "worksWellWhen": [
+    "Creators must understand both respondent experience and collected data."
+  ],
+  "avoidWhen": [
+    "A designer panel hides privacy or validation behavior."
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its build form priority and explicit commitment contract: Publishing requires valid field rules and an explicit data destination."
+  ],
+  "density": "balanced",
+  "navigation": "Form studio keeps the current build form context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A real form preview sits beside field configuration, validation and recipient/data-retention context.",
+    "continuation": "Continue with the evidence and controls needed to build form; creators must understand both respondent experience and collected data.",
+    "priority": "Publishing requires valid field rules and an explicit data destination."
+  },
+  "patternIds": [
+    "form-review"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual build form context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Edit one field at a time while preserving a usable respondent preview.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the form studio structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no build form content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Publishing requires valid field rules and an explicit data destination.",
+    "offline": "Label cached/unsynchronized build form content and prevent claims of server completion.",
+    "success": "Publishing requires valid field rules and an explicit data destination.",
+    "interruption": "Restore the active build form context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

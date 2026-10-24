@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "product-web/account-recovery",
+  "title": "Account recovery",
+  "familyId": "signal",
+  "surface": "product-web",
+  "idea": "Account recovery: The current recovery step and safe next action lead, with identity-sensitive information intentionally limited.",
+  "audience": "People who need to recover account within a product-web surface.",
+  "tasks": [
+    "recover-account",
+    "permissions"
+  ],
+  "worksWellWhen": [
+    "People may be locked out and unfamiliar with security requirements."
+  ],
+  "avoidWhen": [
+    "The screen would reveal whether another person's account exists."
+  ],
+  "distinctFrom": [
+    "Differs from a generic signal layout through its recover account priority and explicit commitment contract: Use verified backend recovery state and avoid account enumeration."
+  ],
+  "density": "balanced",
+  "navigation": "Account recovery keeps the current recover account context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "The current recovery step and safe next action lead, with identity-sensitive information intentionally limited.",
+    "continuation": "Continue with the evidence and controls needed to recover account; people may be locked out and unfamiliar with security requirements.",
+    "priority": "Use verified backend recovery state and avoid account enumeration."
+  },
+  "patternIds": [
+    "permissions"
+  ],
+  "compositionIds": [
+    "state-action"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "teal-paper"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual recover account context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep a single focused recovery action and visible alternate path under the keyboard.",
+    "Preserve entered data and focus when responsive panels become routes."
+  ],
+  "stateContracts": {
+    "loading": "Keep the account recovery structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no recover account content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Use verified backend recovery state and avoid account enumeration.",
+    "offline": "Label cached/unsynchronized recover account content and prevent claims of server completion.",
+    "success": "Use verified backend recovery state and avoid account enumeration.",
+    "interruption": "Restore the active recover account context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure task interaction latency with representative data and slow network states."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

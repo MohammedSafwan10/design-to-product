@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "spatial",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Spatial orientation",
+  "idea": "Position and relationships carry meaning where a list would hide it.",
+  "avoid": "Provide nonspatial alternatives and avoid decorative maps."
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "dashboard/inventory-health",
+  "title": "Inventory health",
+  "familyId": "ledger",
+  "surface": "dashboard",
+  "idea": "Inventory health: Low stock and reserved units expose replenishment decisions",
+  "audience": "People who need to replenish within a dashboard surface.",
+  "tasks": [
+    "replenish",
+    "inventory"
+  ],
+  "worksWellWhen": [
+    "Physical inventory has measurable availability"
+  ],
+  "avoidWhen": [
+    "Stock is only decorative"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its replenish priority and explicit commitment contract: Order placement never silently increases available stock"
+  ],
+  "density": "compact",
+  "navigation": "Inventory health keeps the current replenish context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Low stock and reserved units expose replenishment decisions",
+    "continuation": "Continue with the evidence and controls needed to replenish; physical inventory has measurable availability",
+    "priority": "Order placement never silently increases available stock"
+  },
+  "patternIds": [
+    "inventory"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual replenish context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Preserve SKU units and reservation state in narrow detail",
+    "Keep units, filters and selection understandable at narrow widths; expose a focused item view."
+  ],
+  "stateContracts": {
+    "loading": "Keep the inventory health structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no replenish content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Order placement never silently increases available stock",
+    "offline": "Label cached/unsynchronized replenish content and prevent claims of server completion.",
+    "success": "Order placement never silently increases available stock",
+    "interruption": "Restore the active replenish context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure bounded queries and large-data interaction; virtualize only with accessible alternatives."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

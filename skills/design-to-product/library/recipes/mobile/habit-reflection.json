@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/habit-reflection",
+  "title": "Habit reflection",
+  "familyId": "editorial",
+  "surface": "mobile",
+  "idea": "Habit reflection: A short dated reflection follows a truthful activity record",
+  "audience": "People who need to reflect within a mobile surface.",
+  "tasks": [
+    "reflect",
+    "feedback"
+  ],
+  "worksWellWhen": [
+    "Learning matters more than streak pressure"
+  ],
+  "avoidWhen": [
+    "Users require detailed analytics"
+  ],
+  "distinctFrom": [
+    "Differs from a generic editorial layout through its reflect priority and explicit commitment contract: Missing days are not silently filled"
+  ],
+  "density": "balanced",
+  "navigation": "Habit reflection keeps the current reflect context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A short dated reflection follows a truthful activity record",
+    "continuation": "Continue with the evidence and controls needed to reflect; learning matters more than streak pressure",
+    "priority": "Missing days are not silently filled"
+  },
+  "patternIds": [
+    "feedback"
+  ],
+  "compositionIds": [
+    "claim-evidence"
+  ],
+  "typeRecipeIds": [
+    "editorial-serif"
+  ],
+  "paletteRecipeIds": [
+    "wine-porcelain"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual reflect context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Allow long answers and keyboard-safe save controls",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the habit reflection structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no reflect content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Missing days are not silently filled",
+    "offline": "Label cached/unsynchronized reflect content and prevent claims of server completion.",
+    "success": "Missing days are not silently filled",
+    "interruption": "Restore the active reflect context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

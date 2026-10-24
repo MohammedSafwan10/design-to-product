@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "file-operation",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "File operation",
+  "contract": "Clarify source/destination, progress, conflict, cancellation and retry.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

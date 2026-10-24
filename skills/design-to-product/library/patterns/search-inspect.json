@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "search-inspect",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Search and inspect",
+  "contract": "Query, relevance, selection and empty results remain understandable.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "transaction",
+  "kind": "families",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Trustworthy transaction",
+  "idea": "Review, consent, confirmation and reversible decisions create clarity.",
+  "avoid": "No premature success state or hidden cost."
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "claim-proof",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Claim and proof",
+  "contract": "Keep a specific supported statement near relevant evidence.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

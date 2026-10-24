@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "data-monitor",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Data monitoring",
+  "contract": "Expose freshness, units, source and missing-data conditions.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "desktop/timeline-editor",
+  "title": "Timeline editor",
+  "familyId": "timeline",
+  "surface": "desktop",
+  "idea": "Timeline editor: Tracks align to a time ruler with an independent preview",
+  "audience": "People who need to edit sequence within a desktop surface.",
+  "tasks": [
+    "edit-sequence",
+    "timeline-edit"
+  ],
+  "worksWellWhen": [
+    "Temporal relationships matter"
+  ],
+  "avoidWhen": [
+    "A static list adequately expresses the task"
+  ],
+  "distinctFrom": [
+    "Differs from a generic timeline layout through its edit sequence priority and explicit commitment contract: Destructive trim supports undo and clear duration changes"
+  ],
+  "density": "compact",
+  "navigation": "Timeline editor keeps the current edit sequence context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "Tracks align to a time ruler with an independent preview",
+    "continuation": "Continue with the evidence and controls needed to edit sequence; temporal relationships matter",
+    "priority": "Destructive trim supports undo and clear duration changes"
+  },
+  "patternIds": [
+    "timeline-edit"
+  ],
+  "compositionIds": [
+    "time-tracks"
+  ],
+  "typeRecipeIds": [
+    "system-humanist"
+  ],
+  "paletteRecipeIds": [
+    "graphite-mint"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual edit sequence context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "pointer",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Preserve horizontal timeline scrolling and keyboard selection",
+    "Respect window resizing, keyboard navigation and persistent document/workspace context."
+  ],
+  "stateContracts": {
+    "loading": "Keep the timeline editor structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no edit sequence content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Destructive trim supports undo and clear duration changes",
+    "offline": "Label cached/unsynchronized edit sequence content and prevent claims of server completion.",
+    "success": "Destructive trim supports undo and clear duration changes",
+    "interruption": "Restore the active edit sequence context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure representative large documents/collections and resize interaction on target OS."
+  },
+  "sources": [],
+  "examplePaths": [
+    {
+      "state": "stress",
+      "path": "examples/renders/desktop-timeline-editor-390-stress.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=timeline-editor&state=stress"
+    },
+    {
+      "state": "normal",
+      "path": "examples/renders/desktop-timeline-editor-1440-normal.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "studyUrl": "examples/specimens/index.html?surface=desktop&screen=timeline-editor&state=normal"
+    }
+  ],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate with browser study renders. Automated browser checks are recorded in evals/specimen-review.json. No independent visual comparison, task study or native runtime verification; remains draft. The illustration/task content demonstrates composition and does not prescribe every linked palette or font."
+}

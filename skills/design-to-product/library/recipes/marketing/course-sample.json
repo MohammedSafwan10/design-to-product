@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "marketing/course-sample",
+  "title": "Course sample",
+  "familyId": "document",
+  "surface": "marketing",
+  "idea": "Course sample: A useful lesson excerpt demonstrates teaching style beside a concise syllabus and known prerequisites.",
+  "audience": "People who need to inspect course within a marketing surface.",
+  "tasks": [
+    "inspect-course",
+    "media-preview"
+  ],
+  "worksWellWhen": [
+    "A sample lesson can prove the learning format."
+  ],
+  "avoidWhen": [
+    "Sample certificates or outcomes would imply unsupported credentials."
+  ],
+  "distinctFrom": [
+    "Differs from a generic document layout through its inspect course priority and explicit commitment contract: Distinguish sample access from enrollment and guaranteed results."
+  ],
+  "density": "spacious",
+  "navigation": "Course sample keeps the current inspect course context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A useful lesson excerpt demonstrates teaching style beside a concise syllabus and known prerequisites.",
+    "continuation": "Continue with the evidence and controls needed to inspect course; a sample lesson can prove the learning format.",
+    "priority": "Distinguish sample access from enrollment and guaranteed results."
+  },
+  "patternIds": [
+    "media-preview"
+  ],
+  "compositionIds": [
+    "document-margin"
+  ],
+  "typeRecipeIds": [
+    "reading-text"
+  ],
+  "paletteRecipeIds": [
+    "ochre-ink"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual inspect course context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "keyboard",
+    "touch"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Keep lesson content readable and move syllabus detail into clear disclosures.",
+    "Use a legible phone reading order; media never blocks the primary proposition."
+  ],
+  "stateContracts": {
+    "loading": "Keep the course sample structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect course content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Distinguish sample access from enrollment and guaranteed results.",
+    "offline": "Label cached/unsynchronized inspect course content and prevent claims of server completion.",
+    "success": "Distinguish sample access from enrollment and guaranteed results.",
+    "interruption": "Restore the active inspect course context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure initial transfer, layout stability and real image decode cost at the chosen device."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

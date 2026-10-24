@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "editorial-serif",
+  "kind": "typography",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Editorial contrast",
+  "faces": {
+    "display": "Georgia, serif",
+    "body": "system-ui, sans-serif"
+  },
+  "license": "No font files bundled; use installed system faces.",
+  "scriptCoverage": "Fallback serif metrics vary; test long headings, non-Latin scripts and actual selected faces.",
+  "fit": "Editorial emphasis for claims; controls retain plain readable text.",
+  "roles": {
+    "display": {
+      "minPx": 38,
+      "maxPx": 92,
+      "lineHeight": 1.04
+    },
+    "heading": {
+      "minPx": 26,
+      "maxPx": 44,
+      "lineHeight": 1.16
+    },
+    "body": {
+      "minPx": 17,
+      "maxPx": 21,
+      "lineHeight": 1.65
+    },
+    "label": {
+      "minPx": 14,
+      "maxPx": 17,
+      "lineHeight": 1.45
+    }
+  },
+  "rules": [
+    "Treat sizes as candidate browser baselines, not native point/sp prescriptions.",
+    "Scale and reflow content at enlarged text; do not truncate essential action labels.",
+    "Keep native framework/platform text scaling enabled.",
+    "Use font-display behavior and subset budgets appropriate to the actual chosen files."
+  ],
+  "metricsReview": "Candidate role sizes and line-height ratios; measure x-height, fallback, actual glyph coverage and enlarged text in the target runtime before adoption."
+}

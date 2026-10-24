@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "sequence-reveal",
+  "kind": "compositions",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Sequence reveal",
+  "entry": "Stages reveal causes and dependencies rather than merely counting steps.",
+  "adaptation": "Use a single readable sequence on phones; retain skipped and failed states."
+}

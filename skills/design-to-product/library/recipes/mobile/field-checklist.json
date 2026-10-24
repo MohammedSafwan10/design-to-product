@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "version": 1,
+  "id": "mobile/field-checklist",
+  "title": "Field checklist",
+  "familyId": "ledger",
+  "surface": "mobile",
+  "idea": "Field checklist: A location-specific checklist groups mandatory and optional observations",
+  "audience": "People who need to inspect field within a mobile surface.",
+  "tasks": [
+    "inspect-field",
+    "task-triage"
+  ],
+  "worksWellWhen": [
+    "Work happens away from a reliable connection"
+  ],
+  "avoidWhen": [
+    "Tasks cannot be saved locally"
+  ],
+  "distinctFrom": [
+    "Differs from a generic ledger layout through its inspect field priority and explicit commitment contract: Sync acknowledgement and local completion are separate"
+  ],
+  "density": "balanced",
+  "navigation": "Field checklist keeps the current inspect field context visible; secondary detail has an explicit return path.",
+  "composition": {
+    "entry": "A location-specific checklist groups mandatory and optional observations",
+    "continuation": "Continue with the evidence and controls needed to inspect field; work happens away from a reliable connection",
+    "priority": "Sync acknowledgement and local completion are separate"
+  },
+  "patternIds": [
+    "task-triage"
+  ],
+  "compositionIds": [
+    "ledger-detail"
+  ],
+  "typeRecipeIds": [
+    "data-grotesk"
+  ],
+  "paletteRecipeIds": [
+    "clay-slate"
+  ],
+  "imagery": {
+    "treatmentIds": [
+      "native-content"
+    ],
+    "role": "Support the actual inspect field context; essential controls and state remain native."
+  },
+  "requiredAssets": [],
+  "inputModes": [
+    "touch",
+    "assistive"
+  ],
+  "brandConstraints": [
+    "Preserve approved identity, semantic roles and licensed assets.",
+    "Treat font and palette suggestions as optional; do not replace fixed branding."
+  ],
+  "responsiveRules": [
+    "Expose remaining required items above final review",
+    "Respect safe areas, native text scaling, keyboard intrusion and platform back behavior."
+  ],
+  "stateContracts": {
+    "loading": "Keep the field checklist structure stable while authoritative content resolves; expose unavailable action state.",
+    "empty": "Explain why no inspect field content is available and offer a relevant next action.",
+    "failure": "Preserve safe context and identify the failed operation; Sync acknowledgement and local completion are separate",
+    "offline": "Label cached/unsynchronized inspect field content and prevent claims of server completion.",
+    "success": "Sync acknowledgement and local completion are separate",
+    "interruption": "Restore the active inspect field context safely after navigation, focus loss or platform interruption; do not replay committed actions."
+  },
+  "accessibilityRisks": [
+    "Do not communicate state through color alone; name controls and expose current selection.",
+    "Verify reading order, input alternatives, enlarged text and focus restoration for this composition."
+  ],
+  "performanceBudget": {
+    "principle": "Set an explicit project budget from the actual content/device; no unsupported universal frame or bundle promise.",
+    "verify": "Measure on target devices; test interrupted/resumed state and low-memory restoration."
+  },
+  "sources": [],
+  "examplePaths": [],
+  "evidence": [],
+  "reviewStatus": "draft",
+  "reviewNotes": "Original authored candidate; no representative render, independent craft review or task evaluation is attached. Structural validation is not visual validation."
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "subscription",
+  "kind": "patterns",
+  "reviewStatus": "draft",
+  "evidence": [],
+  "title": "Subscription review",
+  "contract": "Disclose cadence, renewal, cancellation and effective changes.",
+  "states": [
+    "loading",
+    "empty",
+    "failure",
+    "offline",
+    "success",
+    "interruption"
+  ]
+}
