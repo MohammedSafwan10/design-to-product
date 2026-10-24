@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "native-review-v2",
+  "reviewedAt": "2026-10-24",
+  "reviewer": {
+    "kind": "model",
+    "role": "independent visual and evidence critic",
+    "humanStudy": false
+  },
+  "scope": {
+    "runtime": "Windows native Flutter",
+    "sourceReport": "evals/native-windows/report.json",
+    "sourceReportStatus": "passed",
+    "reviewMethod": "Viewed all seven RepaintBoundary PNGs and read builder report; reviewer did not rerun native tests",
+    "captureSize": {
+      "width": 1264,
+      "height": 681
+    },
+    "osChromeCaptured": false,
+    "android": "unverified; unavailable device/emulator evidence",
+    "ios": "unverified",
+    "physicalDevice": "unverified",
+    "controller": "unverified",
+    "assistiveTechnology": "unverified"
+  },
+  "captures": [
+    "transit-normal",
+    "transit-offline",
+    "audio-normal",
+    "audio-export-failure",
+    "beacon-normal",
+    "beacon-wrong-input",
+    "beacon-complete"
+  ],
+  "findings": [
+    {
+      "id": "native-audio-failure-clipped",
+      "severity": "error",
+      "status": "resolved-in-refreshed-capture",
+      "confidence": "high",
+      "capture": "audio-export-failure.png",
+      "evidence": "Export-unavailable text begins at approximately y676 in the 681px capture and is visibly clipped at the lower boundary.",
+      "recommendation": "Keep the full failure message in available layout space or scroll it into view after export, then recapture.",
+      "resolution": "Viewed refreshed audio-export-failure.png: full export-unavailable message appears below the source disclosure near the top; track mute state and playhead remain visible."
+    },
+    {
+      "id": "native-audio-transport-label",
+      "severity": "advice",
+      "status": "resolved-in-refreshed-capture",
+      "confidence": "medium",
+      "capture": "audio-normal.png",
+      "evidence": "The bottom-left mint transport glyph appears as three tiny dots/marks. Its purpose is not clear from the capture.",
+      "recommendation": "Use a recognizable transport control or explicit label. Verify accessible semantics separately.",
+      "resolution": "Viewed refreshed audio-normal.png and audio-export-failure.png: the ambiguous glyph is replaced by the readable Playhead label."
+    }
+  ],
+  "positiveObservations": [
+    {
+      "surface": "Transit",
+      "evidence": "Selected route and offline switch are visually distinct; offline text explicitly says sample route is retained and live departures are unavailable. Text and actions are readable at captured dimensions."
+    },
+    {
+      "surface": "Audio",
+      "evidence": "Muted first waveform changes to subdued color and speaker-off icon. Source absence is stated above the tracks; source-report interaction checks do not imply audio playback."
+    },
+    {
+      "surface": "Beacon",
+      "evidence": "Wrong input presents a readable recovery message. Completion uses both 3/3 text and explicit relay-complete message, with active beacons visibly differentiated."
+    }
+  ],
+  "unverified": [
+    "Screenshots cannot establish keyboard/focus order, screen-reader naming, exact target dimensions or numeric contrast compliance.",
+    "Builder reports integration_test passed for route, mute, playhead, export failure, puzzle recovery, pause and injected keys; this review is not an independent rerun.",
+    "Windows-hosted phone composition does not verify Android/iOS safe areas, soft keyboard, lifecycle or device behavior.",
+    "OS window chrome, system dialogs, native file export and audio output are excluded or unavailable."
+  ],
+  "outcome": "reviewed-with-no-open-observed-visual-faults-in-captured-scope",
+  "supersession": "The initial seven-image review remains recorded; the refreshed two-image audio review supersedes its two open findings. Platform and assistive-technology limits remain unchanged.",
+  "browserFollowup": {
+    "method": "Fresh isolated Chromium render at 390x844 followed by actual PNG viewing",
+    "screens": [
+      {
+        "id": "dashboard-science",
+        "observations": "No measured findings. Plot is deliberately horizontally scrollable in source and accessible region naming; right-hand wavelengths require scrolling on phones. Add visible scroll cue as usability advice; this is not root overflow.",
+        "runtime": "favicon.ico 404 only"
+      },
+      {
+        "id": "market-letterpress",
+        "observations": "No measured findings; heading, ink swatches and specimen no longer overlap in viewed 390px capture.",
+        "runtime": "none"
+      }
+    ],
+    "evidence": "evals/artifacts/native-review-v2/"
+  },
+  "northlineFollowup": {
+    "method": "Fresh390x568 browser with per-element computed font sizes doubled; screenshot viewed",
+    "observations": "Final 390x568 doubled-computed-font capture was rerendered and viewed. NORTH/LINE wordmark wraps without root overflow; count/label summary remains readable; East emphasis and pressed state match selected detail. Readable HTML route summary accompanies SVG. No measured findings. Native text scaling remains unverified.",
+    "status": "verified-within-browser-stress-scope"
+  },
+  "followup": {
+    "reviewedAt": "2026-10-24",
+    "captures": [
+      "audio-normal.png",
+      "audio-export-failure.png"
+    ],
+    "method": "Viewed regenerated actual Windows Flutter RepaintBoundary PNGs and reread passed runtime report",
+    "result": "Both original observations visibly resolved. Parent reports analyzer zero issues, hot reload and rerun integration pass; reviewer did not independently rerun those commands."
+  }
+}

@@ -55,6 +55,14 @@ interaction hierarchy, not just color palettes.
   See [references/tooling.md](references/tooling.md) for options and limits.
   Use `scripts/library.mjs --id mobile/capture-review --modules` to load only a
   selected recipe and its linked modules. Do not ingest the entire catalog.
+- For richer composition/type choices, load
+  [references/typography-and-composition.md](references/typography-and-composition.md)
+  and, when imagery matters,
+  [references/imagery-and-art-direction.md](references/imagery-and-art-direction.md).
+  `examples/showcase/index.html` contains 12 independent product identities and
+  task-specific compositions with working local flows. Adapt the organizing idea,
+  not an unrelated brand's surface costume. The separate model review records
+  findings and corrections, not proof that a style wins across products.
 - Choose an appropriate mockup method: generated raster for art-led concepts,
   editable HTML/design tooling for interactive or text-dense products. Use the
   applicable available skill when generating images. Do not mandate raster art
@@ -104,6 +112,18 @@ and selected-reference organization, read
 
 ## 4. Prepare production assets deliberately
 
+- Check actual asset/tool capabilities, not just the model's name. A text model
+  may still have an image tool. When available and useful, use an authorized
+  image generator (for example GPT Image through the host's tool) for original
+  artwork; use editable vector/code assets for suitable marks and diagrams.
+  Without generation, inspect project/user assets and appropriately licensed
+  sources, or choose an intentional type/content-led composition when it fits
+  the brief. Follow the fallback rules in
+  [references/imagery-and-art-direction.md](references/imagery-and-art-direction.md).
+  If required artwork is unavailable, request the specific missing asset or a
+  suitable reference while continuing independent work. Use placeholders only
+  for an explicitly identified prototype stage; never silently ship them or
+  claim required artwork is complete.
 - Make an asset manifest: role, source, license/provenance, dimensions, alpha,
   budget and intended fit. Generate/download only missing assets needed now.
 - Use isolated artwork and text-free backgrounds. Keep interactive text,
@@ -190,6 +210,10 @@ visual advice with reasons. There is no color ban, media quota or required
 animation count. A clean report is not an aesthetic score or a full accessibility
 certificate. Inspect task completion and visual craft separately. Use native
 platform tooling for native builds and device behavior.
+For actual native/runtime work, load
+[references/native-evidence.md](references/native-evidence.md). The bundled lab
+has recorded Windows Flutter runtime evidence; it does not verify Android/iOS or
+the user's native project. Check source/runtime identity before reusing a report.
 Control occlusion is bounded hit-test evidence, and sparse-region advice is not
 proof of an empty or bad screen. Review the reported uncertainty and readiness.
 For comparative studies or claims of better outcomes, load
@@ -201,6 +225,17 @@ Capture the running implementation using an available platform-appropriate tool;
 compare it with the approved reference at a comparable logical viewport. Inspect
 hierarchy, crop, spacing, wrapping, contrast, materials and missing details. Do
 not claim screenshot verification when only source inspection was possible.
+
+Use the capture → inspect → fix → recapture loop in
+[references/art-direction-and-review.md](references/art-direction-and-review.md).
+Open and inspect the screenshot yourself; generating a PNG or reading DOM metrics
+alone is not visual verification. Exercise relevant open controls, focus/hover,
+scrolling and failure states, including intermediate widths where composition
+changes. Fix concrete defects within the authorized scope without requesting
+another approval for routine corrections. Recheck the affected state after the
+fix; preserve approved identity and behavior. Use available browser/platform
+tools rather than asking the user to supply screenshots you can capture. When
+capture is unavailable, state that visual verification is incomplete.
 
 Use proportional checks: focused regression tests after meaningful changes;
 analyzer/type checks and the applicable final build before handoff. Run broader

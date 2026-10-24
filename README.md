@@ -54,12 +54,25 @@ game interfaces. It separates 20 families, 18 compositions, 36 task patterns,
 six typography systems, eight semantic palettes and six imagery treatments.
 These are authored candidates; they are **not 150 visually reviewed designs**.
 
-A searchable browser catalog includes **36 original interface studies** (six per
-surface), local interactions and normal/interrupted states. Native behavior,
-backend services and actual gameplay remain unverified. The
-[roadmap](docs/NEXT_VERSION_PLAN.md), [research register](docs/RESEARCH_REGISTER.md)
-and [implementation review](docs/IMPLEMENTATION_REVIEW.md) distinguish completed
-engineering from the research, comparisons and device work still needed.
+A searchable catalog includes **36 related-screen studies**. A separate
+[art-direction showcase](skills/design-to-product/examples/showcase/index.html)
+adds **12 distinct product identities**: letterpress, salvage, botanical, cycling,
+booking, inventory, scientific data, dispatch, transit, music, audio and tactical
+planning. Each has a local interaction and actual browser preview captures.
+
+Independent model critics reviewed the new screens, compared their visual
+vocabulary with older examples, and rechecked fixes for clipping, tiny chart
+labels, enlarged-text overflow, selection feedback and action placement. This
+is **unblinded observational critique**, not equal-budget A/B, human research or
+proof of universal superiority. See the [visual review](docs/SHOWCASE_REVIEW_V2.md)
+and [control review](docs/CONTROL_REVIEW_V2.md).
+
+A small [native Flutter lab](skills/design-to-product/examples/native-lab/README.md)
+now has a passed **Windows integration run** and seven reviewed captures: transit,
+audio controls/failure and a playable 2D keyboard puzzle. Android/iOS/device,
+physical controller, real audio and 3D-engine behavior remain unverified. The
+[native review](docs/NATIVE_REVIEW_V2.md), [craft research](docs/CRAFT_RESEARCH_V2.md)
+and [roadmap](docs/NEXT_VERSION_PLAN.md) keep the evidence boundaries explicit.
 
 ## Use
 
@@ -92,10 +105,24 @@ Use $skill-installer to install:
 https://github.com/MohammedSafwan10/design-to-product/tree/main/skills/design-to-product
 ```
 
-For a manual install, clone or download this repository, then copy the complete
-[`skills/design-to-product`](skills/design-to-product) folder into your host's
-supported personal or project skill directory. Keep its references, scripts,
-library, license and metadata together. Invoke it as `$design-to-product`.
+For a clean manual export from a Git checkout:
+
+```text
+npm run package:skill -- .design-to-product/export/design-to-product
+```
+
+Use a new output directory each time. The exporter includes Git-tracked and
+non-ignored new skill files, records file hashes in a sibling manifest, and
+rejects native build caches, local SDK paths, binaries and symlinks. It preserves
+runnable source, references, library data and original review evidence. This is
+a packaging check, not a secret scanner or proof of design quality.
+
+Copy the exported `design-to-product` folder into the host's supported skill
+directory and invoke `$design-to-product`. From a clean GitHub download, the
+[`skills/design-to-product`](skills/design-to-product) folder can be copied
+directly. Do not copy a working folder after native builds: ignored Flutter
+caches can be hundreds of megabytes. Keep references, scripts, library, license
+and metadata together.
 
 When migrating an installed `mockup-to-product`, preserve any local customizations
 before replacing it. Keep old copies outside discoverable skill directories when
@@ -149,6 +176,9 @@ not services provided by this skill.
 - [Tooling and evidence limits](skills/design-to-product/references/tooling.md)
 - [Surface composition and input guidance](skills/design-to-product/references/surface-design.md)
 - [Semantic design systems](skills/design-to-product/references/design-systems.md)
+- [Typography and composition research](skills/design-to-product/references/typography-and-composition.md)
+- [Imagery and art direction](skills/design-to-product/references/imagery-and-art-direction.md)
+- [Native runtime evidence](skills/design-to-product/references/native-evidence.md)
 - [Research and comparison method](skills/design-to-product/references/research-and-evaluation.md)
 - [Frozen development benchmark](skills/design-to-product/evals/benchmark-v1.json)
 - [Browsable catalog](skills/design-to-product/examples/gallery/index.html) (serve over HTTP)
@@ -165,7 +195,8 @@ Core tests cover media/surface eligibility, unique/reproducible suggestions,
 functional findings, explicit layout contracts and local-server confinement.
 Browser tests use actual Chromium against readable and deliberately broken
 fixtures, all 36 original studies across three viewport/state cases, and focused
-local interactions. Library tests check reference integrity and reject unsupported
+local interactions. The 12 new showcases add 48 viewport cases and 12 local-flow
+checks. Native Flutter verification is separate and requires its platform SDK. Library tests check reference integrity and reject unsupported
 review promotion. They check that usable app UI needs no decorative imagery/animation,
 and that resource/runtime/overflow/name/contrast failures are reported.
 

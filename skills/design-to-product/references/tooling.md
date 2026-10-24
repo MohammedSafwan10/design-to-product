@@ -27,6 +27,17 @@ remain drafts. Thirty-six original browser studies cover six entries per surface
 with interrupted-state toggles and local interactions. They do not implement
 native apps, a game engine or a backend. Stop the loopback preview with Ctrl+C.
 
+`examples/showcase/index.html` adds 12 distinct identities rather than six screens
+from the same product. Its preview images come from actual local browser captures.
+`evals/showcase-review-v2.json` records independent model critique, initial faults
+and correction rechecks. It is not randomized, equal-budget A/B or human evidence.
+The same loopback server serves this collection under `/examples/showcase/`.
+
+The separate `examples/native-lab` project and `evals/native-windows/` hold actual
+Windows Flutter evidence. Read [native-evidence.md](native-evidence.md) for scope
+and reproduction. Browser inspector profiles do not inspect Flutter canvas text
+or certify those captures; the native runner and reviewer supply different evidence.
+
 ## Direction hypotheses
 
 ```text

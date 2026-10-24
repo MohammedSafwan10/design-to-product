@@ -1,0 +1,195 @@
+{
+  "version": "2.0.0",
+  "date": "2026-10-24",
+  "reviewer": "Independent model critic; same project agent team, not a human/user panel",
+  "method": "Isolated Chromium; screenshots before builder rationale. Unblinded product names/paths, no builder provenance/rationale read. Twelve new entry screens at 390x844 and 1440x900; seven bounded local actions; six older representative entries at 1440x900. Reduced motion enabled. Screenshot artifacts are local ignored outputs.",
+  "comparisonLimits": "Different briefs and budgets, not randomized blinded A/B or frozen benchmark results. Browser UI studies only; no native lifecycle, device semantics, controller or gameplay verification. First-frame screenshots do not establish every state.",
+  "artifactRoot": "evals/artifacts/independent-v2/",
+  "records": [
+    {
+      "id": "market-letterpress",
+      "artifacts": [
+        "market-letterpress-390.png",
+        "market-letterpress-1440.png"
+      ],
+      "judgment": "Print artifact and serif hierarchy give a specific editorial identity.",
+      "fault": "At390, essential headline 'impression.' is visibly clipped right with horizontal scrollbar; measured root overflow43px.",
+      "action": "Allow safe headline wrapping or a smaller phone display scale; constrain tilted specimen overflow without hiding essential words.",
+      "recheck": {
+        "status": "resolved-at-tested-viewport",
+        "artifact": "market-letterpress-390-fixed.png",
+        "observation": "Fresh390 capture shows Words with weight. fully readable, print sheet contained and no root overflow (scrollWidth375 at innerWidth390). Initial fault preserved above."
+      }
+    },
+    {
+      "id": "market-brutalist",
+      "artifacts": [
+        "market-brutalist-390.png",
+        "market-brutalist-1440.png"
+      ],
+      "judgment": "Fluorescent field, emphatic headline and material inventory compose differently from botanical/letterpress; original illustrations support subject.",
+      "fault": "No blocking first-frame fault observed; lower card details and filter behavior not independently exercised.",
+      "action": "Review filtered empty state and card content at long labels before promotion."
+    },
+    {
+      "id": "market-botanical",
+      "artifacts": [
+        "market-botanical-390.png",
+        "market-botanical-1440.png",
+        "market-botanical-action.png"
+      ],
+      "judgment": "Plant drawing, dark ground and restrained serif carry the seed subject; phone composition remains legible.",
+      "fault": "Phone first fold separates plan controls from the introductory action through substantial illustration space; no task-success conclusion.",
+      "action": "Check anchor arrival/focus at growing-plan controls and contextual heading with keyboard/touch."
+    },
+    {
+      "id": "market-kinetic",
+      "artifacts": [
+        "market-kinetic-390.png",
+        "market-kinetic-1440.png",
+        "market-kinetic-action.png"
+      ],
+      "judgment": "Condensed poster typography and bicycle silhouette form a distinct event identity.",
+      "fault": "Overlapping display wordforms are intentionally dense; support copy is necessary for quick reading. No essential root clipping observed.",
+      "action": "Review full event date/location and reading order before using similar overlap elsewhere."
+    },
+    {
+      "id": "product-booking",
+      "artifacts": [
+        "product-booking-390.png",
+        "product-booking-1440.png",
+        "product-booking-action.png"
+      ],
+      "judgment": "Map, editorial proposition and bounded booking form give a clear local selection flow.",
+      "fault": "Primary form begins below introductory map on390; no small-screen full task or keyboard study performed.",
+      "action": "Verify review action remains discoverable with keyboard/large text; preserve selected inputs during failure."
+    },
+    {
+      "id": "product-inventory",
+      "artifacts": [
+        "product-inventory-390.png",
+        "product-inventory-1440.png",
+        "product-inventory-action.png"
+      ],
+      "judgment": "Technical part illustration and stock rows support workshop context.",
+      "fault": "On390, large branding block and all stock cards precede checkout; selected-part action is distant from first choice.",
+      "action": "Compact branding on task screens; consider persistent selected-part/quantity summary after selection.",
+      "recheck": {
+        "status": "resolved-for-local-selected-flow",
+        "artifact": "product-inventory-390-selected-fixed.png",
+        "observation": "Brand block compacted. Choosing first part focuses qty and scrolls checkout/selection into view; visible focused input and Record use action captured. Native keyboard behavior unverified."
+      }
+    },
+    {
+      "id": "dashboard-editorial",
+      "artifacts": [
+        "dashboard-editorial-390.png",
+        "dashboard-editorial-1440.png",
+        "dashboard-editorial-action.png"
+      ],
+      "judgment": "Newspaper-style dispatch hierarchy contrasts with generic metric-card dashboard.",
+      "fault": "390 header consumes about350px and selected decision detail follows both exception cards; urgent action becomes distant.",
+      "action": "Compact phone masthead/proposition; bring selected detail and decision next to selection or scroll focus deliberately.",
+      "recheck": {
+        "status": "improved-advice-remains",
+        "artifact": "dashboard-editorial-390-fixed.png",
+        "observation": "Heading and exception summaries are more compact; selected decision visible in first390 fold. Form begins below fold; no critical failure demonstrated and deliberate scrolling remains acceptable."
+      }
+    },
+    {
+      "id": "dashboard-science",
+      "artifacts": [
+        "dashboard-science-390.png",
+        "dashboard-science-1440.png"
+      ],
+      "judgment": "Instrument-like plot and supporting numeric facts fit synthetic spectral work.",
+      "fault": "390 SVG chart labels shrink to visually unreadable tiny glyphs while chart surface reserves large blank vertical areas.",
+      "action": "Recompose mobile chart with native-sized axes/labels and appropriate height, or offer accessible tabular values.",
+      "recheck": {
+        "status": "resolved-with-intentional-scroll-tradeoff",
+        "artifact": "dashboard-science-390-fixed.png",
+        "observation": "Axes now readable at390. Plot uses horizontal scrolling with visible scrollbar; full trace no longer simultaneously visible. Keyboard/screen-reader chart navigation remains unverified."
+      }
+    },
+    {
+      "id": "mobile-music",
+      "artifacts": [
+        "mobile-music-390.png",
+        "mobile-music-1440.png",
+        "mobile-music-action.png"
+      ],
+      "judgment": "Pink cover geometry and music hierarchy differ materially from transit and field-note studies.",
+      "fault": "Artwork dominates phone fold; player controls meet bottom navigation near fold. No native safe-area/large-text proof.",
+      "action": "Verify lower controls under short heights/keyboard and retain explicit unavailable-audio feedback.",
+      "recheck": {
+        "status": "verified-bounded-focus-check",
+        "artifact": "mobile-music-320-fixed.png",
+        "observation": "At320x568 last track was programmatically focused, browser scrolled it into view with visible outline and no bottom-control obstruction. Not a complete sequential-keyboard or native safe-area test."
+      }
+    },
+    {
+      "id": "mobile-transit",
+      "artifacts": [
+        "mobile-transit-390.png",
+        "mobile-transit-1440.png"
+      ],
+      "judgment": "Route alternatives, travel-time emphasis and step timeline are task-specific.",
+      "fault": "Start sample journey lies at/below390 fold after route steps, so selection requires scroll; no first-task test.",
+      "action": "Assess sticky summary/action after route choice without obscuring steps; test large text."
+    },
+    {
+      "id": "desktop-audio",
+      "artifacts": [
+        "desktop-audio-390.png",
+        "desktop-audio-1440.png"
+      ],
+      "judgment": "Timeline tracks, transport and recordings compose as a desktop workspace rather than marketing hero.",
+      "fault": "Phone compresses waveform/time context and uses a horizontally scrolling recording strip; no precision-edit claim justified.",
+      "action": "State narrow-window supported task limits and validate tab strip keyboard discoverability; native desktop input still unverified."
+    },
+    {
+      "id": "game-tactical",
+      "artifacts": [
+        "game-tactical-390.png",
+        "game-tactical-1440.png",
+        "game-tactical-action.png"
+      ],
+      "judgment": "Spatial route briefing with resource choices is clearly different from original river HUD.",
+      "fault": "Phone spatial view precedes choice controls by substantial scrolling; static map does not establish a usable gameplay HUD.",
+      "action": "Keep planning-study label, test controller focus separately and verify resource review on small windows."
+    }
+  ],
+  "localActions": {
+    "count": 7,
+    "runtimeIssuesObserved": 0,
+    "facts": [
+      "Botanical build-plan action displayed a local plant plan.",
+      "Kinetic review without lights confirmation produced a validation message.",
+      "Inventory record without chosen part produced a validation message.",
+      "Editorial card activation changed selected decision record; missing address blocked assignment wording.",
+      "Music play reported no audio files, not successful playback.",
+      "Tactical review reported selected approach, fuel arithmetic and no launched mission.",
+      "Booking review reported unavailable service, preserved selection and no reservation."
+    ],
+    "limits": "One selected action per listed page, not complete task coverage or automated accessibility audit."
+  },
+  "olderSpecimens": {
+    "artifacts": [
+      "old-contact.jpg",
+      "old-marketing.png",
+      "old-product-web.png",
+      "old-mobile.png",
+      "old-desktop.png",
+      "old-dashboard.png",
+      "old-game.png"
+    ],
+    "observation": "Older examples share pale fields, small utility labels and repeated panels; newer showcases show substantially more varied subject/typographic/material composition. New compactness/readability regressions remain. This is subjective model critique, not a superiority result."
+  },
+  "outcome": "Useful differentiated craft candidates, with phone clipping/chart-label faults to fix and task-density refinements before reviewed promotion. No independent-human or controlled-comparison claim.",
+  "recheck": {
+    "method": "Fresh isolated Chromium screenshots viewed at390x844; music320x568. Inventory first-part selection exercised.",
+    "date": "2026-10-24",
+    "blockingFaultsRemainingInTestedFixes": 0,
+    "limits": "Chart now horizontally scrolls. Dispatch form still below fold. Full keyboard/native/runtime claims remain unverified."
+  }
+}

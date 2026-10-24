@@ -90,3 +90,33 @@ after the most meaningful fixes. A clean report is not a design judgment. If sco
 scores as the agent's subjective critique, not independent jury or user research.
 Report any material unresolved issue; never claim a screenshot/build/device check
 that was not performed.
+
+## Capture → inspect → fix → recapture
+
+Choose a small evidence set from the actual change: the first viewport, relevant
+continuation, and the states most likely to fail. Include a narrow/short viewport
+and intermediate widths around a real layout transition. For control changes,
+capture the opened dropdown/dialog and long selected values, not just closed
+controls. Exercise keyboard focus, pointer hover where supported, and scrolling
+at content boundaries. Use runtime/device evidence for native and in-canvas UI.
+
+Open the resulting screenshots with an image/browser tool and inspect readable
+detail. Record specific observations tied to route, viewport and state: clipped
+value, cramped reading column, missing feedback, background scroll leak, repeated
+copy, weak hierarchy or inconsistent imagery. Separate measured breakage from
+subjective craft judgment. A green test suite does not dismiss a visible defect.
+
+Fix the highest-impact observed issue within the approved scope, then capture the
+same state again at comparable dimensions. Verify relevant interaction as well
+as appearance, and spot-check a neighboring width/state for regressions. Stop
+when concrete defects are resolved and the requested design contract is met;
+avoid endless arbitrary restyling or rerunning every screen after a minor edit.
+Retain useful before/after evidence in the project's ignored output directory and
+record unresolved findings in the normal handoff. Do not replace screenshot
+inspection with merely creating image files, source-reading or metric counts.
+
+The builder can perform this loop autonomously with available authorized tools.
+An independent reviewer is a separate evidence source, used when authorized;
+self-review is not an independent comparison or a user study. If the host lacks
+capture/view tools or a supported runtime, report the missing evidence and use
+available checks without claiming visual or native verification.

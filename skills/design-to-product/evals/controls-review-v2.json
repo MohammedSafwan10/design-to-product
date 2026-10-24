@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "controls-review-v2",
+  "status": "independent-model-review-rechecked-open-faults-resolved",
+  "reviewer": {
+    "role": "cross-builder model critic",
+    "identity": "library_council subagent",
+    "builtReviewedExamples": false
+  },
+  "method": {
+    "conditions": "Known product identities; reviewer did not author these three pages. Not blinded, equal-budget, randomized or a controlled user study.",
+    "capture": "Isolated Chromium, touch emulation, default and enlarged text, reduced motion.",
+    "textStress": "All precomputed non-SVG element font sizes doubled; 568 CSS-pixel height. Not native Dynamic Type or actual browser text-only zoom.",
+    "visualInspection": "Viewed six full-page screenshots and three post-flow enlarged-text screenshots."
+  },
+  "cases": [
+    {
+      "name": "product-inventory",
+      "width": 390,
+      "height": 844,
+      "textScale": 1,
+      "method": "Default CSS text",
+      "findings": [],
+      "flow": {
+        "focused": "qty",
+        "focusedRect": {
+          "top": 681.65625,
+          "bottom": 728.65625
+        },
+        "valid": "2 × Sealed bearing used in this local sample. 10 remain.",
+        "failure": "Not enough stock. Enter a whole quantity from 1 to 10. Nothing changed.",
+        "selected": "Sealed bearing / 10 available"
+      },
+      "runtimeIssues": [],
+      "screenshots": {
+        "initial": "evals/artifacts/controls-review-v2/product-inventory-default.png",
+        "flow": "evals/artifacts/controls-review-v2/product-inventory-default-flow.png"
+      }
+    },
+    {
+      "name": "product-inventory",
+      "width": 390,
+      "height": 568,
+      "textScale": 2,
+      "method": "All precomputed non-SVG font sizes doubled by reviewer; CSS text enlargement stress, not native Dynamic Type or browser zoom.",
+      "findings": [],
+      "flow": {
+        "focused": "qty",
+        "focusedRect": {
+          "top": 249.625,
+          "bottom": 317.625
+        },
+        "valid": "2 × Sealed bearing used in this local sample. 10 remain.",
+        "failure": "Not enough stock. Enter a whole quantity from 1 to 10. Nothing changed.",
+        "selected": "Sealed bearing / 10 available"
+      },
+      "runtimeIssues": [],
+      "screenshots": {
+        "initial": "evals/artifacts/controls-review-v2/product-inventory-text200-short.png",
+        "flow": "evals/artifacts/controls-review-v2/product-inventory-text200-short-flow.png"
+      }
+    },
+    {
+      "name": "dashboard-editorial",
+      "width": 390,
+      "height": 844,
+      "textScale": 1,
+      "method": "Default CSS text",
+      "findings": [],
+      "flow": {
+        "blocked": "Cannot assign: the unit number is missing. Ask the coordinator to confirm the address.",
+        "late": "This van arrives after closing. Choose the early van; no decision was recorded.",
+        "valid": "Local decision recorded: N-204 → Early van. No live route was changed.",
+        "title": "North / N-204"
+      },
+      "runtimeIssues": [],
+      "screenshots": {
+        "initial": "evals/artifacts/controls-review-v2/dashboard-editorial-default.png",
+        "flow": "evals/artifacts/controls-review-v2/dashboard-editorial-default-flow.png"
+      }
+    },
+    {
+      "name": "dashboard-editorial",
+      "width": 390,
+      "height": 568,
+      "textScale": 2,
+      "method": "All precomputed non-SVG font sizes doubled by reviewer; CSS text enlargement stress, not native Dynamic Type or browser zoom.",
+      "findings": [
+        {
+          "severity": "error",
+          "id": "horizontal-overflow",
+          "message": "Content extends past the viewport.",
+          "evidence": 48
+        },
+        {
+          "severity": "warning",
+          "id": "contrast-unverified",
+          "message": "Complex styling/compositing prevents reliable contrast measurement; inspect manually.",
+          "evidence": [
+            "NORTHLINE"
+          ]
+        }
+      ],
+      "flow": {
+        "blocked": "Cannot assign: the unit number is missing. Ask the coordinator to confirm the address.",
+        "late": "This van arrives after closing. Choose the early van; no decision was recorded.",
+        "valid": "Local decision recorded: N-204 → Early van. No live route was changed.",
+        "title": "North / N-204"
+      },
+      "runtimeIssues": [],
+      "screenshots": {
+        "initial": "evals/artifacts/controls-review-v2/dashboard-editorial-text200-short.png",
+        "flow": "evals/artifacts/controls-review-v2/dashboard-editorial-text200-short-flow.png"
+      }
+    },
+    {
+      "name": "mobile-music",
+      "width": 320,
+      "height": 844,
+      "textScale": 1,
+      "method": "Default CSS text",
+      "findings": [],
+      "flow": {
+        "failure": "Audio unavailable: this study contains no music files. You can still choose and save tracks locally.",
+        "current": "After the rain",
+        "saved": "true",
+        "label": "Unsave After the rain",
+        "status": "1 track saved in this local session."
+      },
+      "runtimeIssues": [],
+      "screenshots": {
+        "initial": "evals/artifacts/controls-review-v2/mobile-music-default.png",
+        "flow": "evals/artifacts/controls-review-v2/mobile-music-default-flow.png"
+      }
+    },
+    {
+      "name": "mobile-music",
+      "width": 320,
+      "height": 568,
+      "textScale": 2,
+      "method": "All precomputed non-SVG font sizes doubled by reviewer; CSS text enlargement stress, not native Dynamic Type or browser zoom.",
+      "findings": [],
+      "flow": {
+        "failure": "Audio unavailable: this study contains no music files. You can still choose and save tracks locally.",
+        "current": "After the rain",
+        "saved": "true",
+        "label": "Unsave After the rain",
+        "status": "1 track saved in this local session."
+      },
+      "runtimeIssues": [],
+      "screenshots": {
+        "initial": "evals/artifacts/controls-review-v2/mobile-music-text200-short.png",
+        "flow": "evals/artifacts/controls-review-v2/mobile-music-text200-short-flow.png"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "northline-enlarged-wordmark-overflow",
+      "severity": "error",
+      "status": "resolved-in-scoped-recheck",
+      "surface": "dashboard-editorial",
+      "condition": "390×568, doubled non-SVG font sizes",
+      "evidence": "Measured root overflow; full-page screenshot expanded to438px and wordmark extends beyond viewport.",
+      "action": "Allow wordmark wrap or bounded responsive scaling that respects text enlargement; verify390 and320 after fix.",
+      "screenshot": "evals/artifacts/controls-review-v2/dashboard-editorial-text200-short.png",
+      "originalStatus": "open",
+      "resolution": "NORTH/wbr/LINE and width-aware reflow; measured root overflow0 at390 and320 with doubled non-SVG text. Both captures viewed."
+    },
+    {
+      "id": "northline-selection-emphasis",
+      "severity": "warning",
+      "status": "resolved-in-scoped-recheck",
+      "surface": "dashboard-editorial",
+      "evidence": "North issue remains yellow after selecting East. Current script changes detail but not selected/pressed state. Yellow may be severity but meaning is not explained.",
+      "action": "If yellow means selection, update aria-pressed/current and selected styling; if urgency, label urgency explicitly and give selected item a separate state.",
+      "originalStatus": "open",
+      "resolution": "East click gives East aria-pressed=true, North=false and yellow East/white North; returning North reverses pressed state."
+    },
+    {
+      "id": "northline-diagram-labels",
+      "severity": "advice",
+      "status": "resolved-in-scoped-recheck",
+      "surface": "dashboard-editorial",
+      "evidence": "600-unit SVG scales into roughly340px region;18-unit source labels render around10px and SVG text is excluded from doubled-text scenario.",
+      "action": "Provide a readable HTML route summary or mobile-specific labels that scale with text.",
+      "screenshot": "evals/artifacts/controls-review-v2/dashboard-editorial-default.png",
+      "originalStatus": "open",
+      "resolution": "Tiny schematic labels remain, but a readable HTML route summary duplicates the route at14px default/28px in text stress. Diagram no longer carries unique small-text information."
+    }
+  ],
+  "limits": [
+    "No native OS or physical-device behavior tested.",
+    "No screen-reader, actual virtual keyboard, complete accessible-name algorithm or persistent storage validation.",
+    "Full-page screenshots combine a short viewport with scrollable content; they do not mean content fits on one screen.",
+    "Flow clicks were scripted DOM clicks/requestSubmit; quantity focus checked by activeElement and bounding rectangle.",
+    "No comparative superiority, designer preference, task-success rate or WCAG certification inferred."
+  ],
+  "followUp": {
+    "method": "Fresh isolated Chromium capture and same doubled non-SVG font-size stress at390×568 and320×568. Viewed both full-page captures. Scripted East/North selection and blocked/valid decisions.",
+    "cases": [
+      {
+        "width": 390,
+        "height": 568,
+        "textScale": 2,
+        "overflow": 0,
+        "findings": [],
+        "selection": {
+          "east": {
+            "north": "false",
+            "east": "true",
+            "northColor": "rgb(255, 255, 255)",
+            "eastColor": "rgb(244, 227, 71)"
+          },
+          "blocked": "Cannot assign: the unit number is missing. Ask the coordinator to confirm the address.",
+          "northPressed": "true",
+          "valid": "Local decision recorded: N-204 → Early van. No live route was changed.",
+          "routeSummary": "Illustrative path: Depot → River junction → Receiver",
+          "summaryFont": "28px"
+        },
+        "screenshot": "evals/artifacts/controls-review-v2/dashboard-editorial-fixed-390-text200-short.png",
+        "runtimeIssues": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "textScale": 2,
+        "overflow": 0,
+        "findings": [],
+        "selection": {
+          "east": {
+            "north": "false",
+            "east": "true",
+            "northColor": "rgb(255, 255, 255)",
+            "eastColor": "rgb(244, 227, 71)"
+          },
+          "blocked": "Cannot assign: the unit number is missing. Ask the coordinator to confirm the address.",
+          "northPressed": "true",
+          "valid": "Local decision recorded: N-204 → Early van. No live route was changed.",
+          "routeSummary": "Illustrative path: Depot → River junction → Receiver",
+          "summaryFont": "28px"
+        },
+        "screenshot": "evals/artifacts/controls-review-v2/dashboard-editorial-fixed-320-text200-short.png",
+        "runtimeIssues": []
+      }
+    ],
+    "result": "No root overflow or measured errors in either fresh scenario. Original fault evidence retained in cases and findings."
+  }
+}

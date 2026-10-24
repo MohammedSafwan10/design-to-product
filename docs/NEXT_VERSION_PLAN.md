@@ -318,3 +318,29 @@ stress cases, recorded public-product/gallery observations toward the explorator
 sample, frozen paired builds, and actual native/game runtime adapters when those
 runners exist. These are required before broad reviewed/validated claims. The
 new library is usable as a candidate reference while that evidence accumulates.
+
+
+## 12. Research and runtime checkpoint — 24 October 2026
+
+Added 12 independently authored product identities, 14 substantive primary-source
+craft records, two deeper craft references and independent model screenshot
+critique. Reviewers captured new/older examples, exercised local actions and
+reported concrete defects. Builders corrected those issues; fresh independent
+captures resolved headline clipping, small chart labels, enlarged-text overflow,
+selection inconsistency and action placement. Scope and initial failed captures
+are retained. The comparison is unblinded and uses different briefs/budgets;
+the frozen equal-budget benchmark remains unexecuted.
+
+Windows Flutter native integration now passes route/offline, audio control/failure
+and a small playable 2D keyboard puzzle. Seven render-boundary captures and source
+fingerprints are packaged. A separate critic found a clipped native audio failure
+message and unclear slider glyph; both were fixed, hot-reloaded, re-tested and
+re-viewed. Flutter analysis reported no issues and live runtime checks found no
+errors. These are Windows/harness findings, not Android/iOS, physical device,
+assistive-technology, audio output, controller or 3D-engine evidence.
+
+Android SDK lacks a connected device/emulator and has incomplete licensing.
+No license terms were accepted or production configuration altered. Device and
+platform-specific verification remains pending rather than being replaced by a
+Windows phone-shaped composition. All 150 library recipes remain draft; reviewed
+example artifacts are separate evidence, not automatic promotion of every recipe.

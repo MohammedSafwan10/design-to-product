@@ -1,0 +1,114 @@
+{
+  "version": 2,
+  "status": "Original browser studies; independent model critique recorded separately",
+  "entries": [
+    {
+      "id": "market-letterpress",
+      "name": "Forme",
+      "surface": "marketing",
+      "idea": "A printer’s specimen becomes the product demonstration.",
+      "ground": "#e7ecf5",
+      "alt": "Forme original marketing interface study",
+      "path": "market-letterpress/index.html"
+    },
+    {
+      "id": "market-brutalist",
+      "name": "OFFCUT",
+      "surface": "marketing",
+      "idea": "A fluorescent salvage yard built around material stock.",
+      "ground": "#d0ff3a",
+      "alt": "OFFCUT original marketing interface study",
+      "path": "market-brutalist/index.html"
+    },
+    {
+      "id": "market-botanical",
+      "name": "Fieldwork",
+      "surface": "marketing",
+      "idea": "A botanical atlas turns growing conditions into a plan.",
+      "ground": "#16382d",
+      "alt": "Fieldwork original marketing interface study",
+      "path": "market-botanical/index.html"
+    },
+    {
+      "id": "market-kinetic",
+      "name": "OFFGRID",
+      "surface": "marketing",
+      "idea": "A cycling poster makes distance and preparation the story.",
+      "ground": "#ec3b25",
+      "alt": "OFFGRID original marketing interface study",
+      "path": "market-kinetic/index.html"
+    },
+    {
+      "id": "product-booking",
+      "name": "Tidemark",
+      "surface": "product-web",
+      "idea": "A coastal route map leads a bounded departure decision.",
+      "ground": "#e6efec",
+      "alt": "Tidemark original product-web interface study",
+      "path": "product-booking/index.html"
+    },
+    {
+      "id": "product-inventory",
+      "name": "KILO",
+      "surface": "product-web",
+      "idea": "Workshop parts, actual stock limits and a focused checkout.",
+      "ground": "#144fb4",
+      "alt": "KILO original product-web interface study",
+      "path": "product-inventory/index.html"
+    },
+    {
+      "id": "dashboard-science",
+      "name": "Aster Lab",
+      "surface": "dashboard",
+      "idea": "Spectral data becomes a readable instrument workspace.",
+      "ground": "#edf3f3",
+      "alt": "Aster Lab original dashboard interface study",
+      "path": "dashboard-science/index.html"
+    },
+    {
+      "id": "dashboard-editorial",
+      "name": "Northline",
+      "surface": "dashboard",
+      "idea": "A dispatch newspaper puts exceptions before decorative metrics.",
+      "ground": "#f4f1e7",
+      "alt": "Northline original dashboard interface study",
+      "path": "dashboard-editorial/index.html"
+    },
+    {
+      "id": "mobile-transit",
+      "name": "Loop",
+      "surface": "mobile",
+      "idea": "Route alternatives and legible travel times on a phone.",
+      "ground": "#eff0eb",
+      "alt": "Loop original mobile interface study",
+      "path": "mobile-transit/index.html"
+    },
+    {
+      "id": "mobile-music",
+      "name": "Rill",
+      "surface": "mobile",
+      "idea": "Album-first listening with honest unavailable-audio feedback.",
+      "ground": "#eebbd1",
+      "alt": "Rill original mobile interface study",
+      "path": "mobile-music/index.html"
+    },
+    {
+      "id": "desktop-audio",
+      "name": "Fieldnote Audio",
+      "surface": "desktop",
+      "idea": "Waveform tracks and a playhead define the editing space.",
+      "ground": "#15191c",
+      "alt": "Fieldnote Audio original desktop interface study",
+      "path": "desktop-audio/index.html"
+    },
+    {
+      "id": "game-tactical",
+      "name": "LOW ORBIT",
+      "surface": "game",
+      "idea": "Orbital paths expose fuel tradeoffs before commitment.",
+      "ground": "#101e31",
+      "alt": "LOW ORBIT original game interface study",
+      "path": "game-tactical/index.html"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "runtime": "windows",
+  "runtimeVersion": "\"Windows 10 Pro\" 10.0 (Build 26300)",
+  "method": "Flutter integration_test running a compiled native desktop application",
+  "status": "passed",
+  "captures": [
+    {
+      "name": "transit-normal",
+      "width": 1264,
+      "height": 681,
+      "artifact": "transit-normal.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "f45d8affbacaf19865e8c62ef3a7425a4116018e67c398cd5f20e534cfc8ec29"
+    },
+    {
+      "name": "transit-offline",
+      "width": 1264,
+      "height": 681,
+      "artifact": "transit-offline.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "3ba7e4554df22553e120a07343c947e994ccdea7ea35beb70c054fbc92fa4131"
+    },
+    {
+      "name": "audio-normal",
+      "width": 1264,
+      "height": 681,
+      "artifact": "audio-normal.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "d21f1541ce6c5a7756146578a478817c420d0047851fddd2ccf60602b85a9c65"
+    },
+    {
+      "name": "audio-export-failure",
+      "width": 1264,
+      "height": 681,
+      "artifact": "audio-export-failure.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "746d43b04d2423ac69c500d97090193485946dfb299f944d603059dfbc9412f5"
+    },
+    {
+      "name": "beacon-normal",
+      "width": 1264,
+      "height": 681,
+      "artifact": "beacon-normal.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "0c3f920fa6037ed6f1daa23d5e959bfd1dcbb0106317e136c2f82071f5777057"
+    },
+    {
+      "name": "beacon-wrong-input",
+      "width": 1264,
+      "height": 681,
+      "artifact": "beacon-wrong-input.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "bd7cd75d62c8e0473c154a5a1a83ae4aacd5fd8f21c256ed90a07a841b6f42fb"
+    },
+    {
+      "name": "beacon-complete",
+      "width": 1264,
+      "height": 681,
+      "artifact": "beacon-complete.png",
+      "method": "RepaintBoundary of the running native Flutter app; OS chrome excluded",
+      "sha256": "85a55a775ffdc81481c5b30ec172832e32eaf7bf2cc87ee4bd71c5f7b5b12463"
+    }
+  ],
+  "checks": [
+    "Route selection and review",
+    "Offline state preserves sample route",
+    "Mute and playhead interaction",
+    "Honest export failure",
+    "Wrong puzzle input recovery",
+    "Pause disables actions",
+    "Injected keyboard input completes the relay",
+    "Flutter exceptions absent at captured states"
+  ],
+  "limits": [
+    "No Android/iOS device or emulator evidence",
+    "Transit phone composition is hosted on Windows, not verified mobile OS behavior",
+    "No physical controller, network service, audio playback or 3D engine test",
+    "Harness injects input; this is not a human usability study",
+    "Captures exclude OS chrome and do not certify assistive technology"
+  ],
+  "sdk": "3.47.5",
+  "buildMode": "debug",
+  "sourceSha256": {
+    "lib/main.dart": "d1bdf7a161eebb5637e7fa45196597dd23d121e452bceabb1c8857bdd962a441",
+    "integration_test/native_flow_test.dart": "b56aa014d3887a8c30012ac28703eae5475d4184467312738260af7e5c354e55",
+    "pubspec.yaml": "d86a50a13d55943cb1031b454e80818b2c45e2e11655c8efa6c6c7ce1e689705"
+  }
+}
