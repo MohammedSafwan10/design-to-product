@@ -4,8 +4,8 @@ One self-contained agent skill for deliberate art direction, comparable mockups,
 scoped design selection, reusable identity assets, working interfaces and visual/
 logic verification. Supports public websites, apps, dashboards and game UIs.
 
-Formerly **Mockup to Product**. The skill is now `design-to-product`; the existing
-repository URL remains `MohammedSafwan10/mockup-to-product` for continuity.
+Formerly **Mockup to Product**. The skill and repository are now
+`design-to-product`; GitHub redirects the former repository address.
 
 ## What is combined
 
@@ -89,7 +89,7 @@ In a Codex environment with `$skill-installer`, ask:
 
 ```text
 Use $skill-installer to install:
-https://github.com/MohammedSafwan10/mockup-to-product/tree/main/skills/design-to-product
+https://github.com/MohammedSafwan10/design-to-product/tree/main/skills/design-to-product
 ```
 
 For a manual install, clone or download this repository, then copy the complete
